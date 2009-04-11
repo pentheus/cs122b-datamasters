@@ -1,0 +1,2548 @@
+INSERT INTO movies VALUES(490001, 'The Aviator', 2004, 'Martin Scorsese',
+'http://ia.imdb.com/media/imdb/01/I/05/31/48m.jpg',
+'http://movies.apple.com/movies/miramax/the_aviator/the_aviator-tlr-ref.mov');
+
+INSERT INTO movies VALUES(490002, 'Ocean\'s Twelve', 2004, 'Steven
+Soderbergh', 'http://ia.imdb.com/media/imdb/01/I/32/23/58m.jpg',
+'http://raincloud.warnerbros.com/wbmovies/oceans12/trailer/trailer_lo/trailer_MSTR.mov');
+
+INSERT INTO movies VALUES(490003, 'Hostage', 2005, 'Florent Emilio Siri',
+'http://ia.imdb.com/media/imdb/01/I/13/78/68m.jpg',
+'http://images.apple.com/movies/miramax/hostage/hostage-ref.mov');
+
+INSERT INTO movies VALUES(490004, 'Elektra', 2005, 'Rob Bowman',
+'http://ia.imdb.com/media/imdb/01/I/85/18/68m.jpg',
+'http://movies.apple.com/movies/fox/elektra/elektra-tlr_480.mov');
+
+INSERT INTO movies VALUES(490005, 'Shall We Dance', 2004, 'Peter Chelsom',
+'http://ia.imdb.com/media/imdb/01/I/49/31/58m.jpg',
+'http://movies.apple.com/movies/miramax/shall_we_dance/shall_we_dance-sref.mov');
+
+INSERT INTO movies VALUES(490006, 'Cold Mountain', 2003, 'Anthony
+Minghella', 'http://ia.imdb.com/media/imdb/01/I/24/13/26m.jpg',
+'http://movies.apple.com/movies/miramax/cold_mountain/cold_mountain_480.mov');
+
+INSERT INTO movies VALUES(490007, 'Titanic', 1997, 'James Cameron',
+'http://ia.imdb.com/media/imdb/01/I/34/59/40m.jpg',
+'http://www.titanicmovie.com/present/movs/titanic_2_hi.mov');
+
+INSERT INTO movies VALUES(490008, 'The Sound of Music', 1965, 'Robert
+Wise', 'http://ia.imdb.com/media/imdb/01/I/66/06/28m.jpg',
+'http://videodetective.com/player.asp?PublishedId=275&List=901769&Customerid=97135');
+
+INSERT INTO movies VALUES(490009, 'A Beautiful Mind', 2001, 'Ron Howard',
+'http://ia.imdb.com/media/imdb/01/I/27/54/84m.jpg',
+'http://videodetective.com/player.asp?PublishedId=912182&List=278378|179312|745846|211636|218940&Customerid=97135');
+
+INSERT INTO movies VALUES(490010, 'Walk in the Clouds', 1995, 'Alfonso
+Arau', 'http://ia.imdb.com/media/imdb/01/I/62/79/06m.jpg',
+'http://videodetective.com/player.asp?PublishedId=5922&List=278378|179312|745846|211636|218940&Customerid=97135');
+
+INSERT INTO movies VALUES(490011, 'Traffic', 2000, 'Steven Soderbergh',
+'http://ia.imdb.com/media/imdb/01/I/32/97/02m.jpg',
+'http://a2016.g.akamai.net/5/2016/51/cc0fd4ba52ea34/1a1a1aaa2198c627970773d80669d84574a8d80d3cb12453c02589f25382f668c9329e0375e8178cff608f0375d63ca20b6e/traffic_240.mov');
+
+INSERT INTO movies VALUES(490012, 'Pretty Woman', 1990, 'Gary Marshall',
+'http://ia.imdb.com/media/imdb/01/I/35/30/91m.gif',
+'http://www.movie-list.net/classics/pretty-woman.mov');
+
+INSERT INTO movies VALUES(490013, 'The Terminal', 2004, 'Steven
+Spielberg', 'http://ia.imdb.com/media/imdb/01/I/81/16/28m.jpg',
+'http://movies.apple.com/movies/dreamworks/the_terminal/the_terminal_480.mov');
+
+INSERT INTO movies VALUES(490014, 'Troy', 2004, 'Wolfgang Petersen',
+'http://ia.imdb.com/media/imdb/01/I/21/65/48m.jpg',
+'http://movies.apple.com/movies/wb/troy/troy-tsr_480.mov');
+
+INSERT INTO movies VALUES(490015, 'Notting Hill', 1999, 'Roger Michell',
+'http://ia.imdb.com/media/imdb/01/I/53/75/43m.jpg',
+'http://www.movie-list.net/classics/notting-hill.mov');
+
+INSERT INTO movies VALUES(490016, 'Stepmom', 1998, 'Chris Columbus',
+'http://ia.imdb.com/media/imdb/01/I/05/30/21m.jpg',
+'http://www.movie-list.net/classics/stepmom.mov');
+
+INSERT INTO movies VALUES(490017, 'Intolerable Cruelty', 2003, 'Joel
+Coen', 'http://ia.imdb.com/media/imdb/01/I/54/91/38m.jpg',
+'http://www.uipfrance.com/sites/intolerablecruaute/ba_qt.html');
+
+
+INSERT INTO stars VALUES(490001, 'Nicole', 'Kidman', '1967-06-20',
+'http://ia.imdb.com/media/imdb/01/I/42/45/38m.jpg');
+INSERT INTO stars VALUES(490002, 'Jennifer', 'Garner', '1972-04-17',
+'http://ia.imdb.com/media/imdb/01/I/27/32/78m.jpg');
+INSERT INTO stars VALUES(490003, 'Brad', 'Pitt', '1963-12-18',
+'http://ia.imdb.com/media/imdb/01/I/40/45/38m.jpg');
+INSERT INTO stars VALUES(490004, 'Julia', 'Roberts', '1967-10-28',
+'http://ia.imdb.com/media/imdb/01/I/85/65/38m.jpg');
+INSERT INTO stars VALUES(490005, 'Catherine', 'Zeta-Jones', '1969-09-25',
+'http://ia.imdb.com/media/imdb/01/I/57/65/38m.jpg');
+INSERT INTO stars VALUES(490006, 'Jennifer', 'Lopez', '1969-07-24',
+'http://ia.imdb.com/media/imdb/01/I/85/85/38m.jpg');
+INSERT INTO stars VALUES(490007, 'Richard', 'Gere', '1949-08-31',
+'http://ia.imdb.com/media/imdb/01/I/84/45/48m.jpg');
+INSERT INTO stars VALUES(490008, 'George', 'Clooney', '1961-05-06',
+'http://ia.imdb.com/media/imdb/01/I/39/65/38m.jpg');
+INSERT INTO stars VALUES(490009, 'Michael', 'Douglas', '1944-09-25',
+'http://ia.imdb.com/media/imdb/01/I/56/05/12m.jpg');
+INSERT INTO stars VALUES(490010, 'Leonardo', 'DiCaprio', '1974-11-11',
+'http://ia.imdb.com/media/imdb/01/I/16/28/38m.jpg');
+INSERT INTO stars VALUES(490011, 'Keanu', 'Reeves', '1964-09-02',
+'http://ia.imdb.com/media/imdb/01/I/65/85/38m.jpg');
+INSERT INTO stars VALUES(490012, 'Julie', 'Andrews', '1935-10-01',
+'http://ia.imdb.com/media/imdb/01/I/97/90/33m.jpg');
+INSERT INTO stars VALUES(490013, 'Bruce', 'Willis', '1955-03-19',
+'http://ia.imdb.com/media/imdb/01/I/84/36/12m.jpg');
+INSERT INTO stars VALUES(490014, 'Russell', 'Crowe', '1964-04-07',
+'http://ia.imdb.com/media/imdb/01/I/19/23/48m.jpg');
+INSERT INTO stars VALUES(490015, 'Tom', 'Hanks', '1956-07-09',
+'http://ia.imdb.com/media/imdb/01/I/68/65/38m.jpg');
+
+INSERT INTO stars_in_movies VALUES(490001, 490006);
+INSERT INTO stars_in_movies VALUES(490002, 490004);
+INSERT INTO stars_in_movies VALUES(490003, 490002);
+INSERT INTO stars_in_movies VALUES(490004, 490002);
+INSERT INTO stars_in_movies VALUES(490005, 490002);
+INSERT INTO stars_in_movies VALUES(490006, 490005);
+INSERT INTO stars_in_movies VALUES(490007, 490012);
+INSERT INTO stars_in_movies VALUES(490008, 490002);
+INSERT INTO stars_in_movies VALUES(490009, 490011);
+INSERT INTO stars_in_movies VALUES(490010, 490001);
+INSERT INTO stars_in_movies VALUES(490011, 490010);
+INSERT INTO stars_in_movies VALUES(490012, 490008);
+INSERT INTO stars_in_movies VALUES(490013, 490003);
+INSERT INTO stars_in_movies VALUES(490005, 490011);
+INSERT INTO stars_in_movies VALUES(490004, 490012);
+INSERT INTO stars_in_movies VALUES(490014, 490009);
+INSERT INTO stars_in_movies VALUES(490015, 490013);
+INSERT INTO stars_in_movies VALUES(490005, 490013);
+INSERT INTO stars_in_movies VALUES(490010, 490007);
+INSERT INTO stars_in_movies VALUES(490003, 490014);
+INSERT INTO stars_in_movies VALUES(490004, 490015);
+INSERT INTO stars_in_movies VALUES(490004, 490016);
+INSERT INTO stars_in_movies VALUES(490008, 490017);
+INSERT INTO stars_in_movies VALUES(490005, 490017);
+
+
+INSERT INTO genres VALUES(490001, 'Comedy');
+INSERT INTO genres VALUES(490002, 'Mystery');
+INSERT INTO genres VALUES(490003, 'Thriller');
+INSERT INTO genres VALUES(490004, 'Drama');
+INSERT INTO genres VALUES(490005, 'Musical');
+INSERT INTO genres VALUES(490006, 'Adventure');
+INSERT INTO genres VALUES(490007, 'Family');
+INSERT INTO genres VALUES(490008, 'Action');
+INSERT INTO genres VALUES(490009, 'Crime');
+INSERT INTO genres VALUES(490010, 'Romance');
+INSERT INTO genres VALUES(490011, 'War');
+INSERT INTO genres VALUES(490012, 'Fantasy');
+
+INSERT INTO genres_in_movies VALUES(490001, 490002);
+INSERT INTO genres_in_movies VALUES(490001, 490012);
+INSERT INTO genres_in_movies VALUES(490001, 490016);
+INSERT INTO genres_in_movies VALUES(490001, 490015);
+INSERT INTO genres_in_movies VALUES(490001, 490017);
+INSERT INTO genres_in_movies VALUES(490002, 490009);
+INSERT INTO genres_in_movies VALUES(490003, 490002);
+INSERT INTO genres_in_movies VALUES(490003, 490003);
+INSERT INTO genres_in_movies VALUES(490003, 490004);
+INSERT INTO genres_in_movies VALUES(490003, 490011);
+INSERT INTO genres_in_movies VALUES(490004, 490001);
+INSERT INTO genres_in_movies VALUES(490004, 490003);
+INSERT INTO genres_in_movies VALUES(490004, 490005);
+INSERT INTO genres_in_movies VALUES(490004, 490006);
+INSERT INTO genres_in_movies VALUES(490004, 490007);
+INSERT INTO genres_in_movies VALUES(490004, 490008);
+INSERT INTO genres_in_movies VALUES(490004, 490009);
+INSERT INTO genres_in_movies VALUES(490004, 490010);
+INSERT INTO genres_in_movies VALUES(490004, 490011);
+INSERT INTO genres_in_movies VALUES(490004, 490005);
+INSERT INTO genres_in_movies VALUES(490004, 490005);
+INSERT INTO genres_in_movies VALUES(490004, 490013);
+INSERT INTO genres_in_movies VALUES(490004, 490014);
+INSERT INTO genres_in_movies VALUES(490004, 490016);
+INSERT INTO genres_in_movies VALUES(490004, 490015);
+INSERT INTO genres_in_movies VALUES(490005, 490005);
+INSERT INTO genres_in_movies VALUES(490005, 490008);
+INSERT INTO genres_in_movies VALUES(490006, 490004);
+INSERT INTO genres_in_movies VALUES(490006, 490014);
+INSERT INTO genres_in_movies VALUES(490007, 490008);
+INSERT INTO genres_in_movies VALUES(490008, 490003);
+INSERT INTO genres_in_movies VALUES(490008, 490004);
+INSERT INTO genres_in_movies VALUES(490008, 490014);
+INSERT INTO genres_in_movies VALUES(490009, 490002);
+INSERT INTO genres_in_movies VALUES(490009, 490003);
+INSERT INTO genres_in_movies VALUES(490009, 490004);
+INSERT INTO genres_in_movies VALUES(490009, 490011);
+INSERT INTO genres_in_movies VALUES(490009, 490017);
+INSERT INTO genres_in_movies VALUES(490010, 490005);
+INSERT INTO genres_in_movies VALUES(490010, 490006);
+INSERT INTO genres_in_movies VALUES(490010, 490007);
+INSERT INTO genres_in_movies VALUES(490010, 490010);
+INSERT INTO genres_in_movies VALUES(490010, 490012);
+INSERT INTO genres_in_movies VALUES(490010, 490013);
+INSERT INTO genres_in_movies VALUES(490010, 490014);
+INSERT INTO genres_in_movies VALUES(490010, 490015);
+INSERT INTO genres_in_movies VALUES(490010, 490017);
+INSERT INTO genres_in_movies VALUES(490011, 490006);
+INSERT INTO genres_in_movies VALUES(490011, 490010);
+INSERT INTO genres_in_movies VALUES(490011, 490014);
+INSERT INTO genres_in_movies VALUES(490012, 490004);
+
+INSERT INTO creditcards VALUES(4900011243567809, 'James Brown', '2007-09-20');
+INSERT INTO creditcards VALUES(4900021243567809, 'Margaret Black', '2006-05-20');
+INSERT INTO creditcards VALUES(4900031243567809, 'Keith Black', '2006-06-25');
+INSERT INTO creditcards VALUES(4900041243567809, 'Kyle Shaw', '2008-04-21');
+INSERT INTO creditcards VALUES(4900051243567809, 'Keith White', '2006-03-22');
+INSERT INTO creditcards VALUES(4900061243567809, 'Sherry Milton', '2007-01-03');
+INSERT INTO creditcards VALUES(4900071243567809, 'Ana Smith', '2005-09-25');
+INSERT INTO creditcards VALUES(4900081243567809, 'Bill Brady', '2008-08-19');
+INSERT INTO creditcards VALUES(4900091243567809, 'Kate Burman', '2006-10-22');
+INSERT INTO creditcards VALUES(4900101243567809, 'David Rice', '2007-02-14');
+INSERT INTO creditcards VALUES(4900111243567809, 'Joyce Stuart', '2006-11-25');
+INSERT INTO creditcards VALUES(4900121243567809, 'Fay Berry', '2005-11-19');
+INSERT INTO creditcards VALUES(4900131243567809, 'Jane Johnson', '2008-05-20');
+INSERT INTO creditcards VALUES(4900141243567809, 'Robert Douglas', '2006-06-12');
+INSERT INTO creditcards VALUES(4900151243567809, 'Cindy Hall', '2006-07-02');
+INSERT INTO creditcards VALUES(4900161243567809, 'Catherine Lee', '2008-12-01');
+INSERT INTO creditcards VALUES(4900171243567809, 'Jessica Jackson','2007-02-03');
+INSERT INTO creditcards VALUES(4900181243567809, 'Bonnie Clark', '2005-12-18');
+INSERT INTO creditcards VALUES(4900191243567809, 'Jack Garcia', '2006-10-28');
+INSERT INTO creditcards VALUES(4900201243567809, 'Kathy Smith', '2007-01-05');
+INSERT INTO creditcards VALUES(4900211243567809, 'Jane Harris', '2008-11-05');
+INSERT INTO creditcards VALUES(4900221243567809, 'John Black', '2008-12-16');
+INSERT INTO creditcards VALUES(4900231243567809, 'Mike Davis', '2007-02-19');
+
+INSERT INTO customers VALUES(490001, 'James', 'Brown', 4900011243567809, '530 White
+Ave., Los Angeles, CA 91701', 'jbrown@ics185.edu', 'keyboard');
+INSERT INTO customers VALUES(490002, 'John', 'Black', 4900021243567809, '531 Green
+Ave., Anaheim, CA 92456', 'jblack@ics185.edu', 'paper');
+INSERT INTO customers VALUES(490003, 'Keith', 'White', 4900031243567809, '532 Yale
+Ave., Irvine, CA 92617', 'kwhite@ics185.edu', 'book');
+INSERT INTO customers VALUES(490004, 'Kathy', 'Smith', 4900041243567809, '533 Alton
+Ave., Irvine, CA 92654', 'ksmith@ics185.edu', 'light');
+INSERT INTO customers VALUES(490005, 'Jane', 'Harris', 4900051243567809, '534 Culver
+Ave., Orange, CA 92156', 'jharris@ics185.edu', 'honey');
+INSERT INTO customers VALUES(490006, 'Bonnie', 'Clark', 4900061243567809, '535
+Barranca Ave., Irvine, CA 92653', 'bclark@ics185.edu', 'funny');
+INSERT INTO customers VALUES(490007, 'Jack', 'Garcia', 4900071243567809, '536 Campus
+Ave., Los Angeles, CA 91720', 'jgarcia@ics185.edu', 'window');
+INSERT INTO customers VALUES(490008, 'Connie', 'Taylor', 4900081243567809, '537
+Orange Ave., Orange, CA 92156', 'ctaylor@ics185.edu', 'pencil');
+INSERT INTO customers VALUES(490009, 'Mike', 'Davis', 4900091243567809, '538 creek
+Ave., Tustin, CA 92710', 'mdavis@ics185.edu', 'material');
+INSERT INTO customers VALUES(490010, 'Jess', 'Jackson', 4900101243567809, '539 Main
+St., Costa Mesa, CA 92711', 'jjackson@ics185.edu', 'cup');
+INSERT INTO customers VALUES(490011, 'Cindy', 'Hall', 4900111243567809, '540 Creek
+Ave., Irvine, CA 92704', 'chall@ics185.edu', 'juice');
+INSERT INTO customers VALUES(490012, 'Catherine', 'Lee', 4900121243567809, '541
+McGaw St., Laguna Beach, CA 92720', 'clee@ics185.edu', 'glass');
+INSERT INTO customers VALUES(490013, 'Jane', 'Johnson', 4900131243567809, '542
+Harvard St., Irvine CA 92711', 'jjohnson@ics185.edu', 'tape');
+INSERT INTO customers VALUES(490014, 'Fay', 'Berry', 4900141243567809, '543 Santa
+Monica Blvd., Santa Monica, CA 90231', 'fberry@ics185.edu', 'shoes');
+INSERT INTO customers VALUES(490015, 'Joyce', 'Stuart', 4900151243567809, '544
+Cherry Ave., Seal Beach, CA 92615', 'jstuart@ics185.edu', 'bowl');
+INSERT INTO customers VALUES(490016, 'David', 'Rice', 4900161243567809, '545 El Toro
+Ave., Laguna Hills, CA 92652', 'drice@ics185.edu', 'board');
+INSERT INTO customers VALUES(490017, 'Kyle', 'Shaw', 4900171243567809, '546 Fairview
+Dr., Costa Mesa, CA 92701', 'kshaw@ics185.edu', 'tissue');
+INSERT INTO customers VALUES(490018, 'Kate', 'Burman', 4900181243567809, '547 Murphy
+St., Laguna Woods, CA 92811', 'kburman@ics185.edu', 'drink');
+INSERT INTO customers VALUES(490019, 'Sherry', 'Milton', 4900191243567809, '548
+Jamboree St., Irvine, CA 92626', 'smilton@ics185.edu', 'food');
+INSERT INTO customers VALUES(490020, 'Bill', 'Brady', 4900201243567809, '549 Bryan
+St., Tustin Ranch, CA 927616', 'bbrady@ics185.edu', 'fruit');
+
+INSERT INTO sales VALUES(490001, 490001, '2005-01-08 04:05:06');
+INSERT INTO sales VALUES(490002, 490001, '2005-01-11 03:18:21');
+INSERT INTO sales VALUES(490003, 490005, '2005-01-02 03:50:30');
+INSERT INTO sales VALUES(490004, 490001, '2005-01-11 03:18:21');
+INSERT INTO sales VALUES(490005, 490014, '2005-01-03 05:15:20');
+INSERT INTO sales VALUES(490006, 490009, '2005-01-10 07:10:45');
+INSERT INTO sales VALUES(490007, 490008, '2005-01-05 08:25:32');
+INSERT INTO sales VALUES(490008, 490007, '2005-01-06 09:20:21');
+INSERT INTO sales VALUES(490009, 490007, '2005-01-07 10:15:16');
+INSERT INTO sales VALUES(490010, 490012, '2005-01-12 18:23:12');
+INSERT INTO sales VALUES(490011, 490003, '2005-01-09 15:46:13');
+INSERT INTO sales VALUES(490012, 490006, '2005-01-01 13:29:26');
+INSERT INTO sales VALUES(490013, 490006, '2005-01-04 22:56:32');
+INSERT INTO sales VALUES(490014, 490013, '2005-01-10 23:19:20');
+INSERT INTO sales VALUES(490015, 490012, '2005-01-01 14:11:13');
+INSERT INTO sales VALUES(490016, 490002, '2005-01-13 16:47:18');
+INSERT INTO sales VALUES(490017, 490015, '2005-01-14 17:55:10');
+INSERT INTO sales VALUES(490018, 490011, '2005-01-14 20:25:13');
+INSERT INTO sales VALUES(490019, 490010, '2005-01-15 21:26:38');
+INSERT INTO sales VALUES(490020, 490011, '2005-01-13 18:42:39');
+
+INSERT INTO movies
+VALUES 
+(755001,
+'Amelie',
+2001,
+'Jean-Pierre Jeunet',
+'http://tecfa.unige.ch/etu/LME/0001/fernandez-trueba/projet/images/amelie.jpg',
+'http://movies.yahoo.com/shop?d=hv&id=1807565371&cf=trailer');
+
+INSERT INTO movies
+VALUES
+(755002,
+'Fahrenheit 9/11',
+2004,
+'Michael Moore',
+'http://www.lavoice.net/911.jpg',
+'http://www.apple.com/trailers/lions_gate/fahrenheit_911/');
+
+INSERT INTO movies
+VALUES 
+(755003,
+'Garden State',
+2004,
+'Zach Braff',
+'http://img7.imageshack.us/img7/433/Garden-State-sheet-hires.jpg',
+'http://www.apple.com/trailers/fox_searchlight/garden_state/');
+
+INSERT INTO movies
+VALUES 
+(755004,
+'Hero',
+2004,
+'Zhang Yimou',
+'http://www.okada-report.jp/hero-poster.jpg',
+'http://www.apple.com/trailers/miramax/hero.html');
+
+INSERT INTO movies
+VALUES 
+(755005,
+'Moulin Rouge',
+2001,
+'Baz Luhrmann',
+'http://dvd.skunkwurks.com/images/moulin_rouge.jpg',
+'http://www.apple.com/trailers/fox/moulin_rouge/');
+
+INSERT INTO movies 
+VALUES 
+(755006,
+ 'Oceans Eleven',
+ 2001,
+ 'Steven Soderbergh',
+ 'http://www.jnpp.ee/dvd/Pildid/DVD%20PILDID/Oceans%2011.jpg',
+'http://a912.g.akamaitech.net/7/912/25/e7919dadf73908/oceans11.warnerbros.com/dld/trailer_hi.mov');
+
+INSERT INTO movies
+VALUES 
+(755007,
+'Raiders Of The Lost Ark',
+1981,
+'Steven Speilberg',
+'http://www.markheadrick.com/dvd/images/IndianaJones-RaidersOfTheLostArk.jpg',
+'http://www.theraider.net/films/raiders/trailers.php');
+
+INSERT INTO movies
+VALUES 
+(755008,
+ 'Seven',
+1995,
+ 'David Fincher',
+ 'http://www.illusionland.net/Movieworld/dvd/western/movie_seven.jpg',
+ 'http://www.movie-list.net/classics/se7en.mov');
+
+INSERT INTO movies
+VALUES 
+(755009,
+'Shrek',
+2001,
+'Andrew Adamson Vicky Jenson',
+'http://www.carosta.com/shrek-dvd.jpg',
+'http://www.apple.com/trailers/dreamworks/shrek.html');
+
+INSERT INTO movies
+VALUES 
+(755010,
+ 'Terminator 2',
+ 1991,
+ 'James Cameron',           
+'http://www.microsoft.com/windows/windowsmedia/images/mediaandent/t2DVD.jpg',
+'http://www.movie-list.net/classics/terminator2-trailer2.mov');
+
+INSERT INTO movies
+VALUES
+(755011,
+'The Incredibles',
+2004,
+'Brad Bird',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/walt_disney/the_incredibles/key_theincredibles.jpg',
+'http://www.apple.com/trailers/disney/the_incredibles/');
+
+INSERT INTO movies
+VALUES (755012,
+'The Matrix', 
+1999,
+'Andy Wachowski Larry Wachowski',
+'http://maggie_jo.tripod.com/images/matrix_30.jpg',
+'http://www.whatisthematrix.com/dld/24matrix00.mov' );
+
+INSERT INTO movies
+VALUES 
+(755013,
+'White Chicks',
+2004,
+'Keenan Ivory Wayans',
+'http://www.imdb.com/gallery/ss/0381707/Ss/0381707/wcos.jpg?path=gallery&path_key=0381707',
+'http://www.apple.com/trailers/sony_pictures/white_chicks/');
+
+
+INSERT INTO movies
+VALUES
+(755014,
+'Star Wars: Episode I',
+1999,
+'George Lucas',
+'http://www.starwars.com/episode-i/release/trailer/vhs1.html');
+
+INSERT INTO stars
+VALUES 
+(755001,
+'Zach',
+'Braff',
+'04/06/1975',
+'http://www.imdb.com/gallery/granitz/2362/Events/2362/ZackBraff_McCar_2078306_400.jpg?path=pgallery&path_key=Braff,%20Zach');
+
+INSERT INTO stars
+VALUES 
+(755002,
+'George',
+'Clooney',
+'05/06/1961' ,
+'http://www.imdb.com/gallery/granitz/2646/Events/2646/GeorgeCloo_Grani_4011331_400.jpg?path=pgallery&path_key=Clooney,%20George');
+
+INSERT INTO stars
+VALUES 
+(755003,
+'Harrison',
+'Ford',
+'07/13/1942',
+'http://www.imdb.com/gallery/granitz/1961/Events/1961/HarrisonFo_Vespa_1081568_400.jpg?path=pgallery&path_key=Ford,%20Harrison%20(I)');
+
+INSERT INTO stars
+VALUES 
+(755004,
+'Nicole',
+'Kidman',
+'06/20/1967' ,
+'http://www.imdb.com/gallery/granitz/2433/Events/2433/NicoleKidm_Grani_2324106_400.jpg?path=pgallery&path_key=Kidman,%20Nicole');
+
+INSERT INTO stars
+VALUES 
+(755005,
+'Jet',
+'Li',
+'04/26/1963',
+'http://www.imdb.com/gallery/granitz/1209/Events/1209/JetLi_Granitz_197571.jpg?path=pgallery&path_key=Li,%20Jet');
+
+INSERT INTO stars
+VALUES 
+(755006,
+'Michael',
+'Moore',
+'04/23/1954',
+'http://www.imdb.com/gallery/granitz/2647/Events/2647/MichaelMoo_Grani_4020784_400.jpg?path=pgallery&path_key=Moore,%20Michael%20(II)');
+
+INSERT INTO stars
+VALUES 
+(755007,
+'Mike',
+'Myers',
+'05/25/1963',
+'http://www.imdb.com/gallery/granitz/2487/Events/2487/MikeMyers_Pimen_2724748_400.jpg?path=pgallery&path_key=Myers,%20Mike%20(I)');
+
+INSERT INTO stars
+VALUES 
+(755008,
+'Craig',
+'Nelson',
+'04/04/1944',
+'http://www.imdb.com/gallery/granitz/0515-wri/Events/0515-wri/nelsoncr.aig?path=pgallery&path_key=Nelson,%20Craig%20T.');
+
+INSERT INTO stars
+VALUES 
+(755009,
+'Brad',
+'Pitt',
+'12/18/1963' ,
+'http://www.imdb.com/gallery/granitz/2646/Events/2646/BradPitt_Grani_4010704_400.jpg?path=pgallery&path_key=Pitt,%20Brad');
+
+INSERT INTO stars
+VALUES 
+(755010,
+'Keanu',
+'Reeves',
+'09/02/1964',
+'http://www.imdb.com/gallery/granitz/2173/Events/2173/KeanuReeve_Grani_1726991_400.jpg?path=pgallery&path_key=Reeves,%20Keanu');
+
+INSERT INTO stars
+VALUES 
+(755011,
+'Arnold',
+'Schwarzeneggar',
+'07/30/1947',
+'http://www.imdb.com/gallery/granitz/2028/Events/2028/ArnoldSchw_Grani_1252920_400.jpg?path=pgallery&path_key=Schwarzenegger,%20Arnold');
+
+INSERT INTO stars
+VALUES 
+(755012,
+'Audrey',
+'Tautou',
+'08/09/1978',
+'http://www.imdb.com/gallery/granitz/2029/Events/2029/AudreyTaut_Devan_1267588_400.jpg?path=pgallery&path_key=Tautou,%20Audrey');
+
+INSERT INTO stars
+VALUES
+(755013,
+'Marlon',
+'Wayans',
+'07/23/1972' ,
+'http://www.imdb.com/gallery/granitz/2619/Events/2619/MarlonWaya_Mazur_3801649_400.jpg?path=pgallery&path_key=Wayans,%20Marlon');
+
+INSERT INTO stars
+VALUES 
+(755014,
+'Ewan',
+'MacGregor',
+'03/31/1971',
+'http://www.imdb.com/gallery/granitz/1970/Events/1970/EwanMcGreg_Mazur_1086308_400.jpg?path=pgallery&path_key=McGregor,%20Ewan');
+
+INSERT INTO stars
+VALUES 
+(755015,
+'Natalie',
+'Portman',
+'06/09/1981',
+'http://www.imdb.com/gallery/granitz/2625/Events/2625/NataliePor_Cohen_3923695_400.jpg?path=pgallery&path_key=Portman,%20Natalie');
+
+INSERT INTO stars
+VALUES 
+(755016,
+'Cameron',
+'Diaz',
+'08/30/1972',
+'http://www.imdb.com/gallery/granitz/2488/Events/2488/CameronDia_Vespa_2727206_400.jpg?path=pgallery&path_key=Diaz,%20Cameron');
+
+INSERT INTO stars
+VALUES 
+(755017,
+'Eddie',
+'Murphy',
+'04/03/1961',
+'http://www.imdb.com/gallery/granitz/2487/Events/2487/EddieMurph_Pimen_2724994_400.jpg?path=pgallery&path_key=Murphy,%20Eddie%20(I)');
+
+INSERT INTO stars_in_movies VALUES (755001, 755003);
+INSERT INTO stars_in_movies VALUES (755002, 755006);
+INSERT INTO stars_in_movies VALUES (755003, 755007);
+INSERT INTO stars_in_movies VALUES (755004, 755005);
+INSERT INTO stars_in_movies VALUES (755005, 755004);
+INSERT INTO stars_in_movies VALUES (755006, 755002);  
+INSERT INTO stars_in_movies VALUES (755007, 755009);
+INSERT INTO stars_in_movies VALUES (755008, 755011);
+INSERT INTO stars_in_movies VALUES (755009, 755008);
+INSERT INTO stars_in_movies VALUES (755009, 755006);
+INSERT INTO stars_in_movies VALUES (755010, 755012);
+INSERT INTO stars_in_movies VALUES (755011, 755010);
+INSERT INTO stars_in_movies VALUES (755012, 755001);
+INSERT INTO stars_in_movies VALUES (755013, 755013);
+INSERT INTO stars_in_movies VALUES (755014, 755005);
+INSERT INTO stars_in_movies VALUES (755014, 755014);
+INSERT INTO stars_in_movies VALUES (755015, 755003);
+INSERT INTO stars_in_movies VALUES (755015, 755014);
+INSERT INTO stars_in_movies VALUES (755016, 755009);
+INSERT INTO stars_in_movies VALUES (755017, 755009);
+
+INSERT INTO genres VALUES (755001, 'Action');
+
+INSERT INTO genres VALUES (755002, 'Adventure');
+
+INSERT INTO genres VALUES (755003, 'Animation');
+
+INSERT INTO genres VALUES (755004, 'Comedy');
+
+INSERT INTO genres VALUES (755005, 'Documentary');
+
+INSERT INTO genres VALUES (755006, 'Drama');
+
+INSERT INTO genres VALUES (755007, 'Family');
+
+INSERT INTO genres VALUES (755008, 'Foreign');
+
+INSERT INTO genres VALUES (755009, 'Horror');
+
+INSERT INTO genres VALUES (755010, 'Musical');
+
+INSERT INTO genres VALUES (755011, 'Mystery');
+
+INSERT INTO genres VALUES (755012, 'Science Fiction');
+
+INSERT INTO genres VALUES (755013, 'Thriller');
+
+
+
+
+INSERT INTO genres_in_movies VALUES (755012, 755012);
+INSERT INTO genres_in_movies VALUES (755001, 755012);
+INSERT INTO genres_in_movies VALUES (755013, 755012);
+
+INSERT INTO genres_in_movies VALUES (755004, 755013);
+
+INSERT INTO genres_in_movies VALUES (755011, 755009);
+INSERT INTO genres_in_movies VALUES (755002, 755009);
+
+INSERT INTO genres_in_movies VALUES (755007, 755009);
+INSERT INTO genres_in_movies VALUES (755004, 755009);
+
+INSERT INTO genres_in_movies VALUES (755001, 755004);
+INSERT INTO genres_in_movies VALUES (755006, 755004);
+
+INSERT INTO genres_in_movies VALUES (755004, 755001);
+INSERT INTO genres_in_movies VALUES (755006, 755001);
+INSERT INTO genres_in_movies VALUES (755008, 755001);
+
+
+INSERT INTO genres_in_movies VALUES (755001, 755010);
+INSERT INTO genres_in_movies VALUES (755006, 755010);
+INSERT INTO genres_in_movies VALUES (755012, 755010);
+INSERT INTO genres_in_movies VALUES (755013, 755010);
+
+INSERT INTO genres_in_movies VALUES (755006, 755008);
+INSERT INTO genres_in_movies VALUES (755013, 755008);
+
+INSERT INTO genres_in_movies VALUES (755004, 755006);
+INSERT INTO genres_in_movies VALUES (755013, 755006);
+
+INSERT INTO genres_in_movies VALUES (755005, 755002);
+
+INSERT INTO genres_in_movies VALUES (755001, 755007);
+INSERT INTO genres_in_movies VALUES (755002, 755007);
+
+INSERT INTO genres_in_movies VALUES (755004, 755003);
+INSERT INTO genres_in_movies VALUES (755006, 755003);
+
+
+INSERT INTO genres_in_movies VALUES (755003, 755011);
+INSERT INTO genres_in_movies VALUES (755007, 755011);
+INSERT INTO genres_in_movies VALUES (755002, 755011);
+INSERT INTO genres_in_movies VALUES (755001, 755011);
+INSERT INTO genres_in_movies VALUES (755004, 755011);
+
+INSERT INTO genres_in_movies VALUES (755006, 755005);
+INSERT INTO genres_in_movies VALUES (755010, 755005);
+
+INSERT INTO creditcards
+VALUES (
+	7550019078563412,
+	'Amy Adams',
+	'01 Jan 2007'
+);
+INSERT INTO creditcards
+VALUES (
+	7550029078563412,
+	'Ben Bridge',
+	'01 Jan 2007'
+);
+INSERT INTO creditcards
+VALUES (
+	7550039078563412,
+	'Chris Carr',
+	'01 Jan 2007'
+);
+INSERT INTO creditcards
+VALUES (
+	7550049078563412,
+	'David Dolt',
+	'01 Jan 2007'
+);
+INSERT INTO creditcards
+VALUES (
+	7550059078563412,
+	'Dena Doris',
+	'01 Jan 2007'
+);
+INSERT INTO creditcards
+VALUES (
+	7550069078563412,
+	'Evan Elliot',
+	'01 Feb 2007'
+);
+INSERT INTO creditcards
+VALUES (
+	7550079078563412,
+	'Frank Furter',
+	'01 Feb 2007'
+);
+INSERT INTO creditcards
+VALUES (
+	7550089078563412,
+	'Grace Graham',
+	'01 Feb 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550099078563412,
+	'Henry Harrison',
+	'01 Feb 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550109078563412,
+	'Ingrid Iwashita',
+	'01 Feb 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550119078563412,
+	'Jack Johnson',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550129078563412,
+	'Ken Kost',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550139078563412,
+	'Luke Lieberman',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550149078563412,
+	'Mark Madson',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550159078563412,
+	'Nancy Nakamoto',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550169078563412,
+	'Omar Omagato',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550179078563412,
+	'Peter Patamato',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550189078563412,
+	'Rick Rodriguez',
+	'01 Mar 2008'
+);
+INSERT INTO creditcards
+VALUES (
+	7550199078563412,
+	'Steve Stevenson',
+	'01 Jul 2009'
+);
+INSERT INTO creditcards
+VALUES (
+	7550209078563412,
+	'Tim Trainer',
+	'01 Jul 2009'
+);
+INSERT INTO creditcards
+VALUES (
+	7550219078563412,
+	'Vicky Vogo',
+	'01 Jul 2009'
+);
+
+
+INSERT INTO customers
+VALUES (
+	755001,
+	'Amy',
+	'Adams',
+	7550019078563412,
+	'101 Anteater Ave, Irvine, CA, 92626 ',
+	'aa@aol.com',
+	'asdf'
+);
+INSERT INTO customers
+VALUES (
+	755002,
+	'Ben',
+	'Bridge',
+	7550029078563412,
+	'102 Anteater Ave, Irvine, CA, 92626',
+	'bb@netzero.net',
+	1234
+);
+INSERT INTO customers
+VALUES (
+	755003,
+	'Chris',
+	'Carr',
+	7550039078563412,
+	'103 Anteater Ave, Irvine, CA, 92626',
+	'cc@msn.com',
+	1111
+);
+INSERT INTO customers
+VALUES (
+	755004,
+	'David',
+	'Dolt',
+	7550049078563412,
+	'104 Anteater Ave, Irvine, CA, 92626',
+	'dd@cnn.com',
+	2222
+);
+INSERT INTO customers
+VALUES (
+	755005,
+	'Dena',
+	'Doris',
+	7550059078563412,
+	'105 Anteater Ave, Irvine, CA, 92626',
+	'doris@abc.com',
+	'asdf'
+);
+INSERT INTO customers
+VALUES (
+	755006,
+	'Evan',
+	'Elliot',
+	7550069078563412,
+	'106 Anteater Ave, Irvine, CA, 92626',
+	'evan@yahoo.com',
+	'qwer'
+);
+INSERT INTO customers
+VALUES (
+	755007,
+	'Frank',
+	'Furter',
+	7550079078563412,
+	'107 Anteater Ave, Irvine, CA, 92626',
+	'ff@aol.com',
+	3333
+);
+INSERT INTO customers
+VALUES (
+	755008,
+	'Grace',
+	'Graham',
+	7550089078563412,
+	'108 Anteater Ave, Irvine, CA, 92626',
+	'gg@netzero.net',
+	4444
+);
+INSERT INTO customers
+VALUES (
+	755009,
+	'Henry',
+	'Harrison',
+	7550099078563412,
+	'109 Anteater Ave, Irvine, CA, 92626',
+	'hh@msn.com',
+	1234
+);
+INSERT INTO customers
+VALUES (
+	755010,
+	'Ingrid',
+	'Iwashita',
+	7550109078563412,
+	'110 Anteater Ave, Irvine, CA, 92626',
+	'ii@cnn.com',
+	'asdf'
+);
+INSERT INTO customers
+VALUES (
+	755011,
+	'Jack',
+	'Johnson',
+	7550119078563412,
+	'111 Anteater Ave, Irvine, CA, 92626',
+	'jack@abc.com',
+	1234
+);
+INSERT INTO customers
+VALUES (
+	755012,
+	'Ken',
+	'Kost',
+	7550129078563412,
+	'112 Anteater Ave, Irvine, CA, 92626',
+	'ken@yahoo.com',
+	1111
+);
+INSERT INTO customers
+VALUES (
+	755013,
+	'Luke',
+	'Lieberman',
+	7550139078563412,
+	'113 Anteater Ave, Irvine, CA, 92626',
+	'luke@aol.com',
+	2222
+);
+INSERT INTO customers
+VALUES (
+	755014,
+	'Mark',
+	'Madson',
+	7550149078563412,
+	'114 Anteater Ave, Irvine, CA, 92626',
+	'mm@netzero.net',
+	'asdf'
+);
+INSERT INTO customers
+VALUES (
+	755015,
+	'Nancy',
+	'Nakamoto',
+	7550159078563412,
+	'115 Anteater Ave, Irvine, CA, 92626',
+	'nancy@msn.com',
+	'qwer'
+);
+INSERT INTO customers
+VALUES (
+	755016,
+	'Omar',
+	'Omagato',
+	7550169078563412,
+	'116 Anteater Ave, Irvine, CA, 92626',
+	'omar@cnn.com',
+	3333
+);
+INSERT INTO customers
+VALUES (
+	755017,
+	'Peter',
+	'Patamato',
+	7550179078563412,
+	'117 Anteater Ave, Irvine, CA, 92626',
+	'pp@abc.com',
+	4444
+);
+INSERT INTO customers
+VALUES (
+	755018,
+	'Rick',
+	'Rodriguez',
+	7550189078563412,
+	'118 Anteater Ave, Irvine, CA, 92626',
+	'rick@yahoo.com',
+	1234
+);
+INSERT INTO customers
+VALUES (
+	755019,
+	'Steve',
+	'Stevenson',
+	7550199078563412,
+	'119 Anteater Ave, Irvine, CA, 92626',
+	'steve@aol.com',
+	1234
+);
+INSERT INTO customers
+VALUES (
+	755020,
+	'Tim',
+	'Trainer',
+	7550209078563412,
+	'120 Anteater Ave, Irvine, CA, 92626',
+	'tim@netzero.net',
+	1234
+);
+INSERT INTO customers
+VALUES (
+	755021,
+	'Vicky',
+	'Vogo',
+	7550219078563412,
+	'121 Anteater Ave, Irvine, CA, 92626',
+	'vogo@msn.com',
+	1234
+);
+
+
+INSERT INTO sales
+VALUES (
+	755001,
+	755014,
+	'2005-01-20 14:31:59'
+);
+INSERT INTO sales
+VALUES (
+	755002,
+	755013,
+	'2005-01-20 13:20:59'
+);
+INSERT INTO sales
+VALUES (
+	755003,
+	755012,
+	'2005-01-20 12:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755004,
+	755011,
+	'2005-01-20 11:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755005,
+	755010,
+	'2005-01-20 09:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755006,
+	755009,
+	'2005-01-20 05:50:59'
+);
+INSERT INTO sales
+VALUES (
+	755007,
+	755005,
+	'2005-01-20 04:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755008,
+	755004,
+	'2005-01-20 01:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755009,
+	755003,
+	'2005-01-20 21:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755010,
+	755002,
+	'2005-01-20 23:40:59'
+);
+INSERT INTO sales
+VALUES (
+	755011,
+	755001,
+	'2005-01-20 22:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755012,
+	755014,
+	'2005-01-20 21:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755013,
+	755013,
+	'2005-01-20 21:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755014,
+	755012,
+	'2005-01-20 23:10:59'
+);
+INSERT INTO sales
+VALUES (
+	755015,
+	755011,
+	'2005-01-20 22:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755016,
+	755010,
+	'2005-01-20 21:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755017,
+	755009,
+	'2005-01-20 20:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755018,
+	755008,
+	'2005-01-20 18:20:59'
+);
+INSERT INTO sales
+VALUES (
+	755019,
+	755001,
+	'2005-01-19 17:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755019,
+	755007,
+	'2005-01-19 16:40:59'
+);
+INSERT INTO sales
+VALUES (
+	755020,
+	755001,
+	'2005-01-19 04:50:59'
+);
+INSERT INTO sales
+VALUES (
+	755020,
+	755004,
+	'2005-01-19 08:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755021,
+	755001,
+	'2005-01-19 12:30:59'
+);
+INSERT INTO sales
+VALUES (
+	755021,
+	755002,
+	'2005-01-19 03:10:59'
+);
+INSERT INTO sales
+VALUES (
+	755021,
+	755001,
+	'2005-01-19 13:20:59'
+);
+
+
+INSERT INTO movies VALUES (0901, 'Eurotrip', 2004, 'Jeff Schaffer',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/allposters/30/1808471630p-th.jpg',
+'http://www.dreamworks.com/trailers/eurotrip/eurotrip_trlr_qt_480.mov');
+INSERT INTO movies VALUES (0902, 'Gone in 60 Seconds', 2000, 'Dominic
+Sena', 'http://ia.imdb.com/media/imdb/01/I/92/65/28m.jpg',
+'http://www.dreamworks.com/trailers/eurotrip/eurotrip_trlr_qt_480.mov');
+INSERT INTO movies VALUES (0903, 'Oceans Twelve', 2004, 'Steven
+Soderbergh', 'http://ia.imdb.com/media/imdb/01/I/32/23/58m.jpg',
+'http://www.apple.com/trailers/wb/oceans_12/medium.html');
+INSERT INTO movies VALUES (0904, 'The Matrix Reloaded', 2003, 'The
+Wachowski Brothers',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/allposters/53/1807428853p-th.jpg',
+'http://whatisthematrix.warnerbros.com/rv_cmp/theatrical_trailer_480.html');
+INSERT INTO movies VALUES (0905, 'Star Wars: Episode III - Revenge of the
+Sith', 2005, 'George Lucas',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/twentieth_century_fox/star_wars__episode_iii__revenge_of_the_sith/starwarsepisodeiii_teaserposter.jpg',
+'http://www.aol.com/starwars/trailer/index.adp?type=lrg');
+INSERT INTO movies VALUES (0906, 'Bruce Almighty', 2003, 'Tom Shadyac',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/universal_pictures/bruce_almighty/brucealmighty_poster3.jpg',
+'http://www.apple.com/trailers/wb/oceans_12/medium.html');
+INSERT INTO movies VALUES (0907, 'Bicentennial Man', 1999, 'Chris
+Columbus',
+'http://shopping.yahoo.com/video/images/muze/dvd/sm/12/158512.jpg',
+'http://video.movies.go.com/bicentennialman/bicman-trailer.mov');
+INSERT INTO movies VALUES (0908, 'Lord of the Rings: The Return of the
+King', 2003, 'Peter Jackson',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/allposters/30/1804738130p-th.jpg',
+'http://www.apple.com/trailers/newline/returnoftheking/trailer_medium.html');
+INSERT INTO movies VALUES (0909, 'Elektra', 2005, 'Rob Bowman',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/twentieth_century_fox/elektra/elektra_poster4.jpg',
+'http://www.apple.com/trailers/fox/elektra/trailer1/index.html');
+INSERT INTO movies VALUES (0910, 'Spider Man 2', 2004, 'Sam Raimi',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/columbia_pictures/spider_man_2/spiderman2_poster3.jpg',
+'http://www.apple.com/trailers/sony_pictures/spider-man_2/trailer/large.html');
+INSERT INTO movies VALUES (0921, 'Smallville: Season 3', 2004, 'Alfred
+Gough', '', '');
+INSERT INTO movies VALUES (0922, 'Mr. and Mrs. Smith', 2005, 'Doug Liman',
+'', '');
+INSERT INTO movies VALUES (0923, 'Troy', 2004, 'Wolfgang Peterson', '',
+'');
+INSERT INTO movies VALUES (0924, 'The Matrix Revolutions', 2003, 'The
+Wachowski Brothers', '', '');
+INSERT INTO movies VALUES (0925, 'The Majestic', 2001, 'Frank Darabont',
+'', '');
+INSERT INTO movies VALUES (0926, 'Insomnia', 2002, 'Christopher Nolan',
+'', '');
+INSERT INTO movies VALUES (0927, 'Lord of the Rings: The Two Towers',
+2002, 'Peter Jackson', '', '');
+INSERT INTO movies VALUES (0928, 'Daredevil', 2003, 'Mark Steven Johnson',
+'', '');
+INSERT INTO movies VALUES (0929, 'Spider Man', 2002, 'Sam Raimi', '', '');
+INSERT INTO movies VALUES (0930, 'Garden State', 2004, 'Zach Braff', '',
+'');
+
+
+INSERT INTO stars VALUES (0911, 'Kristin', 'Kreuk', '1982-12-30',
+'http://www.geocities.com/angelleyes220/sv22.html');
+INSERT INTO stars VALUES (0912, 'Angelina', 'Jolie', '1975-06-04',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/twentieth_century_fox/mr__and_mrs__smith/angelina_jolie/mrsteaser.jpg');
+INSERT INTO stars VALUES (0913, 'Brad', 'Pitt', '1963-12-18',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/twentieth_century_fox/mr__and_mrs__smith/brad_pitt/mrteaser.jpg');
+INSERT INTO stars VALUES (0914, 'Keanu', 'Reeves', '1964-09-02',
+'http://www.celebjunction.com/actors/k/keanu/enlarge/3.jpg');
+INSERT INTO stars VALUES (0915, 'Jim', 'Carrey', '1962-01-17',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/universal_pictures/bruce_almighty/jim_carrey/bruce.jpg');
+INSERT INTO stars VALUES (0916, 'Robin', 'Williams', '1952-07-21',
+'http://www.perfectpeople.net/media/indexpictures/502.jpg');
+INSERT INTO stars VALUES (0917, 'Liv', 'Tyler', '1977-07-01',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/new_line_cinema/the_lord_of_the_rings__the_return_of_the_king/liv_tyler/rings4.jpg');
+INSERT INTO stars VALUES (0918, 'Jennifer', 'Garner', '1972-04-17',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/twentieth_century_fox/elektra/jennifer_garner/elektraposterbig.jpg');
+INSERT INTO stars VALUES (0919, 'Kirsten Dunst', 'Kreuk', '1982-04-30',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/columbia_pictures/spider_man_2/kirsten_dunst/tweed.jpg');
+INSERT INTO stars VALUES (0920, 'Natalie', 'Portman', '1981-06-09',
+'http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/fox_searchlight/garden_state/natalie_portman/gardenpred.jpg');
+
+
+INSERT INTO stars_in_movies VALUES (0911, 0901);
+INSERT INTO stars_in_movies VALUES (0912, 0902);
+INSERT INTO stars_in_movies VALUES (0913, 0903);
+INSERT INTO stars_in_movies VALUES (0914, 0904);
+INSERT INTO stars_in_movies VALUES (0915, 0906);
+INSERT INTO stars_in_movies VALUES (0916, 0907);
+INSERT INTO stars_in_movies VALUES (0917, 0908);
+INSERT INTO stars_in_movies VALUES (0918, 0909);
+INSERT INTO stars_in_movies VALUES (0919, 0910);
+INSERT INTO stars_in_movies VALUES (0920, 0905);
+INSERT INTO stars_in_movies VALUES (0911, 0921);
+INSERT INTO stars_in_movies VALUES (0912, 0922);
+INSERT INTO stars_in_movies VALUES (0913, 0923);
+INSERT INTO stars_in_movies VALUES (0914, 0924);
+INSERT INTO stars_in_movies VALUES (0915, 0925);
+INSERT INTO stars_in_movies VALUES (0916, 0926);
+INSERT INTO stars_in_movies VALUES (0917, 0927);
+INSERT INTO stars_in_movies VALUES (0918, 0928);
+INSERT INTO stars_in_movies VALUES (0919, 0929);
+INSERT INTO stars_in_movies VALUES (0920, 0930);
+
+
+INSERT INTO genres VALUES (0931, 'Action');
+INSERT INTO genres VALUES (0932, 'Adventure');
+INSERT INTO genres VALUES (0933, 'Comedy');
+INSERT INTO genres VALUES (0934, 'Crime/Gangster');
+INSERT INTO genres VALUES (0935, 'Drama');
+INSERT INTO genres VALUES (0936, 'Epics/Historical');
+INSERT INTO genres VALUES (0937, 'Horror');
+INSERT INTO genres VALUES (0938, 'Romance');
+INSERT INTO genres VALUES (0939, 'Science Fiction');
+INSERT INTO genres VALUES (0940, 'War');
+
+
+INSERT INTO genres_in_movies VALUES (0933, 0901);
+INSERT INTO genres_in_movies VALUES (0931, 0902);
+INSERT INTO genres_in_movies VALUES (0935, 0903);
+INSERT INTO genres_in_movies VALUES (0939, 0904);
+INSERT INTO genres_in_movies VALUES (0939, 0905);
+INSERT INTO genres_in_movies VALUES (0933, 0906);
+INSERT INTO genres_in_movies VALUES (0939, 0907);
+INSERT INTO genres_in_movies VALUES (0932, 0908);
+INSERT INTO genres_in_movies VALUES (0931, 0909);
+INSERT INTO genres_in_movies VALUES (0931, 0910);
+INSERT INTO genres_in_movies VALUES (0935, 0921);
+INSERT INTO genres_in_movies VALUES (0938, 0922);
+INSERT INTO genres_in_movies VALUES (0936, 0923);
+INSERT INTO genres_in_movies VALUES (0939, 0924);
+INSERT INTO genres_in_movies VALUES (0938, 0925);
+INSERT INTO genres_in_movies VALUES (0934, 0926);
+INSERT INTO genres_in_movies VALUES (0932, 0927);
+INSERT INTO genres_in_movies VALUES (0931, 0928);
+INSERT INTO genres_in_movies VALUES (0931, 0929);
+INSERT INTO genres_in_movies VALUES (0938, 0930);
+
+
+INSERT INTO creditcards VALUES (0941564738219576, 'a a', '2005-11-01');
+INSERT INTO creditcards VALUES (0942564738219576, 'b b', '2005-11-02');
+INSERT INTO creditcards VALUES (0943564738219576, 'c c', '2005-11-03');
+INSERT INTO creditcards VALUES (0944564738219576, 'd d', '2005-11-04');
+INSERT INTO creditcards VALUES (0945564738219576, 'e e', '2005-11-05');
+INSERT INTO creditcards VALUES (0946564738219576, 'f f', '2005-11-06');
+INSERT INTO creditcards VALUES (0947564738219576, 'g g', '2005-11-07');
+INSERT INTO creditcards VALUES (0948564738219576, 'h h', '2005-11-08');
+INSERT INTO creditcards VALUES (0949564738219576, 'i i', '2005-11-09');
+INSERT INTO creditcards VALUES (0950564738219576, 'j j', '2005-11-10');
+INSERT INTO creditcards VALUES (0951564738219576, 'k k', '2005-11-11');
+INSERT INTO creditcards VALUES (0952564738219576, 'l l', '2005-11-12');
+INSERT INTO creditcards VALUES (0953564738219576, 'm m', '2005-11-13');
+INSERT INTO creditcards VALUES (0954564738219576, 'n n', '2005-11-14');
+INSERT INTO creditcards VALUES (0955564738219576, 'o o', '2005-11-15');
+INSERT INTO creditcards VALUES (0956564738219576, 'p p', '2005-11-16');
+INSERT INTO creditcards VALUES (0957564738219576, 'q q', '2005-11-17');
+INSERT INTO creditcards VALUES (0958564738219576, 'r r', '2005-11-18');
+INSERT INTO creditcards VALUES (0959564738219576, 's s', '2005-11-19');
+INSERT INTO creditcards VALUES (0960564738219576, 't t', '2005-11-20');
+
+
+INSERT INTO customers VALUES (0961, 'a', 'a', 0941564738219576, 'a1', 'a@email.com',
+'a2');
+INSERT INTO customers VALUES (0962, 'b', 'b', 0942564738219576, 'b1', 'b@email.com',
+'b2');
+INSERT INTO customers VALUES (0963, 'c', 'c', 0943564738219576, 'c1', 'c@email.com',
+'c2');
+INSERT INTO customers VALUES (0964, 'd', 'd', 0944564738219576, 'd1', 'd@email.com',
+'d2');
+INSERT INTO customers VALUES (0965, 'e', 'e', 0945564738219576, 'e1', 'e@email.com',
+'e2');
+INSERT INTO customers VALUES (0966, 'f', 'f', 0946564738219576, 'f1', 'f@email.com',
+'f2');
+INSERT INTO customers VALUES (0967, 'g', 'g', 0947564738219576, 'g1', 'g@email.com',
+'g2');
+INSERT INTO customers VALUES (0968, 'h', 'h', 0948564738219576, 'h1', 'h@email.com',
+'h2');
+INSERT INTO customers VALUES (0969, 'i', 'i', 0949564738219576, 'i1', 'i@email.com',
+'i2');
+INSERT INTO customers VALUES (0970, 'j', 'j', 0950564738219576, 'j1', 'j@email.com',
+'j2');
+INSERT INTO customers VALUES (0971, 'k', 'k', 0951564738219576, 'k1', 'k@email.com',
+'k2');
+INSERT INTO customers VALUES (0972, 'l', 'l', 0952564738219576, 'l1', 'l@email.com',
+'l2');
+INSERT INTO customers VALUES (0973, 'm', 'm', 0953564738219576, 'm1', 'm@email.com',
+'m2');
+INSERT INTO customers VALUES (0974, 'n', 'n', 0954564738219576, 'n1', 'n@email.com',
+'n2');
+INSERT INTO customers VALUES (0975, 'o', 'o', 0955564738219576, 'o1', 'o@email.com',
+'o2');
+INSERT INTO customers VALUES (0976, 'p', 'p', 0956564738219576, 'p1', 'p@email.com',
+'p2');
+INSERT INTO customers VALUES (0977, 'q', 'q', 0957564738219576, 'q1', 'q@email.com',
+'q2');
+INSERT INTO customers VALUES (0978, 'r', 'r', 0958564738219576, 'r1', 'r@email.com',
+'r2');
+INSERT INTO customers VALUES (0979, 's', 's', 0959564738219576, 's1', 's@email.com',
+'s2');
+INSERT INTO customers VALUES (0980, 't', 't', 0960564738219576, 't1', 't@email.com',
+'t2');
+
+
+INSERT INTO sales VALUES (0961, 0901, '2005-01-20 11:00:00');
+INSERT INTO sales VALUES (0962, 0902, '2005-01-20 11:00:01');
+INSERT INTO sales VALUES (0963, 0903, '2005-01-20 11:00:02');
+INSERT INTO sales VALUES (0964, 0904, '2005-01-20 11:00:03');
+INSERT INTO sales VALUES (0965, 0905, '2005-01-20 11:00:04');
+INSERT INTO sales VALUES (0966, 0906, '2005-01-20 11:00:05');
+INSERT INTO sales VALUES (0967, 0907, '2005-01-20 11:00:06');
+INSERT INTO sales VALUES (0968, 0908, '2005-01-20 11:00:07');
+INSERT INTO sales VALUES (0969, 0909, '2005-01-20 11:00:08');
+INSERT INTO sales VALUES (0970, 0910, '2005-01-20 11:00:09');
+INSERT INTO sales VALUES (0971, 0921, '2005-01-20 11:00:11');
+INSERT INTO sales VALUES (0972, 0922, '2005-01-20 11:00:12');
+INSERT INTO sales VALUES (0973, 0923, '2005-01-20 11:00:13');
+INSERT INTO sales VALUES (0974, 0924, '2005-01-20 11:00:14');
+INSERT INTO sales VALUES (0975, 0925, '2005-01-20 11:00:15');
+INSERT INTO sales VALUES (0976, 0926, '2005-01-20 11:00:16');
+INSERT INTO sales VALUES (0977, 0927, '2005-01-20 11:00:17');
+INSERT INTO sales VALUES (0978, 0928, '2005-01-20 11:00:18');
+INSERT INTO sales VALUES (0979, 0929, '2005-01-20 11:00:19');
+INSERT INTO sales VALUES (0980, 0930, '2005-01-20 11:00:20');
+
+
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135001,'12 Monkeys', 1995, 'Terry Gilliam',
+'http://ia.imdb.com/media/imdb/01/I/95/71/38m.jpg',
+'http://videodetective.com/home.asp?PublishedID=6239');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135002,'Blade Runner', 1982, 'Ridley Scott',
+'http://ia.imdb.com/media/imdb/01/I/57/21/01m.jpg',
+'http://www.brmovie.com/Downloads/Media/BR_DC.mpeg');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135003,'Snatch', 2000, 'Guy Ritchie',
+'http://ia.imdb.com/media/imdb/01/I/49/99/02m.jpg',
+'http://a772.g.akamai.net/5/772/51/3517666cfc3986/1a1a1aaa2198c627970773d80669d84574a8d80d3cb12453c02589f25382f668c9329e0375e8177ae955ca37990263920573d448ab13/snatch_T1.mov');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135004,'The Usual Suspects', 1995, 'Bryan Singer',
+'http://ia.imdb.com/media/imdb/01/I/49/14/80m.jpg',
+'http://www.movie-list.net/classics/the-usual-suspects.mov');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135005,'Zoolander', 2001, 'Ben Stiller',
+'http://ia.imdb.com/media/imdb/01/I/79/10/51m.jpg',
+'http://a192.g.akamai.net/5/192/51/b361f751dfdcb8/1a1a1aaa2198c627970773d80669d84574a8d80d3cb12453c02589f25382f668c9329e0375e81787e85abb28970c7aee1d970675e142b01479eb/zoolander_320_sv3.mov');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135006,'The Life Aquatic', 2004, 'Wes Anderson',
+'http://ia.imdb.com/media/imdb/01/I/61/13/48m.jpg',
+'http://www.imdb.com/title/tt0362270/trailers-screenplay-X26121-10-2');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135007,'The Lost Boys', 1987, 'Joel Schumacher',
+'http://ia.imdb.com/media/imdb/01/I/50/51/28m.jpg',
+'http://www.movie-list.com/l/lost-boys.html');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135008,'Braveheart', 1995, 'Mel Gibson',
+'http://ia.imdb.com/media/imdb/01/I/61/43/90m.jpg',
+'http://www.rottentomatoes.com/url/shop.php?k=trailer-http%253A%252F%252Fwww.movie-list.net%252Fclassics%252Fbraveheart-trailer.mov&kw=');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135009,'The Royal Tenenbaums', 2001, 'Wes Anderson',
+'http://ia.imdb.com/media/imdb/01/I/66/78/40m.jpg',
+'http://a292.g.akamaitech.net/d/292/2279/5d/1a1a1a1d517fb6e6144a80aee01241b72084e95887e95fc83564d840a51786ff60cc40a51378e648a91e8bfe/the_royal_tenenbaums_1500.mov');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135010,'Indiana Jones and the Last Crusade', 1989,
+'Steven Spielberg', 'http://ia.imdb.com/media/imdb/01/I/66/71/38m.jpg',
+'http://indyjones.simplenet.com/video/crus_isdn.rm');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135011,'A Nightmare On Elm Street', 1984, 'Wes
+Craven', 'http://ia.imdb.com/media/imdb/01/I/56/45/61m.jpg',
+'http://www.movie-list.net/classics/nightmare1.mov');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135012,'Dumb and Dumber', 1994, 'Peter Farrelly',
+'http://ia.imdb.com/media/imdb/01/I/66/51/61m.jpg',
+'http://www.newline.com/dvd/mov/dumb.mov');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135013,'Elf', 2003, 'Jon Favreau',
+'http://ia.imdb.com/media/imdb/01/I/64/55/28m.jpg',
+'http://raincloud.warnerbros.com/wbol/us/whv/med/elf/elf_trade_tlr_qt_100.mov');
+INSERT INTO movies (id, title, year, director, banner_url,
+trailer_url) VALUES (135014,'Monty Python and the Holy Grail', 1975,
+'Terry Jones', 'http://ia.imdb.com/media/imdb/01/I/94/55/51m.jpg',
+'http://www.imdb.com/title/tt0071853/trailers-screenplay-X22674-9-2');
+
+
+ -- INSERT ALL STARS INTO DATABASE
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135001, 'Bruce', 'Willis', '3/19/1955',
+'http://www.imdb.com/gallery/granitz/2646/Events/2646/BruceWilli_Cohen_4012173_400.jpg?path=pgallery&path_key=Willis,%20Bruce%20(I)');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135002, 'Brad', 'Pitt', '12/18/1963',
+'http://www.imdb.com/gallery/granitz/2496/Events/2496/BradPitt_Pimen_2712340_400.jpg?path=pgallery&path_key=Pitt,%20Brad');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135003, 'Madeleine', 'Stowe', '8/18/1958',
+'http://www.imdb.com/gallery/granitz/1383/Events/1383/WireImage_356839_400.jpg?path=pgallery&path_key=Stowe,%20Madeleine');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135004, 'Harrison', 'Ford', '7/13/1942',
+'http://www.imdb.com/gallery/granitz/1797/Events/1797/HarrisonFo_Mazur_832761_400.jpg?path=pgallery&path_key=Ford,%20Harrison%20(I)');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135005, 'Rutger', 'Hauer', '1/23/1944',
+'http://www.imdb.com/gallery/hh/0000442/HH/0000442/imdb01w.jpg?path=pgallery&path_key=Hauer,%20Rutger');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135006, 'Daryl', 'Hannah', '12/3/1960',
+'http://www.imdb.com/gallery/ss/0266697/Ss/0266697/daryl1.jpg?path=pgallery&path_key=Hannah,%20Daryl');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135007, 'Jason', 'Statham', '5/25/1905',
+'http://www.imdb.com/gallery/ss/0337921/Ss/0337921/cellular_DF_3944F.jpg?path=pgallery&path_key=Statham,%20Jason');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135008, 'Kevin', 'Spacey', '7/26/1959',
+'http://www.imdb.com/gallery/ss/0363473/Ss/0363473/15_72dpi.jpg?path=pgallery&path_key=Spacey,%20Kevin');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135009, 'Gabriel', 'Byrne', '5/12/1950',
+'http://www.imdb.com/gallery/ss/0288477/Ss/0288477/C239-8.jpg?path=pgallery&path_key=Byrne,%20Gabriel');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135010, 'Ben', 'Stiller', '11/30/1965',
+'http://www.imdb.com/gallery/granitz/2653/Events/2653/BenStiller_Cohen_4071584_400.jpg?path=pgallery&path_key=Stiller,%20Ben');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135011, 'Owen', 'Wilson', '11/18/1968',
+'http://www.imdb.com/gallery/ss/0335438/Ss/0335438/SHD-7322.jpg?path=pgallery&path_key=Wilson,%20Owen');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135012, 'Bill', 'Murray', '9/21/1950',
+'http://www.imdb.com/gallery/ss/0362270/Ss/0362270/006_LAC-4544.jpg?path=pgallery&path_key=Murray,%20Bill%20(I)');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135013, 'Cate ', 'Blanchett', '5/14/1969',
+'http://www.imdb.com/gallery/granitz/2677/Events/2677/CateBlanch_Grani_4203186_400.jpg?path=pgallery&path_key=Blanchett,%20Cate');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135014, 'Danny', 'Glover', '7/22/1946',
+'http://www.imdb.com/gallery/granitz/2388/Events/2388/DramaticJu_Fred_2089480_400.jpg?path=pgallery&path_key=Glover,%20Danny');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135015, 'Kiefer', 'Sutherland', '12/21/1966',
+'http://www.imdb.com/gallery/ss/0364045/Ss/0364045/C24-5AR.jpg?path=pgallery&path_key=Sutherland,%20Kiefer');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135016, 'Mel', 'Gibson', '1/3/1956',
+'http://www.imdb.com/gallery/ss/0286106/Ss/0286106/27-SIGNS-Photo1.jpg?path=pgallery&path_key=Gibson,%20Mel%20(I)');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135017, 'Sophie', 'Marceau', '11/17/1966',
+'http://www.imdb.com/gallery/ss/0318283/Ss/0318283/AE-2663.jpg?path=pgallery&path_key=Marceau,%20Sophie');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135018, 'Gene', 'Hackman', '1/30/1930',
+'http://www.imdb.com/gallery/granitz/1798/Events/1798/GeneHackma_Grani_833015_400.jpg?path=pgallery&path_key=Hackman,%20Gene');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135019, 'Sean', 'Connery', '8/25/1930',
+'http://www.imdb.com/gallery/ss/0311429/Ss/0311429/L-73.jpg?path=pgallery&path_key=Connery,%20Sean');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135020, 'Johnny', 'Depp', '6/9/1963',
+'http://www.imdb.com/gallery/granitz/2543/Events/2543/JohnnyDepp_Vespa_3317606_400.jpg?path=pgallery&path_key=Depp,%20Johnny');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135021, 'Jim', 'Carrey', '1/17/1962',
+'http://www.imdb.com/gallery/scrapbook/58/Sbk/58/ILC_2.jpg?path=pgallery&path_key=Carrey,%20Jim');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135022, 'Jeff', 'Daniels', '2/19/1955',
+'http://www.imdb.com/gallery/granitz/1927/Events/1927/JeffDaniel_Grani_947348_400.jpg?path=pgallery&path_key=Daniels,%20Jeff%20(I)');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135023, 'Will', 'Farrel', '7/16/1967',
+'http://www.imdb.com/gallery/granitz/1191/Events/1191/WilFerrell_Granitz_182790.jpg?path=pgallery&path_key=Ferrell,%20Will');
+INSERT INTO stars (id, first_name, last_name, dob, photo_url) VALUES
+(135024, 'Graham', 'Chapman', '1/8/1941',
+'http://www.rotten.com/library/bio/entertainers/actors/graham-chapman/');
+
+ -- INSERT GENRES INTO DATABASE
+INSERT INTO genres (id, name) VALUES (135001, 'SCI/FI');
+INSERT INTO genres (id, name) VALUES (135002, 'Action');
+INSERT INTO genres (id, name) VALUES (135003, 'Comedy');
+INSERT INTO genres (id, name) VALUES (135004, 'Drama');
+INSERT INTO genres (id, name) VALUES (135005, 'Horror');
+
+ -- INSERT Movie/Star Links
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135001, 135001);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135002, 135001);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135003, 135001);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135004, 135002);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135005, 135002);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135006, 135002);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135002, 135003);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135007, 135003);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135008, 135004);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135009, 135004);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135010, 135005);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135011, 135005);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135011, 135006);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135012, 135006);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135013, 135006);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135015, 135007);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135016, 135008);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135016, 135008);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135016, 135009);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135016, 135009);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135016, 135009);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135016, 135009);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135004, 135010);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135019, 135010);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135020, 135011);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135021, 135012);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135022, 135012);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135023, 135013);
+INSERT INTO stars_in_movies (star_id, movie_id) VALUES (135024, 135014);
+
+ -- INSERT Genre/Movie Links
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135001, 135001);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135001, 135002);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135003, 135003);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135004, 135004);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135003, 135005);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135003, 135006);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135005, 135007);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135004, 135008);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135003, 135009);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135002, 135010);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135005, 135011);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135003, 135012);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135003, 135013);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135003, 135014);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135005, 135001);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135004, 135002);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135002, 135002);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135002, 135003);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135002, 135008);
+INSERT INTO genres_in_movies (genre_id, movie_id) VALUES (135004, 135009);
+
+ -- INSERT CREDIT CARDS
+INSERT INTO creditcards VALUES (
+1351234512345123, 'Jackie Brown', '1/28/2005');
+INSERT INTO creditcards VALUES (
+1354895485215896, 'Janet Trink', '3/25/2004');
+INSERT INTO creditcards VALUES (
+1351465859655326, 'Bob Jacobs', '5/20/2006');
+INSERT INTO creditcards VALUES (
+1351564897565485, 'Joe Martinez', '7/15/2005');
+INSERT INTO creditcards VALUES (
+1356858558612344, 'Frank Rizzo', '9/10/2006');
+INSERT INTO creditcards VALUES (
+1353579516489567, 'Billy Bob', '11/5/2005');
+INSERT INTO creditcards VALUES (
+1351236966685974, 'Lloyd Webber', '2/12/2005');
+INSERT INTO creditcards VALUES (
+1352245887366458, 'Wilbur Cox', '4/17/2005');
+INSERT INTO creditcards VALUES (
+1356543987465431, 'Harry Potter', '6/22/2005');
+INSERT INTO creditcards VALUES (
+1359845651298453, 'Bart Simpson', '8/27/2004');
+INSERT INTO creditcards VALUES (
+1351594489526154, 'Lisa Kudrow', '10/11/2004');
+INSERT INTO creditcards VALUES (
+1359865326587542, 'Homer Martin', '12/8/2006');
+INSERT INTO creditcards VALUES (
+1357485859641525, 'Richard Watcher', '3/9/2005');
+INSERT INTO creditcards VALUES (
+1356352419685748, 'Pedro Wilson', '5/10/2004');
+INSERT INTO creditcards VALUES (
+1359874563125648, 'Napolean Carson', '4/12/2006');
+INSERT INTO creditcards VALUES (
+1354895123485674, 'Robert Tange', '8/18/2006');
+INSERT INTO creditcards VALUES (
+1351566345587445, 'Shane Stewart', '4/28/2004');
+INSERT INTO creditcards VALUES (
+1359846518947563, 'Martha Matthews', '9/27/2005');
+INSERT INTO creditcards VALUES (
+1351594897535684, 'Joey Larson', '4/24/2005');
+INSERT INTO creditcards VALUES (
+1351597784565853, 'Fred Terrance', '8/19/2005');
+
+ -- INSERT Customers
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135001, 'Jackie', 'Brown', 1351234512345123, '16
+Carbonara', 'jbrown@yahoo.com', 'jbrown');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135002, 'Janet', 'Trink', 1354895485215896, '4873
+Canton Way', 'jtrink@hotmail.com', 'tasty');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135003, 'Bob', 'Jacobs', 1351465859655326, '2398
+Trinkle Ave', 'bjacobs@gmail.com', 'brownie');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135004, 'Joe', 'Martinez', 1351564897565485, '987
+Main St', 'jjil@google.com', 'password');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135005, 'Frank', 'Rizzo', 1356858558612344, '4303
+Jackson', 'frankie@munez.com', 'admin');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135006, 'Billy', 'Bob', 1353579516489567, '21
+Fruitdale', 'Bob@rox.com', 'hope');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135007, 'Lloyd', 'Webber', 1351236966685974, '290
+Olandish', 'web@taster.com', 'master');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135008, 'Wilbur', 'Cox', 1352245887366458, '6548
+Giante Way', 'cox@cox.net', 'jinky');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135009, 'Harry', 'Potter', 1356543987465431, '254
+Venetto', 'potting@soil.com', 'baiter');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135010, 'Bart', 'Simpson', 1359845651298453, '12
+Harvard Ave', 'bSimp@nebraska.net', 'matters');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135011, 'Lisa', 'Kudrow', 1351594489526154, '897
+Harvest', 'jackk_01@msn.com', 'polson');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135012, 'Homer', 'Martin', 1359865326587542, '893
+Sedona', 'martin@act.com', 'brandon');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135013, 'Richard', 'Watcher', 1357485859641525,
+'99882 A Street', 'richard.watcher@sbc.com', 'martha');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135014, 'Pedro', 'Wilson', 1356352419685748, '847
+SW 3rd Street', 'peety@andromeda.com', 'microsoft');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135015, 'Napolean', 'Carson', 1359874563125648,
+'33 Hillcrest', 'cartme@jingle.com', 'security');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135016, 'Robert', 'Tange', 1354895123485674, '9970
+Redwood', 'tange@hotmail.com', 'jacksonville');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135017, 'Shane', 'Stewart', 1351566345587445, '943
+Euclid', 'stewwie@oleander.net', 'brant');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135018, 'Martha', 'Matthews', 1359846518947563,
+'3889 Harbor', 'm.matthews@microsoft.com', 'love');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135019, 'Joey', 'Larson', 1351594897535684, '338
+Archer Terrace', 'jlarson@email.com', 'sweet');
+INSERT INTO customers (id, first_name, last_name, cc_id, address, email,
+password) VALUES ( 135020, 'Fred', 'Terrance', 1351597784565853, '156
+MainPlace Ave', 'terry@hope.com', 'ginormous');
+
+ -- INSERT SALES
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135001, 135001,
+'06/25/2001 12:24:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135001, 135002,
+'07/25/2001 10:24:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135001, 135011,
+'08/14/2003 14:15:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135004, 135004,
+'12/12/2002 05:19:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135005, 135005,
+'04/28/2004 11:54:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135006, 135014,
+'06/25/2001 12:24:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135007, 135001,
+'08/14/2003 14:15:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135006, 135007,
+'10/30/2002 16:15:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135004, 135003,
+'06/25/2001 12:24:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135010, 135004,
+'02/11/2005 10:13:14.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135006, 135005,
+'07/19/2002 15:14:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135012, 135006,
+'08/14/2003 14:15:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135004, 135012,
+'06/25/2001 12:24:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135014, 135002,
+'12/12/2002 05:19:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135015, 135003,
+'04/28/2004 11:54:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135016, 135004,
+'08/14/2003 14:15:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135017, 135011,
+'10/30/2002 16:15:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135006, 135006,
+'07/19/2002 15:14:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135006, 135007,
+'06/25/2001 12:24:00.00 PDT');
+INSERT INTO SALES (customer_id, movie_id, time) VALUES (135012, 135008,
+'02/11/2005 10:13:14.00 PDT');
+
+
+
+
+
+       
+INSERT INTO stars VALUES('671101', 'Sigourney', 'Weaver', '1949-10-08',
+'http://ia.imdb.com/media/imdb/01/I/15/28/38m.jpg');
+INSERT INTO stars VALUES('671102', 'Michael', 'Moore', '1954-04-23',
+'http://ia.imdb.com/media/imdb/01/I/25/65/38m.jpg');
+INSERT INTO stars VALUES('671103', 'Mel', 'Gibson', '1956-01-03',
+'http://ia.imdb.com/media/imdb/01/I/67/05/12m.jpg');
+INSERT INTO stars VALUES('671104', 'Tom', 'Hanks', '1956-07-09',
+'http://ia.imdb.com/media/imdb/01/I/68/65/38m.jpg');
+INSERT INTO stars VALUES('671105', 'Jim', 'Carrey', '1962-01-17',
+'http://ia.imdb.com/media/imdb/01/I/95/85/38m.jpg');
+INSERT INTO stars VALUES('671106', 'Matt', 'Damon', '1970-10-08',
+'http://ia.imdb.com/media/imdb/01/I/90/45/38m.jpg');
+INSERT INTO stars VALUES('671107', 'Casper', 'Van Dien', '1968-12-18',
+'http://ia.imdb.com/media/imdb/01/I/72/35/12m.jpg');
+INSERT INTO stars VALUES('671108', 'Will', 'Smith', '1968-09-25',
+'http://ia.imdb.com/media/imdb/01/I/31/45/38m.jpg');
+INSERT INTO stars VALUES('671109', 'Brendan', 'Fraser', '1968-12-03',
+'http://ia.imdb.com/media/imdb/01/I/74/45/48m.jpg');
+INSERT INTO stars VALUES('671110', 'Harrison', 'Ford', '1942-07-13',
+'http://ia.imdb.com/media/imdb/01/I/16/65/38m.jpg');
+       
+       
+
+ 	
+ INSERT INTO movies VALUES('671001', 'Alien', '1979', 'Ridley Scott',
+'http://www.imdb.com/gallery/ss/0078748/Ss/0078748/5337_16_13.jpg?path=gallery&path_key=0078748',
+'http://www.apple.com/trailers/fox/alien_25/medium.html');
+ INSERT INTO movies VALUES('671002', 'Aliens', '1986', 'James Cameron',
+'http://ia.imdb.com/media/imdb/01/I/65/14/51m.jpg',
+'http://www.movie-list.net/classics/aliens-640.mov');
+ INSERT INTO movies VALUES('671003', 'Alien3', '1992', 'David Fincher',
+'http://ia.imdb.com/media/imdb/01/I/80/63/81m.gif',
+'http://www.movie-list.net/classics/alien3-trailer-e-640.mov');
+ INSERT INTO movies VALUES('671004', 'Bowling for Columbine', '2002',
+'Michael Moore',
+'http://www.imdb.com/gallery/ss/0310793/Ss/0310793/BFC_1Sheet.jpg?path=gallery&path_key=0310793',
+'http://www.apple.com/trailers/mgm/bowling_for_columbine/large.html');
+ INSERT INTO movies VALUES('671005', 'Fahrenheit 9/11', '2004', 'Michael
+Moore',
+'http://www.imdb.com/gallery/ss/0361596/Ss/0361596/F911OneSheet.jpg?path=gallery&path_key=0361596',
+'http://www.fahrenheit911.com/trailer/windows/large.php');
+ INSERT INTO movies VALUES('671006', 'Braveheart', '1995', 'Mel Gibson',
+'http://ia.imdb.com/media/imdb/01/I/61/43/90m.jpg',
+'http://www.movie-list.net/classics/braveheart-trailer.mov');
+ INSERT INTO movies VALUES('671007', 'Saving Private Ryan', '1998',
+'Steven Spielberg', 'http://ia.imdb.com/media/imdb/01/I/29/39/51m.jpg',
+'http://www.movie-list.net/classics/saving-private-ryan.mov');
+ INSERT INTO movies VALUES('671008', 'The Terminal', '2004', 'Steven
+Spielberg', 'http://ia.imdb.com/media/imdb/01/I/81/16/28m.jpg',
+'http://www.apple.com/trailers/dreamworks/the_terminal/theterminal_qt-lrg.html');
+ INSERT INTO movies VALUES('671009', 'The Mask', '1994', 'Chuck Russell',
+'http://ia.imdb.com/media/imdb/01/I/99/73/11m.jpg',
+'http://www.movie-list.net/classics/mask.mov');
+ INSERT INTO movies VALUES('671010', 'Dogma', '1999', 'Kevin Smith',
+'http://ia.imdb.com/media/imdb/01/I/20/49/70m.jpg',
+'http://mymovies.net/asx_secured.asp?wmpath=/filmmedia/film/fid108/trailers/trid109/wm/bb.asz&filmid=108');
+ INSERT INTO movies VALUES('671011', 'Starship Troopers', '1997', 'Paul
+Verhoeven', 'http://ia.imdb.com/media/imdb/01/I/18/06/28m.jpg',
+'http://www.movie-list.net/classics/starship-troopers-trailer-fs.mov');
+ INSERT INTO movies VALUES('671012', 'Independence Day', '1996', 'Roland
+Emmerich', 'http://ia.imdb.com/media/imdb/01/I/32/33/46m.jpg',
+'http://www.movie-list.net/classics/independence-day-teaser.mov');
+ INSERT INTO movies VALUES('671013', 'Men In Black', '1997', 'Barry
+Sonnenfeld', 'http://ia.imdb.com/media/imdb/01/I/73/19/31m.jpg',
+'http://www.movie-list.net/classics/men-in-black-trailer.mov');
+ INSERT INTO movies VALUES('671014', 'Men in Black II', '2002', 'Barry
+Sonnenfeld', 'http://ia.imdb.com/media/imdb/01/I/61/02/02m.jpg',
+'http://www.movie-list.net/mlst2k2/meninblack2.mpg');
+ INSERT INTO movies VALUES('671015', 'The Mummy', '1999', 'Stephen
+Sommers', 'http://ia.imdb.com/media/imdb/01/I/79/20/12m.jpg',
+'http://www.mummyvideo.com/mov/mummy10fps.mov');
+ INSERT INTO movies VALUES('671016', 'The Mummy Returns', '2001', 'Stephen
+Sommers', 'http://ia.imdb.com/media/imdb/01/I/37/12/20m.jpg',
+'http://www.themummy.com/mummy_returns_300k.wmv');
+ INSERT INTO movies VALUES('671017', 'Blast From the Past', '1999', 'Hugh
+Wilson', 'http://ia.imdb.com/media/imdb/01/I/35/01/12m.jpg',
+'http://videodetective.com/player.asp?PublishedId=8202&List=762860|308387|798035|150092|853941&Customerid=97135');
+ INSERT INTO movies VALUES('671018', 'Raiders of the Lost Ark', '1981',
+'Steven Spielberg', 'http://ia.imdb.com/media/imdb/01/I/92/63/50m.jpg',
+'http://www.indianajones.de/indy1/multimedia/Raiders_Trailer.mov');
+ INSERT INTO movies VALUES('671019', 'Indiana Jones and the Temple of
+Doom', '1984', 'Steven Spielberg',
+'http://ia.imdb.com/media/imdb/01/I/79/74/61m.jpg',
+'http://www.indianajones.de/indy2/downloads/todoom_teaser.mpeg');
+ INSERT INTO movies VALUES('671020', 'Indiana Jones and the Last Crusade',
+'1989', 'Steven Speilberg',
+'http://ia.imdb.com/media/imdb/01/I/66/71/38m.jpg',
+'http://www.indianajones.de/indy3/downloads/lastcrusade_teaser.avi');
+ 
+ 	
+ 	
+
+	
+INSERT INTO stars_in_movies VALUES('671101', '671001');
+INSERT INTO stars_in_movies VALUES('671101', '671002');
+INSERT INTO stars_in_movies VALUES('671101', '671003');
+INSERT INTO stars_in_movies VALUES('671102', '671004');
+INSERT INTO stars_in_movies VALUES('671102', '671005');
+INSERT INTO stars_in_movies VALUES('671103', '671006');
+INSERT INTO stars_in_movies VALUES('671104', '671007');
+INSERT INTO stars_in_movies VALUES('671104', '671008');
+INSERT INTO stars_in_movies VALUES('671105', '671009');
+INSERT INTO stars_in_movies VALUES('671106', '671010');
+INSERT INTO stars_in_movies VALUES('671107', '671011');
+INSERT INTO stars_in_movies VALUES('671108', '671012');
+INSERT INTO stars_in_movies VALUES('671108', '671013');
+INSERT INTO stars_in_movies VALUES('671108', '671014');
+INSERT INTO stars_in_movies VALUES('671109', '671015');
+INSERT INTO stars_in_movies VALUES('671109', '671016');
+INSERT INTO stars_in_movies VALUES('671109', '671017');
+INSERT INTO stars_in_movies VALUES('671110', '671018');
+INSERT INTO stars_in_movies VALUES('671110', '671019');
+INSERT INTO stars_in_movies VALUES('671110', '671020');
+
+
+	
+INSERT INTO genres VALUES('671201', 'Science Fiction');
+INSERT INTO genres VALUES('671202', 'Action');
+INSERT INTO genres VALUES('671203', 'Horror');
+INSERT INTO genres VALUES('671204', 'Fantasy');
+INSERT INTO genres VALUES('671205', 'Comedy');
+INSERT INTO genres VALUES('671206', 'Drama');
+INSERT INTO genres VALUES('671207', 'War');
+INSERT INTO genres VALUES('671208', 'Romance');
+INSERT INTO genres VALUES('671209', 'Thriller');
+INSERT INTO genres VALUES('671210', 'Adventure');
+
+
+
+INSERT INTO genres_in_movies VALUES('671203', '671001');
+INSERT INTO genres_in_movies VALUES('671202', '671002');
+INSERT INTO genres_in_movies VALUES('671209', '671003');
+INSERT INTO genres_in_movies VALUES('671205', '671004');
+INSERT INTO genres_in_movies VALUES('671205', '671005');
+INSERT INTO genres_in_movies VALUES('671206', '671006');
+INSERT INTO genres_in_movies VALUES('671207', '671007');
+INSERT INTO genres_in_movies VALUES('671206', '671008');
+INSERT INTO genres_in_movies VALUES('671205', '671009');
+INSERT INTO genres_in_movies VALUES('671206', '671010');
+INSERT INTO genres_in_movies VALUES('671201', '671011');
+INSERT INTO genres_in_movies VALUES('671207', '671012');
+INSERT INTO genres_in_movies VALUES('671202', '671013');
+INSERT INTO genres_in_movies VALUES('671210', '671014');
+INSERT INTO genres_in_movies VALUES('671210', '671015');
+INSERT INTO genres_in_movies VALUES('671204', '671016');
+INSERT INTO genres_in_movies VALUES('671208', '671017');
+INSERT INTO genres_in_movies VALUES('671202', '671018');
+INSERT INTO genres_in_movies VALUES('671209', '671019');
+INSERT INTO genres_in_movies VALUES('671210', '671020');
+	
+
+
+INSERT INTO creditcards VALUES(6713015728690461, 'Ryan A Kholer','2006-02-28');
+INSERT INTO creditcards VALUES(6713025728690461, 'David B James', '2005-06-03');
+INSERT INTO creditcards VALUES(6713035728690461, 'Andy C Tsai', '2007-09-11');
+INSERT INTO creditcards VALUES(6713045728690461, 'Liem D Tran', '2005-12-12');
+INSERT INTO creditcards VALUES(6713055728690461, 'Abraham E Lincoln','2008-11-30');
+INSERT INTO creditcards VALUES(6713065728690461, 'Pete F Rose', '2005-07-04');
+INSERT INTO creditcards VALUES(6713075728690461, 'Stan G Marsh', '2009-08-15');
+INSERT INTO creditcards VALUES(6713085728690461, 'George H Clinton','2008-04-01');
+INSERT INTO creditcards VALUES(6713095728690461, 'Al I Bundy', '2007-10-10');
+INSERT INTO creditcards VALUES(6713105728690461, 'Peggy J Bundy', '2006-08-19');
+INSERT INTO creditcards VALUES(6713115728690461, 'Marcy K Darcy', '2007-08-13');
+INSERT INTO creditcards VALUES(6713125728690461, 'Jefferson L Darcy','2006-09-09');
+INSERT INTO creditcards VALUES(6713135728690461, 'Carole M Carlson','2007-01-13');
+INSERT INTO creditcards VALUES(6713145728690461, 'Carl N Carlson', '2008-03-24');
+INSERT INTO creditcards VALUES(6713155728690461, 'Kevin O Sorbo', '2007-05-21');
+INSERT INTO creditcards VALUES(6713165728690461, 'Richard P Gomez','2008-06-30');
+INSERT INTO creditcards VALUES(6713175728690461, 'Dave Q Chapelle','2009-07-27');
+INSERT INTO creditcards VALUES(6713185728690461, 'Crystal R Silver','2006-08-07');
+INSERT INTO creditcards VALUES(6713195728690461, 'Rich S Hanchet', '2006-05-28');
+INSERT INTO creditcards VALUES(6713205728690461, 'Pepper T Metsger','2007-09-09');
+
+
+
+INSERT INTO customers VALUES('671401', 'Ryan', 'Kholer', 6713015728690461, '4
+Butterfly', 'rk@hotmial.com', 'creed');
+INSERT INTO customers VALUES('671402', 'David', 'James', 6713025728690461, '14
+Nightwing', 'dj@hotmail.com', 'craft');
+INSERT INTO customers VALUES('671403', 'Andy', 'Tsai', 6713035728690461, '200 Lake
+Superior', 'at@hotmail.com', 'elmejor');
+INSERT INTO customers VALUES('671404', 'Liem', 'Tran', 6713045728690461, '5
+Rostrum', 'lt@hotmail.com', 'mushy');
+INSERT INTO customers VALUES('671405', 'Abraham', 'Lincoln', 6713055728690461,
+'1500 Pennsylvania ave.', 'al@mail.gov', 'fordstheater');
+INSERT INTO customers VALUES('671406', 'Pete', 'Rose', 6713065728690461, '17
+Sharbsburg', 'pr@baseball.com', 'mr3000');
+INSERT INTO customers VALUES('671407', 'Stan', 'Marsh', 6713075728690461, '5
+Southpark', 'sm@southpark.org', 'treyparker');
+INSERT INTO customers VALUES('671408', 'George', 'Clinton', 6713085728690461, '6
+Losers', 'gl@helper.net', 'beggar');
+INSERT INTO customers VALUES('671409', 'Al', 'Bundy', 6713095728690461, '18 Shoe
+St.', 'ab@shoester.com', 'shoeman');
+INSERT INTO customers VALUES('671410', 'Peggy', 'Bundy', 6713105728690461, '18
+Shoe St.', 'pb@shoester.com', 'nonshoeman');
+INSERT INTO customers VALUES('671411', 'Marcy', 'Darcy', 6713115728690461, '16
+Shoe St.', 'md@mwc.net', 'chicken');
+INSERT INTO customers VALUES('671412', 'Jefferson', 'Darcy', 6713125728690461, '16
+Shoe St.', 'jd@mwc.net', 'jiggalo');
+INSERT INTO customers VALUES('671413', 'Carole', 'Carlson', 6713135728690461, '2
+College Park', 'cc1@realtor.com', 'mysoneric');
+INSERT INTO customers VALUES('671414', 'Carl', 'Carlson', 6713145728690461, '2
+College Park', 'cc2@realtor.com', 'baseballteam');
+INSERT INTO customers VALUES('671415', 'Kevin', 'Sorbo', 6713155728690461, '17
+Greece', 'ks@shows.net', 'herules');
+INSERT INTO customers VALUES('671416', 'Richard', 'Gomez', 6713165728690461, '123
+Fake St.', 'rg@realgood.com', 'phantom');
+INSERT INTO customers VALUES('671417', 'Dave', 'Chapelle', 6713175728690461, '1
+Rick James Way', 'dc@comedycentral.com', 'farce');
+INSERT INTO customers VALUES('671418', 'Crystal', 'Silver', 6713185728690461, '132
+Target', 'cs@steam.com', 'gildedage');
+INSERT INTO customers VALUES('671419', 'Rich', 'Hanchet', 6713195728690461, '31
+Bakers', 'rh@bsa.com', 'boyscouts');
+INSERT INTO customers VALUES('671420', 'Pepper', 'Metsger', 6713205728690461, '2
+Funky Town', 'pm@soda.org', 'thedoctor');
+
+
+	
+INSERT INTO sales VALUES('671401', '671001', '2005-01-17 13:21:15.0001');
+INSERT INTO sales VALUES('671402', '671002', '2004-12-26 12:45:45.0003');
+INSERT INTO sales VALUES('671403', '671003', '2003-01-14 3:41:56.4642');
+INSERT INTO sales VALUES('671404', '671004', '2004-09-15 7:21:11.7148');
+INSERT INTO sales VALUES('671405', '671005', '2004-11-01 17:35:12.1384');
+INSERT INTO sales VALUES('671406', '671006', '2005-07-07 8:49:14.6103');
+INSERT INTO sales VALUES('671407', '671007', '2001-04-20 22:26:10.1851');
+INSERT INTO sales VALUES('671408', '671008', '2002-05-30 23:56:19.5743');
+INSERT INTO sales VALUES('671409', '671009', '2003-06-30 11:19:34.3184');
+INSERT INTO sales VALUES('671410', '671010', '2004-03-22 15:07:39.1681');
+INSERT INTO sales VALUES('671411', '671011', '2004-01-26 4:35:41.5553');
+INSERT INTO sales VALUES('671412', '671012', '2004-09-04 8:15:01.4431');
+INSERT INTO sales VALUES('671413', '671013', '2003-10-25 9:59:12.1884');
+INSERT INTO sales VALUES('671414', '671014', '2003-09-22 4:53:43.6431');
+INSERT INTO sales VALUES('671415', '671015', '2002-05-30 1:11:43.9874');
+INSERT INTO sales VALUES('671416', '671016', '2003-08-12 9:13:46.1381');
+INSERT INTO sales VALUES('671417', '671017', '2004-04-14 2:16:25.8852');
+INSERT INTO sales VALUES('671418', '671018', '2001-12-25 20:27:27.3135');
+INSERT INTO sales VALUES('671419', '671019', '2005-11-30 16:29:29.8993');
+INSERT INTO sales VALUES('671420', '671020', '2001-03-19 18:34:57.8888');
+	
+	
+
+INSERT INTO movies VALUES(156001, 'Aviator', '2004', 'Martin Scorsese',
+'http://ia.imdb.com/media/imdb/01/I/05/31/48m.jpg',
+'http://www.apple.com/trailers/miramax/the_aviator/trailer.html');
+INSERT INTO movies VALUES(156002, 'The Incredibles', '2004', 'Brad Bird',
+'http://ia.imdb.com/media/imdb/01/I/62/66/48m.jpg',
+'http://www.apple.com/trailers/disney/the_incredibles/');
+INSERT INTO movies VALUES(156003, 'Love the Hard Way', '2001', 'Peter
+Sehr', 'http://ia.imdb.com/media/imdb/01/I/47/24/43m.jpg', 'None');
+INSERT INTO movies VALUES(156004, 'Meet the Fockers', '2004', 'Jay Roach',
+'http://ia.imdb.com/media/imdb/01/I/78/14/68m.jpg',
+'http://www.apple.com/trailers/universal/meet_the_fockers/');
+INSERT INTO movies VALUES(156005, 'The Terminator', '1984', 'James
+Cameron', 'http://ia.imdb.com/media/imdb/01/I/34/82/91m.jpg',
+'http://imdb.com/title/tt0088247/trailers');
+INSERT INTO movies VALUES(156006, 'Jurassic Park', '1993', 'Steven
+Spielberg', 'http://ia.imdb.com/media/imdb/01/I/79/51/30m.jpg',
+'http://imdb.com/title/tt0107290/trailers');
+INSERT INTO movies VALUES(156007, 'The Godfather', '1972', 'Franci Ford
+Coppola', 'http://ia.imdb.com/media/imdb/01/I/34/32/20m.jpg',
+'http://imdb.com/title/tt0068646/trailers');
+INSERT INTO movies VALUES(156008, 'Snatch', '2000', 'Guy Ritchie',
+'http://ia.imdb.com/media/imdb/01/I/49/99/02m.jpg',
+'http://imdb.com/title/tt0208092/trailers');
+INSERT INTO movies VALUES(156009, 'Garden State', '2004', 'Zach Braff',
+'http://ia.imdb.com/media/imdb/01/I/37/14/58m.jpg',
+'http://imdb.com/title/tt0333766/trailers');
+INSERT INTO movies VALUES(156010, 'The Lord of the Rings: The Fellowship
+of the Ring', '2001', 'Peter Jackson',
+'http://ia.imdb.com/media/imdb/01/I/19/35/60m.jpg',
+'http://imdb.com/title/tt0120737/trailers');
+INSERT INTO stars VALUES(156001, 'Leonardo', 'Dicaprio', '1974-11-11',
+'http://ia.imdb.com/media/imdb/01/I/16/28/38m.jpg');
+INSERT INTO stars VALUES(156002, 'Cate', 'Blanchett', '1969-05-14',
+'http://ia.imdb.com/media/imdb/01/I/66/33/48m.jpg');
+INSERT INTO stars VALUES(156003, 'Kate', 'Beckinsale', '1973-07-26',
+'http://ia.imdb.com/media/imdb/01/I/45/65/38m.jpg');
+INSERT INTO stars VALUES(156004, 'Adrien', 'Brody', '1973-04-14',
+'http://ia.imdb.com/media/imdb/01/I/74/28/38m.jpg');
+INSERT INTO stars VALUES(156005, 'Charlotte', 'Ayanna', '1976-09-25',
+'http://ia.imdb.com/media/imdb/01/I/50/97/16m.jpg');
+INSERT INTO stars VALUES(156006, 'Robert', 'De Niro', '1943-08-17',
+'http://ia.imdb.com/media/imdb/01/I/95/65/38m.jpg');
+INSERT INTO stars VALUES(156007, 'Ben', 'Stiller', '1965-11-30',
+'http://ia.imdb.com/media/imdb/01/I/54/65/38m.jpg');
+INSERT INTO stars VALUES(156008, 'Dustin', 'Hoffman', '1937-08-08',
+'http://ia.imdb.com/media/imdb/01/I/46/33/48m.jpg');
+INSERT INTO stars VALUES(156009, 'Arnold', 'Schwarzenegger', '1947-07-30',
+'http://ia.imdb.com/media/imdb/01/I/70/17/38m.jpg');
+INSERT INTO stars VALUES(156010, 'Linda', 'Hamilton', '1956-09-26',
+'http://ia.imdb.com/media/imdb/01/I/36/15/22m.jpg');
+INSERT INTO stars VALUES(156011, 'Jeff', 'Goldblum', '1952-10-22',
+'http://ia.imdb.com/media/imdb/01/I/87/05/12m.jpg');
+INSERT INTO stars VALUES(156012, 'Linda', 'Hamilton', '1967-02-10',
+'http://ia.imdb.com/media/imdb/01/I/08/65/12m.jpg');
+INSERT INTO stars VALUES(156013, 'Marlon', 'Brando', '1924-04-03',
+'http://ia.imdb.com/media/imdb/01/I/88/94/12m.jpg');
+INSERT INTO stars VALUES(156014, 'Al', 'Pacino', '1940-04-25',
+'http://ia.imdb.com/media/imdb/01/I/74/85/38m.jpg');
+INSERT INTO stars VALUES(156015, 'Brad', 'Pitt', '1963-12-18',
+'http://ia.imdb.com/media/imdb/01/I/40/45/38m.jpg');
+INSERT INTO stars VALUES(156016, 'Vinnie', 'Jones', '1965-01-05',
+'http://ia.imdb.com/media/imdb/01/I/63/55/12m.jpg');
+INSERT INTO stars VALUES(156017, 'Zach', 'Braff', '1975-04-06',
+'http://ia.imdb.com/media/imdb/01/I/66/95/22m.jpg');
+INSERT INTO stars VALUES(156018, 'Natalie', 'Portman', '1981-06-09',
+'http://ia.imdb.com/media/imdb/01/I/64/65/38m.jpg');
+INSERT INTO stars VALUES(156019, 'Sean', 'Astin', '1971-02-25',
+'http://ia.imdb.com/media/imdb/01/I/13/09/38m.jpg');
+INSERT INTO stars VALUES(156020, 'Orlando', 'Bloom', '1977-01-13',
+'http://ia.imdb.com/media/imdb/01/I/80/45/38m.jpg');
+INSERT INTO stars VALUES(156021, 'Liv', 'Tyler', '1977-07-01',
+'http://ia.imdb.com/media/imdb/01/I/87/23/48m.jpg');
+INSERT INTO stars VALUES(156022, 'Holly', 'Hunter', '1958-03-20',
+'http://ia.imdb.com/media/imdb/01/I/74/45/12m.jpg');
+INSERT INTO stars VALUES(156023, 'Samuel L.', 'Jackson', '1948-12-21',
+'http://ia.imdb.com/media/imdb/01/I/94/88/38m.jpg');
+INSERT INTO stars VALUES(156024, 'Jason', 'Liu', '1983-01-29',
+'http://www.xanga.com');
+INSERT INTO stars_in_movies VALUES(156001, 156001);
+INSERT INTO stars_in_movies VALUES(156002, 156001);
+INSERT INTO stars_in_movies VALUES(156003, 156001);
+INSERT INTO stars_in_movies VALUES(156004, 156003);
+INSERT INTO stars_in_movies VALUES(156005, 156003);
+INSERT INTO stars_in_movies VALUES(156006, 156004);
+INSERT INTO stars_in_movies VALUES(156007, 156004);
+INSERT INTO stars_in_movies VALUES(156008, 156004);
+INSERT INTO stars_in_movies VALUES(156009, 156005);
+INSERT INTO stars_in_movies VALUES(156010, 156005);
+INSERT INTO stars_in_movies VALUES(156011, 156006);
+INSERT INTO stars_in_movies VALUES(156012, 156006);
+INSERT INTO stars_in_movies VALUES(156013, 156007);
+INSERT INTO stars_in_movies VALUES(156014, 156007);
+INSERT INTO stars_in_movies VALUES(156015, 156008);
+INSERT INTO stars_in_movies VALUES(156016, 156008);
+INSERT INTO stars_in_movies VALUES(156017, 156009);
+INSERT INTO stars_in_movies VALUES(156018, 156009);
+INSERT INTO stars_in_movies VALUES(156019, 156010);
+INSERT INTO stars_in_movies VALUES(156020, 156010);
+INSERT INTO stars_in_movies VALUES(156021, 156010);
+INSERT INTO stars_in_movies VALUES(156022, 156002);
+INSERT INTO stars_in_movies VALUES(156023, 156002);
+INSERT INTO stars_in_movies VALUES(156023, 156006);
+INSERT INTO genres VALUES(156001, 'Action');
+INSERT INTO genres VALUES(156002, 'Crime');
+INSERT INTO genres VALUES(156003, 'Fantasy');
+INSERT INTO genres VALUES(156004, 'Musical');
+INSERT INTO genres VALUES(156005, 'Short');
+INSERT INTO genres VALUES(156006, 'Adventure');
+INSERT INTO genres VALUES(156007, 'Documentary');
+INSERT INTO genres VALUES(156008, 'Film-Noir');
+INSERT INTO genres VALUES(156009, 'Mystery');
+INSERT INTO genres VALUES(156010, 'Thriller');
+INSERT INTO genres VALUES(156011, 'Animation');
+INSERT INTO genres VALUES(156012, 'Drama');
+INSERT INTO genres VALUES(156013, 'Horror');
+INSERT INTO genres VALUES(156014, 'Romance');
+INSERT INTO genres VALUES(156015, 'War');
+INSERT INTO genres VALUES(156016, 'Comedy');
+INSERT INTO genres VALUES(156017, 'Family');
+INSERT INTO genres VALUES(156018, 'Music');
+INSERT INTO genres VALUES(156019, 'Sci-Fi');
+INSERT INTO genres VALUES(156020, 'Western');
+INSERT INTO genres_in_movies VALUES(156012, 156001);
+INSERT INTO genres_in_movies VALUES(156012, 156003);
+INSERT INTO genres_in_movies VALUES(156002, 156003);
+INSERT INTO genres_in_movies VALUES(156014, 156003);
+INSERT INTO genres_in_movies VALUES(156016, 156004);
+INSERT INTO genres_in_movies VALUES(156019, 156005);
+INSERT INTO genres_in_movies VALUES(156010, 156005);
+INSERT INTO genres_in_movies VALUES(156001, 156005);
+INSERT INTO genres_in_movies VALUES(156012, 156005);
+INSERT INTO genres_in_movies VALUES(156014, 156005);
+INSERT INTO genres_in_movies VALUES(156014, 156005);
+INSERT INTO genres_in_movies VALUES(156013, 156006);
+INSERT INTO genres_in_movies VALUES(156019, 156006);
+INSERT INTO genres_in_movies VALUES(156006, 156006);
+INSERT INTO genres_in_movies VALUES(156001, 156006);
+INSERT INTO genres_in_movies VALUES(156002, 156007);
+INSERT INTO genres_in_movies VALUES(156012, 156007);
+INSERT INTO genres_in_movies VALUES(156002, 156008);
+INSERT INTO genres_in_movies VALUES(156016, 156008);
+INSERT INTO genres_in_movies VALUES(156012, 156009);
+INSERT INTO genres_in_movies VALUES(156016, 156009);
+INSERT INTO genres_in_movies VALUES(156014, 156009);
+INSERT INTO genres_in_movies VALUES(156003, 156010);
+INSERT INTO genres_in_movies VALUES(156001, 156010);
+INSERT INTO genres_in_movies VALUES(156006, 156010);
+INSERT INTO genres_in_movies VALUES(156006, 156010);
+INSERT INTO genres_in_movies VALUES(156011, 156002);
+INSERT INTO genres_in_movies VALUES(156017, 156002);
+INSERT INTO genres_in_movies VALUES(156006, 156002);
+INSERT INTO genres_in_movies VALUES(156001, 156002);
+INSERT INTO genres_in_movies VALUES(156016, 156002);
+INSERT INTO genres_in_movies VALUES(156019, 156002);
+INSERT INTO creditcards VALUES(1560015728690461, 'Jason Liu', '2007-01-11');
+INSERT INTO creditcards VALUES(1560025728690461, 'Yin Yee Lai', '2007-04-30');
+INSERT INTO creditcards VALUES(1560035728690461, 'Yoong 'Chia', '2007-05-31');
+INSERT INTO creditcards VALUES(1560045728690461, 'Ted Wong', '2007-01-31');
+INSERT INTO creditcards VALUES(1560055728690461, 'Susan Wei Wei Liu', '2007-11-30');
+INSERT INTO creditcards VALUES(1560065728690461, 'Connie Hom', '2007-08-31');
+INSERT INTO creditcards VALUES(1560075728690461, 'Steve Ng', '2007-04-30');
+INSERT INTO creditcards VALUES(1560085728690461, 'Wes Chen', '2007-01-31');
+INSERT INTO creditcards VALUES(1560095728690461, 'James Liu', '2007-02-28');
+INSERT INTO creditcards VALUES(1560105728690461, 'Jenny Wu', '2007-01-31');
+INSERT INTO creditcards VALUES(1560115728690461, 'Karen Wu', '2007-03-31');
+INSERT INTO creditcards VALUES(1560125728690461, 'Matt Chou', '2007-01-31');
+INSERT INTO creditcards VALUES(1560135728690461, 'Maurice Chou', '2007-04-30');
+INSERT INTO creditcards VALUES(1560145728690461, 'Gina Nei', '2007-02-28');
+INSERT INTO creditcards VALUES(1560155728690461, 'Jenie Chiu', '2007-12-31');
+INSERT INTO creditcards VALUES(1560165728690461, 'George Chen', '2007-06-30');
+INSERT INTO creditcards VALUES(1560175728690461, 'Wendy Hu', '2007-09-30');
+INSERT INTO creditcards VALUES(1560185728690461, 'Jessie Feng', '2007-02-28');
+INSERT INTO creditcards VALUES(1560195728690461, 'Cathy Zhang', '2007-10-31');
+INSERT INTO creditcards VALUES(1560205728690461, 'Edwin Coo', '2007-07-31');
+
+INSERT INTO customers VALUES(156001, 'Jason', 'Liu', 1560015728690461, '384
+orange, Irvine, CA, 92618', 'bol@uci.edu', 'blahblah');
+INSERT INTO customers VALUES(156002, 'Yin Yee', 'Lai', 1560025728690461, '123 Big
+driveway, Irvine, CA, 92618', 'yinyeelai@uci.edu', 'yesyes');
+INSERT INTO customers VALUES(156003, 'Yoong', 'Chia', 1560035728690461, '45 Small
+Driveway, Irvine, CA, 92618', 'yoongchia@uci.edu', 'sick');
+INSERT INTO customers VALUES(156004, 'Ted', 'Wong', 1560045728690461, '647 av
+lane, Irvine, CA, 92618', 'tedwong@uci.edu', 'funny');
+INSERT INTO customers VALUES(156005, 'Susan', 'Liu', 1560055728690461, '524
+parkwest lane, Irvine, CA, 92618', 'susanliu@uci.edu', 'married');
+INSERT INTO customers VALUES(156006, 'Connie', 'Hom', 1560065728690461, '361
+church street, Pasadena, CA, 91785', 'conniehom@cpp.edu', 'hihi');
+INSERT INTO customers VALUES(156007, 'Steve', 'Ng', 1560075728690461, '384 orange
+blossom, Irvine, CA, 92618', 'steveng@uci.edu', 'bobng');
+INSERT INTO customers VALUES(156008, 'Wes', 'Chen', 1560085728690461, '384 orange
+blossom, Irvine, CA, 92618', 'WesChen@uci.edu', 'lud');
+INSERT INTO customers VALUES(156009, 'James', 'Liu', 1560095728690461, '344
+halifax, temple City, CA, 91780', 'jamesliu@yahoo.com', 'blahd');
+INSERT INTO customers VALUES(156010, 'Jenny', 'Wu', 1560105728690461, '3445
+halifax, Temple City, CA, 91780', 'landdinc@hotmail.com', 'mememe');
+INSERT INTO customers VALUES(156011, 'Karen', 'Wu', 1560115728690461, '3445
+halifax, Temple City, CA, 91780', 'karenwu@hotmail.com', 'stevei');
+INSERT INTO customers VALUES(156012, 'Matt', 'Chou', 1560125728690461, '5534 rich
+lane, Irvine, CA, 92618', 'mattchou@hotmail.com', 'sich');
+INSERT INTO customers VALUES(156013, 'Maurice', 'Chou', 1560135728690461, '5534
+rich lane, Irvine, CA, 92618', 'spongebob@hotmail.com', 'hello');
+INSERT INTO customers VALUES(156014, 'Gina', 'Nei', 1560145728690461, '47478
+parkwest lane, Irvine, CA, 92618', 'ginanei@uci.edu', 'littleman');
+INSERT INTO customers VALUES(156015, 'Jenie', 'Chiu', 1560155728690461, '47478
+parkwest lane, Irvine, CA, 92618', 'jeniechan@uci.edu', 'dude');
+INSERT INTO customers VALUES(156016, 'George', 'Ji', 1560165728690461, '47478
+parkwest lane, Irvine, CA, 92618', 'georgeji@uci.edu', 'vicious');
+INSERT INTO customers VALUES(156017, 'Wendy', 'Hu', 1560175728690461, '5534
+darmeth, Irvine, CA, 92618', 'wendyhu@uci.edu', 'konjac');
+INSERT INTO customers VALUES(156018, 'Jessie', 'Feng', 1560185728690461, '374 Big
+China, Irvine, CA, 92618', 'jessieFeng@uci.edu', 'nonono');
+INSERT INTO customers VALUES(156019, 'Cathy', 'Zhang', 1560195728690461, '347
+Parkwest lane, Irvine, CA, 92618', 'cathyzhang@uci.edu', 'sanfran');
+INSERT INTO customers VALUES(156020, 'Edwin', 'Coo', 1560205728690461, '3748
+southpas dr, South Pasadena, CA, 91849', 'edwincoo@hotmail.com',
+'naruto');
+
+INSERT INTO sales VALUES(156001, 156001, '2004-03-12 14:40:33');
+INSERT INTO sales VALUES(156002, 156008, '2004-02-10 15:20:13');
+INSERT INTO sales VALUES(156003, 156001, '2004-01-11 16:45:43');
+INSERT INTO sales VALUES(156004, 156007, '2004-01-21 06:42:13');
+INSERT INTO sales VALUES(156005, 156002, '2004-06-21 18:25:33');
+INSERT INTO sales VALUES(156006, 156007, '2004-07-11 12:52:47');
+INSERT INTO sales VALUES(156007, 156004, '2004-01-13 11:32:17');
+INSERT INTO sales VALUES(156008, 156001, '2004-02-11 11:26:23');
+INSERT INTO sales VALUES(156009, 156004, '2004-07-11 13:28:21');
+INSERT INTO sales VALUES(156010, 156001, '2004-07-12 12:22:26');
+INSERT INTO sales VALUES(156011, 156008, '2004-06-11 16:42:25');
+INSERT INTO sales VALUES(156012, 156001, '2004-03-21 12:12:28');
+INSERT INTO sales VALUES(156013, 156002, '2004-04-16 11:12:48');
+INSERT INTO sales VALUES(156014, 156004, '2004-07-18 17:12:38');
+INSERT INTO sales VALUES(156015, 156006, '2004-02-12 19:12:28');
+INSERT INTO sales VALUES(156016, 156007, '2004-03-12 11:12:38');
+INSERT INTO sales VALUES(156017, 156002, '2004-05-01 17:12:38');
+INSERT INTO sales VALUES(156018, 156003, '2004-07-07 14:12:25');
+INSERT INTO sales VALUES(156019, 156006, '2004-08-25 17:12:22');
+INSERT INTO sales VALUES(156020, 156003, '2004-05-02 11:10:20');
+
+
+insert into movies values (872001, 'Catwoman', 2004, 'Pitof',
+'http://ia.imdb.com/media/imdb/01/I/52/51/58m.jpg',
+'http://fantasticadaily.com/premiere_coverage.php?pID=84');
+
+insert into stars values (872001, 'Halle', 'Barry', '1966-08-14',
+'http://www.imdb.com/name/nm0000932/photogallery');
+
+insert into movies values (872002, 'Are We There Yet', 2005, 'Brian
+Levant', 'http://www.imdb.com/title/tt0368578/photogallery',
+'http://www.imdb.com/title/tt0368578/trailers-screenplay-X25578-9-2');
+
+insert into stars values (872002, 'Ice', 'Cube', '1969-6-15',
+'http://www.imdb.com/name/nm0001084/photogallery');
+
+insert into movies values (872003, 'Meet the Fockers', 2004, 'Jay Roach',
+'http://ia.imdb.com/media/imdb/01/I/78/14/68m.jpg',
+'http://www.imdb.com/title/tt0290002/trailers-screenplay-E20995-9-2');
+
+insert into stars values (872003, 'Ben', 'Stiller', '1965-11-30',
+'http://ia.imdb.com/media/imdb/01/I/54/65/38m.jpg');
+
+insert into movies values (872004, 'Dodgeball: A True Underdog Story',
+2004, 'Rawson Marshall Thurber',
+'http://ia.imdb.com/media/imdb/01/I/97/09/48m.jpg',
+'http://justmovietrailers.com/video/3978/dodgeball_a_true_underdog_story_trailer.html');
+
+insert into stars values (872004, 'Vince', 'Vaughn', '1970-3-28',
+'http://ia.imdb.com/media/imdb/01/I/18/65/38m.jpg');
+
+insert into movies values (872005, 'Starsky & Hutch', 2004, 'Todd
+Phillips', 'http://ia.imdb.com/media/imdb/01/I/84/24/36m.jpg',
+'http://www.imdb.com/title/tt0335438/trailers-screenplay-X23452-9-2');
+
+insert into stars values (872005, 'Snoop', 'Dogg', '1971-10-20',
+'http://ia.imdb.com/media/imdb/01/I/85/45/22m.jpg');
+
+insert into movies values (872006, 'Training Day', 2001, 'Antoine Fuqua',
+'http://ia.imdb.com/media/imdb/01/I/54/23/80m.jpg',
+'http://www.imdb.com/rg/TITLETRA_VIDDET//http://videodetective.com/home.asp?PublishedID=773656');
+
+insert into stars values (872006, 'Denzel', 'Washington', '1954-12-28',
+'http://ia.imdb.com/media/imdb/01/I/62/17/38m.jpg');
+
+insert into movies values (872007, 'Man on Fire', 2001, 'Tony Scott',
+'http://ia.imdb.com/media/imdb/01/I/83/85/28m.jpg',
+'http://justmovietrailers.com/video/2838/man_on_fire_trailer.html');
+
+insert into stars values (872007, 'Christopher', 'Walken', '1943-3-31',
+'http://ia.imdb.com/media/imdb/01/I/13/35/12m.jpg');
+
+insert into movies values (872008, 'The Stepford Wives', 2004, 'Frank Oz',
+'http://ia.imdb.com/media/imdb/01/I/56/86/48m.jpg',
+'http://movies.yahoo.com/shop?d=hv&id=1808411987&cf=trailer&intl=us');
+
+insert into stars values (872008, 'Nicole', 'Kidman', '1967-6-20',
+'http://ia.imdb.com/media/imdb/01/I/42/45/38m.jpg');
+
+insert into movies values (872009, 'Eyes Wide Shut', 1999, 'Stanley
+Kubrick', 'http://ia.imdb.com/media/imdb/01/I/99/82/85m.jpg',
+'http://www.geocities.com/hollywood/academy/6067/movf1.html');
+
+insert into stars values (872009, 'Tom', 'Cruise', '1962-7-3',
+'http://ia.imdb.com/media/imdb/01/I/51/45/38m.jpg');
+
+insert into movies values (872010, 'Collateral', 2004, 'Michael Mann',
+'http://ia.imdb.com/media/imdb/01/I/71/92/28m.jpg',
+'http://justmovietrailers.com/video/4216/collateral_trailer.html');
+
+insert into stars values (872010, 'Jamie', 'Fox', '1967-12-13',
+'http://ia.imdb.com/media/imdb/01/I/21/55/12m.jpg');
+
+insert into movies values (872011, 'Ray', 2004, 'Taylor Hackford',
+'http://ia.imdb.com/media/imdb/01/I/25/61/38m.jpg',
+'http://ca.movies.yahoo.com/movies/feature/ray.html');
+
+insert into stars values (872011, 'Kerry', 'Washington', '1977-1-5',
+'http://ia.imdb.com/media/imdb/01/I/96/87/16m.jpg');
+
+insert into movies values (872012, 'Bad Company', 2002, 'Joel Schumacher',
+'http://ia.imdb.com/media/imdb/01/I/47/82/11m.jpg',
+'http://www.acommecinema.com/dossier/02/eteus02/films/badcompagny.htm');
+
+insert into stars_in_movies values (872001, 872001);
+
+insert into stars_in_movies values (872002, 872002);
+
+insert into stars_in_movies values (872003, 872003);
+
+insert into stars_in_movies values (872003, 872004);
+
+insert into stars_in_movies values (872004, 872004);
+
+insert into stars_in_movies values (872004, 872005);
+
+insert into stars_in_movies values (872005, 872005);
+
+insert into stars_in_movies values (872005, 872006);
+
+insert into stars_in_movies values (872006, 872006);
+
+insert into stars_in_movies values (872006, 872007);
+
+insert into stars_in_movies values (872007, 872007);
+
+insert into stars_in_movies values (872007, 872008);
+
+insert into stars_in_movies values (872008, 872008);
+
+insert into stars_in_movies values (872008, 872009);
+
+insert into stars_in_movies values (872009, 872009);
+
+insert into stars_in_movies values (872009, 872010);
+
+insert into stars_in_movies values (872010, 872010);
+
+insert into stars_in_movies values (872010, 872011);
+
+insert into stars_in_movies values (872011, 872011);
+
+insert into stars_in_movies values (872011, 872012);
+
+insert into genres values (872001, 'Action');
+
+insert into genres values (872002, 'Adventure');
+
+insert into genres values (872003, 'Comedy');
+
+insert into genres values (872004, 'Crime/Gangster');
+
+insert into genres values (872005, 'Drama');
+
+insert into genres values (872006, 'Epics/Historical');
+
+insert into genres values (872007, 'Horror');
+
+insert into genres values (872008, 'Musicals');
+
+insert into genres values (872009, 'Science Fiction');
+
+insert into genres values (872010, 'War');
+
+insert into genres values (872011, 'Westerns');
+
+insert into genres values (872012, 'Family');
+
+insert into genres_in_movies values (872001, 872002);
+
+insert into genres_in_movies values (872004, 872001);
+
+insert into genres_in_movies values (872004, 872001);
+
+insert into genres_in_movies values (872003, 872002);
+
+insert into genres_in_movies values (872012, 872002);
+
+insert into genres_in_movies values (872012, 872003);
+
+insert into genres_in_movies values (872003, 872003);
+
+insert into genres_in_movies values (872003, 872004);
+
+insert into genres_in_movies values (872003, 872005);
+
+insert into genres_in_movies values (872001, 872005);
+
+insert into genres_in_movies values (872004, 872005);
+
+insert into genres_in_movies values (872005, 872006);
+
+insert into genres_in_movies values (872004, 872006);
+
+insert into genres_in_movies values (872001, 872007);
+
+insert into genres_in_movies values (872005, 872007);
+
+insert into genres_in_movies values (872004, 872007);
+
+insert into genres_in_movies values (872003, 872008);
+
+insert into genres_in_movies values (872005, 872008);
+
+insert into genres_in_movies values (872005, 872009);
+
+insert into genres_in_movies values (872001, 872010);
+
+insert into creditcards values (5728690461872001, 'John Smith', '2008-01-19');
+
+insert into creditcards values (5728690461872002, 'Ben Stine', '2009-02-18');
+
+insert into creditcards values (5728690461872003, 'James Irvine', '2006-03-17');
+
+insert into creditcards values (5728690461872004, 'Robert Clinton',
+'2005-04-16');
+
+insert into creditcards values (5728690461872005, 'Bob Poll', '2007-05-15');
+
+insert into creditcards values (5728690461872006, 'Wayne Johnson', '2009-06-14');
+
+insert into creditcards values (5728690461872007, 'Dick VanDick', '2008-07-13');
+
+insert into creditcards values (5728690461872008, 'Steven Mar', '2007-08-12');
+
+insert into creditcards values (5728690461872009, 'Joe Schmo', '2009-09-11');
+
+insert into creditcards values (5728690461872010, 'Mario Lopizo', '2006-10-10');
+
+insert into creditcards values (5728690461872011, 'Brad Pity', '2005-11-09');
+
+insert into creditcards values (5728690461872012, 'Mark Anthony', '2007-12-08');
+
+insert into creditcards values (5728690461872013, 'Ernest Chan', '2009-01-07');
+
+insert into creditcards values (5728690461872014, 'Henry Pho', '2010-02-06');
+
+insert into creditcards values (5728690461872015, 'Roger Tee', '2009-03-05');
+
+insert into creditcards values (5728690461872016, 'Alan Wong', '2007-04-04');
+
+insert into creditcards values (5728690461872017, 'Aaron Carter', '2008-05-03');
+
+insert into creditcards values (5728690461872018, 'Clark Kent', '2007-06-02');
+
+insert into creditcards values (5728690461872019, 'Jose Cuervo', '2008-07-01');
+
+insert into creditcards values (5728690461872020, 'Ken Doll', '2009-08-20');
+
+insert into customers values (872001, 'John', 'Smith', 5728690461872001, '123 Fake
+st. Alhambra, CA, 91803', 'Jsmith@mail.com', 'password1');
+
+insert into customers values (872002, 'Ben', 'Stine', 5728690461872002, '123 Alpine
+way. Montebello, CA, 91456', 'Bstine@mail.com', 'password2');
+
+insert into customers values (872003, 'James', 'Irvine', 5728690461872003, '123
+Naple ave. san Gabriel, CA, 94585', 'Jirvine@mail.com', 'password3');
+
+insert into customers values (872004, 'Robert', 'Clinton', 5728690461872004, '123
+Street st. East Los Angeles, CA, 95132', 'Rclinton@mail.com',
+'password4');
+
+insert into customers values (872005, 'Bob', 'Poll', 5728690461872005, '123 New
+st. West Los Angeles, CA, 94865', 'Bpoll@mail.com', 'password5');
+
+insert into customers values (872006, 'Wayne', 'Johnson', 5728690461872006, '123 Old
+st. Los Angeles, CA, 91587', 'Wjohnson@mail.com', 'password6');
+
+insert into customers values (872007, 'Dick', 'VanDick', 5728690461872007, '123
+Roger st. Irvine, CA, 96523', 'Dvandick@mail.com', 'password7');
+
+insert into customers values (872008, 'Steven', 'Mar', 5728690461872008, '123 Apple
+st. Anaheim, CA, 94785', 'Smar@mail.com', 'password8');
+
+insert into customers values (872009, 'Joe', 'Schmo', 5728690461872009, '123 Contest
+st. Fullerton, CA, 94562', 'JSchmo@mail.com', 'password9');
+
+insert into customers values (872010, 'Mario', 'Lopizo', 5728690461872010, '123
+Revenue st. Costa Mesa, CA, 91478', 'Mlopizo@mail.com', 'password10');
+
+insert into customers values (872011, 'Brad', 'Pity', 5728690461872011, '123 Money
+st. Santa Ana, CA, 94562', 'Bpity@mail.com', 'password11');
+
+insert into customers values (872012, 'Mark', 'Anthony', 5728690461872012, '123
+Corona st. Arcadia, CA, 96542', 'Manthony@mail.com', 'password12');
+
+insert into customers values (872013, 'Ernest', 'Chan', 5728690461872013, '123 New
+werk st. Monterey Park, CA, 99875', 'Echan@mail.com', 'password13');
+
+insert into customers values (872014, 'Henry', 'Pho', 5728690461872014, '123 Citadel
+st. Covina, CA, 97895', 'Hpho@mail.com', 'password14');
+
+insert into customers values (872015, 'Roger', 'Tee', 5728690461872015, '123 Fast
+st. Corona, CA, 91234', 'Rtee@mail.com', 'password15');
+
+insert into customers values (872016, 'Alan', 'Wong', 5728690461872016, '123 Slow
+st. Ontario, CA, 93264', 'Awong@mail.com', 'password16');
+
+insert into customers values (872017, 'Aaron', 'Carter', 5728690461872017, '123
+Strange st. Monte Clair, CA, 98526', 'Acarter@mail.com', 'password17');
+
+insert into customers values (872018, 'Clark', 'Kent', 5728690461872018, '123 Cool
+st. Torrence, CA, 92548', 'Ckent@mail.com', 'password18');
+
+insert into customers values (872019, 'Jose', 'Cuervo', 5728690461872019, '123
+Perfect st. Rosemead, CA, 96328', 'Jcuervo@mail.com', 'password19');
+
+insert into customers values (872020, 'Ken', 'Doll', 5728690461872020, '123 Ugly
+st. West covina, CA, 91235', 'Kdoll@mail.com', 'password20');
+
+insert into sales values (872001, 872001, '2000-06-11 15:48:12.80-04');
+
+insert into sales values (872002, 872002, '2005-01-12 13:48:12.80-04');
+
+insert into sales values (872003, 872003, '2005-02-13 12:48:12.80-04');
+
+insert into sales values (872004, 872004, '2005-03-14 11:48:12.80-04');
+
+insert into sales values (872005, 872005, '2005-04-15 10:48:12.80-04');
+
+insert into sales values (872006, 872006, '2005-05-16 16:48:12.80-04');
+
+insert into sales values (872007, 872007, '2005-06-17 17:48:12.80-04');
+
+insert into sales values (872008, 872008, '2005-07-18 18:48:12.80-04');
+
+insert into sales values (872009, 872009, '2005-08-19 19:48:12.80-04');
+
+insert into sales values (872010, 872010, '2005-09-20 20:48:12.80-04');
+
+insert into sales values (872011, 872011, '2005-10-21 09:48:12.80-04');
+
+insert into sales values (872012, 872012, '2005-11-22 08:48:12.80-04');
+
+insert into sales values (872013, 872001, '2005-12-23 07:48:12.80-04');
+
+insert into sales values (872014, 872002, '2005-01-24 06:48:12.80-04');
+
+insert into sales values (872015, 872003, '2005-02-25 05:48:12.80-04');
+
+insert into sales values (872016, 872004, '2005-03-26 04:48:12.80-04');
+
+insert into sales values (872017, 872005, '2005-04-27 03:48:12.80-04');
+
+insert into sales values (872018, 872006, '2005-05-09 02:48:12.80-04');
+
+insert into sales values (872019, 872007, '2005-06-08 01:48:12.80-04');
+
+insert into sales values (872020, 872008, '2005-07-07 04:48:12.80-04');
+
+
+
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788001,'Meg','Ryan',DATE
+'1961-11-19','http://movies.yahoo.com/shop?d=hc&id=1800017434&cf=pg&photoid=35058&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788002,'Robin','Williams',DATE
+'1952-07-21','http://movies.yahoo.com/shop?d=hc&id=1800013042&cf=pg&photoid=503126&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788003,'Russell','Crowe',DATE
+'1964-04-07','http://movies.yahoo.com/shop?d=hc&id=1800019188&cf=pg&photoid=500201&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788004,'Nicole','Kidman',DATE
+'1967-06-20','http://movies.yahoo.com/shop?d=hc&id=1800018939&cf=pg&photoid=171617&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788005,'Denzel','Washington',DATE
+'1954-12-28','http://movies.yahoo.com/shop?d=hc&id=1800021631&cf=pg&photoid=538120&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788006,'Matt','Damon',DATE
+'1970-10-08','http://movies.yahoo.com/shop?d=hc&id=1800020155&cf=pg&photoid=537115&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788007,'Angelina','Jolie',DATE
+'1975-06-04','http://movies.yahoo.com/shop?d=hc&id=1800019275&cf=pg&photoid=551682&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788008,'Ashley','Judd',DATE
+'1968-04-19','http://movies.yahoo.com/shop?d=hc&id=1800018868&cf=pg&photoid=38137&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788009,'Tobey','Maguire',DATE
+'1975-06-27','http://movies.yahoo.com/shop?d=hc&id=1800019261&cf=pg&photoid=428903&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788010,'Tom','Hanks',DATE
+'1956-07-09','http://movies.yahoo.com/shop?d=hc&id=1800010392&cf=pg&photoid=531737&intl=us');
+insert into stars(id,first_name,last_name,dob,photo_url) values
+(788011,'Kate','Hudson',DATE
+'1979-04-19','http://movies.yahoo.com/shop?d=hc&id=1800018574&cf=pg&photoid=557679&intl=us');
+
+
+insert into movies (id, title, year, director, banner_url,
+trailer_url) values (788001, 'When Harry Met Sally', 1989, 'Rob Reiner',
+'http://www.mgm.com/whenharrymetsally/',
+'http://www.mgm.com/title_clip.do?title_star=WHENHARR');
+insert into movies (id, title, year, director, banner_url,
+trailer_url) values (788002, 'Being Human', 1994, 'Bill Forsyth', null,
+null);
+insert into movies (id, title, year, director, banner_url,
+trailer_url) values (788003, 'American History X', 1998, 'Tony Kaye',
+'http://www.newline.com/sites/historyx/','www.newline.com/sites/historyx/highlow/highpath/filmclips/trailer.html');
+insert into movies (id, title, year, director, banner_url,
+trailer_url) values (788004, 'Bone Collector', 1999, 'Phil
