@@ -15,13 +15,14 @@ public class EmployeeAccessFrame extends JFrame
 	
 	public EmployeeAccessFrame()
 	{		
-		super("Employee Access for Fabflix");
+		super("Employee Access - Fabflix");
 		try {
 			Class.forName("org.postgresql.Driver").newInstance();
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
 		setSize(400, 350);
+		setResizable(false);
 		addWindowListener(new WindowAdapter() {   // anonymous inner class
             public void windowClosing(WindowEvent e) {
             	exitSystem();
@@ -115,6 +116,7 @@ public class EmployeeAccessFrame extends JFrame
 		
 	}
 
+	//this is completed, use it as an example for others
 	public void AdvancedSql() {
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
@@ -181,10 +183,9 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((id.getText().length() > 0))
 				{
-					Statement update;
 					try 
 					{
-						update = connection.createStatement();
+						Statement update = connection.createStatement();
 						Integer retID = update.executeUpdate("delete from customers where id = " + id.getText());
 						employeeAccessDialog(retID.toString());
 					}
@@ -425,7 +426,7 @@ public class EmployeeAccessFrame extends JFrame
             	trailerUrl.setText("");
             }
         });
-		contentPane.add(new JLabel("Enter title"));
+		contentPane.add(new JLabel("Enter title of movie"));
 		contentPane.add(title);
 		contentPane.add(new JLabel("Enter year"));
 		contentPane.add(year);
