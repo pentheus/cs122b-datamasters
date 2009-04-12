@@ -181,7 +181,19 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((id.getText().length() > 0))
 				{
-					//stuff to get from database 
+					Statement update;
+					try 
+					{
+						update = connection.createStatement();
+						Integer retID = update.executeUpdate("delete from customers where id = " + id.getText());
+						employeeAccessDialog(retID.toString());
+					}
+					catch (SQLException e1) 
+					{
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
