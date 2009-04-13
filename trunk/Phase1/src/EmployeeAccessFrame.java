@@ -184,14 +184,13 @@ public class EmployeeAccessFrame extends JFrame
 				if ((id.getText().length() > 0))
 				{
 					try 
-					{
+					{	//Still need to test.
 						Statement update = connection.createStatement();
 						Integer retID = update.executeUpdate("delete from customers where id = " + id.getText());
 						employeeAccessDialog(retID.toString());
 					}
 					catch (SQLException e1) 
 					{
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 						employeeAccessDialog("Query Failed!");
 					}
@@ -233,7 +232,19 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((id.getText().length() > 0))
 				{
-					//stuff to get from database 
+					Statement update;
+					try 
+					{	//Still need to test.
+						update = connection.createStatement();
+						Integer retID = update.executeUpdate("delete from stars where id = " + id.getText());
+						employeeAccessDialog(retID.toString());
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
+							
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -272,7 +283,17 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((id.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try 
+					{	//Still need to test.
+						Statement update = connection.createStatement();
+						Integer retID = update.executeUpdate("delete from movies where id = " + id.getText());
+						employeeAccessDialog(retID.toString());
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -311,7 +332,17 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((id.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try 
+					{	//Still need to test.
+						Statement update = connection.createStatement();
+						Integer retID = update.executeUpdate("delete from genre where id = " + id.getText());
+						employeeAccessDialog(retID.toString());
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -353,7 +384,18 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((starName.getText().length() > 0) || (starID.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try 
+					{	//I'm not really sure how to do an insert for queries.
+						Statement insert = connection.createStatement();
+						insert.executeUpdate("insert title = " + starName.getText() + "and starID = " +
+											 starID.getText());
+						employeeAccessDialog("Query Sucessful!");
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -407,7 +449,18 @@ public class EmployeeAccessFrame extends JFrame
             	//do actual checking later
 				if ((title.getText().length() > 0) && (directorLastName.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try 
+					{	//I'm not really sure how to do an insert for queries.
+						Statement insert = connection.createStatement();
+						insert.executeUpdate("insert title = " + title.getText() + "and directorLastName = " +
+											 directorLastName.getText());
+						employeeAccessDialog("Query Sucessful!");
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -466,7 +519,18 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((firstName.getText().length() > 0) && (ccID.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try 
+					{	//I'm not really sure how to do an insert for queries.
+						Statement insert = connection.createStatement();
+						insert.executeUpdate("insert firstName = " + firstName.getText() + "and ccID = " +
+											 ccID.getText());
+						employeeAccessDialog("Query Sucessful!");
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -523,7 +587,18 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((firstName.getText().length() > 0) && (dob.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try 
+					{	//I'm not really sure how to do an insert for queries.
+						Statement insert = connection.createStatement();
+						insert.executeUpdate("insert firstName = " + firstName.getText() + "and dob = " +
+											 dob.getText());
+						employeeAccessDialog("Query Sucessful!");
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -573,7 +648,31 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((lastName.getText().length() > 0) || (starID.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try
+					{	//Not sure if I did this right.
+						Statement getGenre = connection.createStatement();
+						ResultSet printGenre = getGenre.executeQuery("select firstName and lastName and starID from genres ");
+						
+						System.out.println("The results of the query");
+						ResultSetMetaData metadata = printGenre.getMetaData();
+						
+						for (int i = 1; i <= metadata.getColumnCount(); i++)
+							System.out.println("Type of column "+ i + " is " + metadata.getColumnTypeName(i));
+
+						while (printGenre.next())
+						{
+							System.out.println("Name = " + printGenre.getString(1) + printGenre.getString(2));
+							System.out.println("starID = " + printGenre.getInt(3));
+							System.out.println();
+						}
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
+					
+					
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -620,7 +719,29 @@ public class EmployeeAccessFrame extends JFrame
             {
 				if ((lastName.getText().length() > 0) || (starID.getText().length() > 0))
 				{
-					//stuff to get from database 
+					try
+					{	//Not sure if I did this right.
+						Statement getMovie = connection.createStatement();
+						ResultSet printMovie = getMovie.executeQuery("select firstName and lastName and starID from Movies");
+						
+						System.out.println("The results of the query");
+						ResultSetMetaData metadata = printMovie.getMetaData();
+						
+						for (int i = 1; i <= metadata.getColumnCount(); i++)
+							System.out.println("Type of column "+ i + " is " + metadata.getColumnTypeName(i));
+
+						while (printMovie.next())
+						{
+							System.out.println("Name = " + printMovie.getString(1) + printMovie.getString(2));
+							System.out.println("starID = " + printMovie.getInt(3));
+							System.out.println();
+						}
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					} 
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
