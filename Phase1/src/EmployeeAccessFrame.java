@@ -639,32 +639,61 @@ public class EmployeeAccessFrame extends JFrame
 		
 	    final JTextField firstName = new JTextField(30);		
 		final JTextField lastName = new JTextField(30);	
-		final JTextField starID = new JTextField(30);	
+		final JTextField starIdTextfield = new JTextField(30);	
 		
 		JButton get = new JButton("Get genres");
 		JButton clear = new JButton("Clear");
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-				if ((lastName.getText().length() > 0) || (starID.getText().length() > 0))
+				if ((lastName.getText().length() > 0) || (starIdTextfield.getText().length() > 0))
 				{
 					try
-					{	//Not sure if I did this right.
-						Statement getGenre = connection.createStatement();
-						ResultSet printGenre = getGenre.executeQuery("select firstName and lastName and starID from genres ");
-						
-						System.out.println("The results of the query");
-						ResultSetMetaData metadata = printGenre.getMetaData();
-						
-						for (int i = 1; i <= metadata.getColumnCount(); i++)
-							System.out.println("Type of column "+ i + " is " + metadata.getColumnTypeName(i));
-
-						while (printGenre.next())
+					{	
+						String starId = "";
+						if((lastName.getText().length() > 0 && (firstName.getText().length() > 0)))
 						{
-							System.out.println("Name = " + printGenre.getString(1) + printGenre.getString(2));
-							System.out.println("starID = " + printGenre.getInt(3));
-							System.out.println();
+							Statement getName = connection.createStatement();
+							ResultSet result = getName.executeQuery("select * from stars where " +
+							"first_name = '" + firstName.getText() + "' and last_name = '" + 
+							lastName.getText() + "'");
+							
+							while(result.next())
+							{
+								Integer id = result.getInt(1); 
+								starId = id.toString();
+							}
 						}
+						if(starIdTextfield.getText().length() > 0)
+						{	
+							starId = starIdTextfield.getText();
+						}
+						String genres = "";
+						Statement getID = connection.createStatement();
+						System.out.println(starIdTextfield.getText());
+						ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
+								+ starId);
+						while(result.next())
+						{
+							Statement getGenreID = connection.createStatement();
+							ResultSet result1 = getGenreID.executeQuery("select * from genres_in_movies where " +
+							"movie_id =" + result.getInt(2));
+							
+							while(result1.next())
+							{
+								Statement getGenre = connection.createStatement();
+								ResultSet result2 = getGenre.executeQuery("select * from genres where " +
+								"id =" + result1.getInt(1));
+								
+								while(result2.next())
+								{
+									genres += result2.getString(2) + "\n\r";
+								}
+							}
+
+						employeeAccessDialog(genres);
+						}
+						
 					}
 					catch (SQLException e1) 
 					{
@@ -685,7 +714,7 @@ public class EmployeeAccessFrame extends JFrame
             {
             	firstName.setText("");
             	lastName.setText("");
-            	starID.setText("");
+            	starIdTextfield.setText("");
             }
         });
 		contentPane.add(new JLabel("Enter the star's first name and..."));
@@ -693,7 +722,7 @@ public class EmployeeAccessFrame extends JFrame
 		contentPane.add(new JLabel("last name; or..."));
 		contentPane.add(lastName);
 		contentPane.add(new JLabel("the star's ID"));
-		contentPane.add(starID);
+		contentPane.add(starIdTextfield);
 		contentPane.add(get);
 		contentPane.add(clear);
 	    
@@ -728,8 +757,7 @@ public class EmployeeAccessFrame extends JFrame
 						ResultSetMetaData metadata = printMovie.getMetaData();
 						
 						for (int i = 1; i <= metadata.getColumnCount(); i++)
-							System.out.println("Type of column "+ i + " is " + metadata.getColumnTypeName(i));
-
+						
 						while (printMovie.next())
 						{
 							System.out.println("Name = " + printMovie.getString(1) + printMovie.getString(2));
