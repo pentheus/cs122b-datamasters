@@ -590,7 +590,7 @@ public class EmployeeAccessFrame extends JFrame
 					try 
 					{	//I'm not really sure how to do an insert for queries.
 						Statement insert = connection.createStatement();
-						insert.executeUpdate("insert firstName = " + firstName.getText() + "and dob = " +
+						insert.executeUpdate("insert firstName = '" + firstName.getText() + "' and dob = " +
 											 dob.getText());
 						employeeAccessDialog("Query Sucessful!");
 					}
@@ -663,6 +663,7 @@ public class EmployeeAccessFrame extends JFrame
 								Integer id = result.getInt(1); 
 								starId = id.toString();
 							}
+							//System.out.println(starId);
 						}
 						if(starIdTextfield.getText().length() > 0)
 						{	
@@ -670,7 +671,6 @@ public class EmployeeAccessFrame extends JFrame
 						}
 						String genres = "";
 						Statement getID = connection.createStatement();
-						System.out.println(starIdTextfield.getText());
 						ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
 								+ starId);
 						while(result.next())
@@ -739,37 +739,61 @@ public class EmployeeAccessFrame extends JFrame
 		
 	    final JTextField firstName = new JTextField(30);		
 		final JTextField lastName = new JTextField(30);	
-		final JTextField starID = new JTextField(30);	
+		final JTextField starIdTextfield = new JTextField(30);	
 		
 		JButton get = new JButton("Get movies");
 		JButton clear = new JButton("Clear");
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-				if ((lastName.getText().length() > 0) || (starID.getText().length() > 0))
+				if ((lastName.getText().length() > 0) || (starIdTextfield.getText().length() > 0))
 				{
 					try
-					{	//Not sure if I did this right.
-						Statement getMovie = connection.createStatement();
-						ResultSet printMovie = getMovie.executeQuery("select firstName and lastName and starID from Movies");
-						
-						System.out.println("The results of the query");
-						ResultSetMetaData metadata = printMovie.getMetaData();
-						
-						for (int i = 1; i <= metadata.getColumnCount(); i++)
-						
-						while (printMovie.next())
+					{	
+						String starId = "";
+						if((lastName.getText().length() > 0 && (firstName.getText().length() > 0)))
 						{
-							System.out.println("Name = " + printMovie.getString(1) + printMovie.getString(2));
-							System.out.println("starID = " + printMovie.getInt(3));
-							System.out.println();
+							Statement getName = connection.createStatement();
+							ResultSet result = getName.executeQuery("select * from stars where " +
+							"first_name = '" + firstName.getText() + "' and last_name = '" + 
+							lastName.getText() + "'");
+							
+							while(result.next())
+							{
+								Integer id = result.getInt(1); 
+								starId = id.toString();
+							}
+							//System.out.println(starId);
 						}
+						if(starIdTextfield.getText().length() > 0)
+						{	
+							starId = starIdTextfield.getText();
+						}
+						
+						String movies = "";
+						Statement getID = connection.createStatement();
+						ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
+								+ starId);
+						while(result.next())
+						{
+							Statement getMovieID = connection.createStatement();
+							ResultSet result1 = getMovieID.executeQuery("select * from movies where " +
+							"id =" + result.getInt(2));
+							
+							while(result1.next())
+							{
+								movies += result1.getString(2) + "\n\r";
+							}
+
+						employeeAccessDialog(movies);
+						}
+						
 					}
 					catch (SQLException e1) 
 					{
 						e1.printStackTrace();
 						employeeAccessDialog("Query Failed!");
-					} 
+					}
 				}
 				else
 					Toolkit.getDefaultToolkit().beep();  // signal error
@@ -782,7 +806,7 @@ public class EmployeeAccessFrame extends JFrame
             {
             	firstName.setText("");
             	lastName.setText("");
-            	starID.setText("");
+            	starIdTextfield.setText("");
             }
         });
 		contentPane.add(new JLabel("Enter the star's first name and..."));
@@ -790,7 +814,7 @@ public class EmployeeAccessFrame extends JFrame
 		contentPane.add(new JLabel("last name; or..."));
 		contentPane.add(lastName);
 		contentPane.add(new JLabel("the star's ID"));
-		contentPane.add(starID);
+		contentPane.add(starIdTextfield);
 		contentPane.add(get);
 		contentPane.add(clear);
 	    
