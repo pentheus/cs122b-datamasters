@@ -390,7 +390,7 @@ public class EmployeeAccessFrame extends JFrame
 					try 
 					{	//I'm not really sure how to do an insert for queries.
 						Statement insert = connection.createStatement();
-						insert.executeUpdate("insert title = " + starName.getText() + "and starID = " +
+						insert.executeUpdate("INSERT INTO stars VALUES (DEFAULT," + starName.getText() + "and starID = " +
 											 starID.getText());
 						employeeAccessDialog("Query Sucessful!");
 					}
