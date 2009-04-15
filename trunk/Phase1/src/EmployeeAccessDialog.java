@@ -11,33 +11,9 @@ public class EmployeeAccessDialog extends JDialog
 	
 	static final long serialVersionUID = 0;
 	
-	public EmployeeAccessDialog(JFrame parent, double result1)
-	{
-		super(parent, "Employee Access for Fabflix", true);
-		JPanel contentPane1 = new JPanel();
-		contentPane1.setLayout(new BorderLayout());
-		setSize( 250, 120 );
-		Double i = result1;
-	    
-	    result = new JLabel(i.toString());
-	    contentPane1.add(result, BorderLayout.PAGE_START);
-	    
-	    JButton okButton = new JButton("OK");
-	    contentPane1.add(okButton, BorderLayout.PAGE_END);
-	    
-	    setContentPane(contentPane1);
-	    
-		this.addWindowListener( new MyWindowAdapter() );
-		
-		ButtonListener buttonListener = new ButtonListener(okButton);
-		okButton.addActionListener(buttonListener);
-		
-		setVisible(true);
-	}
-	
 	public EmployeeAccessDialog(JFrame parent, String s)
 	{
-		super(parent, "Employee Access for Fabflix", true);
+		super(parent, "Employee Access Results", true);
 		JPanel contentPane = new JPanel();
 		contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.PAGE_AXIS));
 		setSize( 250, 120 );
