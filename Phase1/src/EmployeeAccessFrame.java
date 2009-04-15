@@ -181,7 +181,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void deleteCustomer() {// TODO needs to "Deal Nicely"
+	public void deleteCustomer() {
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -196,7 +196,8 @@ public class EmployeeAccessFrame extends JFrame
 				if ((id.getText().length() > 0))
 				{
 					try 
-					{	//Still need to test.
+					{	//Does it need to deal nicely Bret? I remember you telling me that
+						//This does not need extra programming or something?
 						Statement update = connection.createStatement();
 						Integer retID = update.executeUpdate("delete from customers where id = " + id.getText());
 						employeeAccessDialog(retID.toString());
@@ -230,7 +231,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void deleteStar() {// TODO Needs to "Deal Nicely"
+	public void deleteStar() {
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -246,13 +247,27 @@ public class EmployeeAccessFrame extends JFrame
 				{
 					Statement update;
 					try 
-					{	//Still need to test.
+					{	
 						//You need to create a statement that selects the star_id from the stars_in_movies
 						//db to see if it exists before you delete it from the stars db
 						//if it exists, tell the user that it cannot be deleted because it is associated
-						update = connection.createStatement();
-						Integer retID = update.executeUpdate("delete from stars where id = " + id.getText());
-						employeeAccessDialog(retID.toString());
+						boolean movieExist = false;
+						Statement checkStar = connection.createStatement();
+						ResultSet result = checkStar.executeQuery("SELECT star_id FROM stars_in_movies");
+						while(result.next())
+						{
+							movieExist = true;
+						}
+						if(movieExist)
+						{
+						employeeAccessDialog("Cannot be deleted because it is associated with a movie!");
+						}
+						else
+						{
+							update = connection.createStatement();
+							Integer retID = update.executeUpdate("delete from stars where id = " + id.getText());
+							employeeAccessDialog(retID.toString());
+						}
 					}
 					catch (SQLException e1) 
 					{
@@ -333,7 +348,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();	
 	}
 
-	public void deleteGenre() {// TODO needs to "Deal Nicely"
+	public void deleteGenre() {
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -348,10 +363,24 @@ public class EmployeeAccessFrame extends JFrame
 				if ((id.getText().length() > 0))
 				{
 					try 
-					{	//Still need to test.
-						Statement update = connection.createStatement();
-						Integer retID = update.executeUpdate("delete from genre where id = " + id.getText());
-						employeeAccessDialog(retID.toString());
+					{	
+						boolean movieExist = false;
+						Statement checkStar = connection.createStatement();
+						ResultSet result = checkStar.executeQuery("SELECT genres_id FROM genres_in_movies");
+						while(result.next())
+						{
+							movieExist = true;
+						}
+						if(movieExist)
+						{
+						employeeAccessDialog("Cannot be deleted because it is associated with a movie!");
+						}
+						else
+						{
+							Statement update = connection.createStatement();
+							Integer retID = update.executeUpdate("delete from stars where id = " + id.getText());
+							employeeAccessDialog(retID.toString());
+						}
 					}
 					catch (SQLException e1) 
 					{
@@ -400,7 +429,8 @@ public class EmployeeAccessFrame extends JFrame
 				if ((starName.getText().length() > 0) || (starID.getText().length() > 0))
 				{
 					try 
-					{	//I'm not really sure how to do an insert for queries.
+					{	//I do not know whether or not to use INSERT or UPDATE.. I had a thought that
+						//Maybe we use INSERT INTO movies FROM stars something like that. 
 						Statement insert = connection.createStatement();
 						insert.executeUpdate("INSERT INTO stars VALUES (DEFAULT," + starName.getText() + "and starID = " +
 											 starID.getText());
@@ -444,7 +474,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void insertMovie() {// TODO
+	public void insertMovie() {
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -465,10 +495,12 @@ public class EmployeeAccessFrame extends JFrame
 				if ((title.getText().length() > 0) && (directorLastName.getText().length() > 0))
 				{
 					try 
-					{	//I'm not really sure how to do an insert for queries.
+					{	
 						Statement insert = connection.createStatement();
-						insert.executeUpdate("insert title = " + title.getText() + "and directorLastName = " +
-											 directorLastName.getText());
+						insert.executeUpdate("INSERT INTO movies VALUES(DEFAULT, '" + title.getText() + 
+								"', " + year.getText() + ", '" + directorRestOfName.getText() + "', '" +
+								directorLastName.getText() + "', '" + bannerUrl.getText() + "', '" +
+								trailerUrl.getText() + "')");
 						employeeAccessDialog("Query Sucessful!");
 					}
 					catch (SQLException e1) 
