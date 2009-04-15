@@ -2,6 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
+
 import java.sql.*;
 
 
@@ -52,10 +53,19 @@ public class EmployeeAccessFrame extends JFrame
         NewConnection();
 	}
 	
-	public void employeeAccessDialog()
+	public void employeeAccessTable(Object[][] data,String[] columnNames)
 	{
-			EmployeeAccessDialog r = new EmployeeAccessDialog(this, result);
-			r.isEnabled();
+		JFrame frame = new JFrame("Results Table");
+
+        //Create and set up the content pane.
+        EmployeeAccessTable newContentPane = new EmployeeAccessTable(data, columnNames);
+        newContentPane.setOpaque(true); //content panes must be opaque
+        frame.setContentPane(newContentPane);
+
+        //Display the window.
+        frame.pack();
+        frame.setVisible(true);
+
 	}
 	
 	//use this to print the information out to a dialog box
@@ -778,7 +788,7 @@ public class EmployeeAccessFrame extends JFrame
 				{
 					try
 					{	
-						String starId = "";
+						ArrayList<String> starIds = new ArrayList<String>();
 						if((lastName.getText().length() > 0 && (firstName.getText().length() > 0)))
 						{
 							Statement getName = connection.createStatement();
@@ -789,32 +799,44 @@ public class EmployeeAccessFrame extends JFrame
 							while(result.next())
 							{
 								Integer id = result.getInt(1); 
-								starId = id.toString();
+								starIds.add(id.toString());
 							}
 							//System.out.println(starId);
 						}
 						if(starIdTextfield.getText().length() > 0)
 						{	
-							starId = starIdTextfield.getText();
+							starIds.add(starIdTextfield.getText());
 						}
 						
-						String movies = "";
+						ArrayList<Object[]> movieData = new ArrayList<Object[]>();
 						Statement getID = connection.createStatement();
-						ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
-								+ starId);
-						while(result.next())
+						for(String starId : starIds)
 						{
-							Statement getMovieID = connection.createStatement();
-							ResultSet result1 = getMovieID.executeQuery("select * from movies where " +
-							"id =" + result.getInt(2));
-							
-							while(result1.next())
+							ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
+									+ starId);
+							while(result.next())
 							{
-								movies += result1.getString(2) + "\n\r";
-							}
-
-						employeeAccessDialog(movies);
+								Statement getMovieID = connection.createStatement();
+								ResultSet result1 = getMovieID.executeQuery("select * from movies where " +
+								"id =" + result.getInt(2));
+								
+								while(result1.next())
+								{
+									//the first name is really the last column added
+									Object[] movie = {result1.getString(1),result1.getString(2),result1.getInt(3),result1.getString(4),
+											result1.getString(7),result1.getString(5),result1.getString(6)};
+									movieData.add(movie);
+								}							
 						}
+						
+						}
+						String[] columnNames = {"ID", "Title","Year","Director's Last Name","Director's First Name","Banner URL","Trailer URL"};
+						Object[][] movieDataArray = new Object[movieData.size()][];
+						for(int i = 0; i<movieData.size();i++)
+						{
+							movieDataArray[i] = movieData.get(i);
+						}
+						employeeAccessTable(movieDataArray,columnNames);
 						
 					}
 					catch (SQLException e1) 
@@ -862,99 +884,6 @@ public class EmployeeAccessFrame extends JFrame
 
         pack();
 		repaint();		
-	}
-	
-	public void randomGenerate()
-	{
-		JPanel contentPane = new JPanel();
-        contentPane.setPreferredSize(new Dimension(400, 350));
-        contentPane.setLayout(new FlowLayout());
-        
-		
-	    final JTextField start = new JTextField(30);		
-		final JTextField end = new JTextField(30);	
-		
-		JButton add = new JButton("Calculate");
-		JButton clear = new JButton("Clear");
-		add.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e)
-            {
-				if ((start.getText().length() > 0) && (end.getText().length() > 0))
-				{
-					long range = Integer.valueOf(end.getText()) - Integer.valueOf(start.getText()) + 1;
-				    // compute a fraction of the range, 0 <= frac < range
-				    long fraction = (long)(range * r.nextDouble());
-					result = (int)(fraction + Integer.valueOf(start.getText()));
-					employeeAccessDialog();
-				}
-				else
-					Toolkit.getDefaultToolkit().beep();  // signal error
-            }
-        });
-		
-		
-		clear.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e)
-            {
-            		start.setText("");
-					end.setText("");
-            }
-        });
-		contentPane.add(new JLabel("Enter Lower bound then upper bound"));
-		contentPane.add(start);
-		contentPane.add(end);
-		contentPane.add(add);
-		contentPane.add(clear);
-	    
-		setContentPane(contentPane);
-
-        pack();
-		repaint();
-	}
-	
-	public void powerFunc()
-	{
-		JPanel contentPane = new JPanel();
-        contentPane.setPreferredSize(new Dimension(400, 350));
-        contentPane.setLayout(new FlowLayout());
-        
-		
-	    final JTextField start = new JTextField(30);		
-		final JTextField end = new JTextField(30);	
-		
-		JButton add = new JButton("Calculate");
-		JButton clear = new JButton("Clear");
-		add.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e)
-            {
-				if ((start.getText().length() > 0) && (end.getText().length() > 0))
-				{
-					result = Math.pow(Double.valueOf(start.getText()), Double.valueOf(end.getText()));
-					employeeAccessDialog();
-				}
-				else
-					Toolkit.getDefaultToolkit().beep();  // signal error
-            }
-        });
-		
-		
-		clear.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e)
-            {
-            		start.setText("");
-					end.setText("");
-            }
-        });
-		contentPane.add(new JLabel("Number to the power of"));
-		contentPane.add(start);
-		contentPane.add(end);
-		contentPane.add(add);
-		contentPane.add(clear);
-	    
-		setContentPane(contentPane);
-
-        pack();
-		repaint();
 	}
 	
 	public void run()
