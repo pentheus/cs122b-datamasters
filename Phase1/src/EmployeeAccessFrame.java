@@ -5,6 +5,8 @@ import javax.swing.*;
 
 import java.sql.*;
 
+//For the todo's, look at the beginning of each individual method
+//Also need to comment code, clean up code, and change the connection to ask instead of just connecting
 
 public class EmployeeAccessFrame extends JFrame
 {
@@ -179,7 +181,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void deleteCustomer() {
+	public void deleteCustomer() {// TODO needs to "Deal Nicely"
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -228,7 +230,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void deleteStar() {
+	public void deleteStar() {// TODO Needs to "Deal Nicely"
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -331,7 +333,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();	
 	}
 
-	public void deleteGenre() {
+	public void deleteGenre() {// TODO needs to "Deal Nicely"
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -380,7 +382,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void insertAssocation() {
+	public void insertAssocation() {// TODO
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -390,7 +392,7 @@ public class EmployeeAccessFrame extends JFrame
 		final JTextField movieName = new JTextField(30);	
 		final JTextField movieID = new JTextField(30);
 		
-		JButton get = new JButton("Get Results");
+		JButton get = new JButton("Associate");
 		JButton clear = new JButton("Clear");
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
@@ -442,7 +444,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void insertMovie() {
+	public void insertMovie() {// TODO
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());        
@@ -525,7 +527,7 @@ public class EmployeeAccessFrame extends JFrame
 		final JTextField email = new JTextField(30);	
 		final JTextField password = new JTextField(30);	
 		
-		JButton get = new JButton("Connect");
+		JButton get = new JButton("Insert");
 		JButton clear = new JButton("Clear");
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
@@ -616,7 +618,7 @@ public class EmployeeAccessFrame extends JFrame
 		final JTextField dob = new JTextField(30);	
 		final JTextField photoUrl = new JTextField(30);	
 		
-		JButton get = new JButton("Connect");
+		JButton get = new JButton("Insert");
 		JButton clear = new JButton("Clear");
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
@@ -624,11 +626,11 @@ public class EmployeeAccessFrame extends JFrame
 				if ((firstName.getText().length() > 0) && (dob.getText().length() > 0))
 				{
 					try 
-					{	//I'm not really sure how to do an insert for queries.
+					{
 						
 						Statement insert = connection.createStatement();
-						insert.executeUpdate("insert firstName = '" + firstName.getText() + "' and dob = " +
-											 dob.getText());
+						insert.executeUpdate("INSERT INTO stars VALUES(DEFAULT,'" + firstName.getText() + "', '" + lastName.getText() 
+								+ "', DATE '" + dob.getText() + "', '" + photoUrl.getText()+ "')");
 						
 						employeeAccessDialog("Query Sucessful!");
 					}
@@ -659,7 +661,7 @@ public class EmployeeAccessFrame extends JFrame
 		contentPane.add(lastName);
 		contentPane.add(new JLabel("Enter date of birth"));
 		contentPane.add(dob);
-		contentPane.add(new JLabel("Enter User"));
+		contentPane.add(new JLabel("Enter Photo URL"));
 		contentPane.add(photoUrl);
 		contentPane.add(get);
 		contentPane.add(clear);
@@ -701,13 +703,12 @@ public class EmployeeAccessFrame extends JFrame
 								Integer id = result.getInt(1); 
 								starId = id.toString();
 							}
-							//System.out.println(starId);
 						}
 						if(starIdTextfield.getText().length() > 0)
 						{	
 							starId = starIdTextfield.getText();
 						}
-						String genres = "";
+						ArrayList<Object[]> genres = new ArrayList<Object[]>();
 						Statement getID = connection.createStatement();
 						ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
 								+ starId);
@@ -725,12 +726,20 @@ public class EmployeeAccessFrame extends JFrame
 								
 								while(result2.next())
 								{
-									genres += result2.getString(2) + "\n\r";
+									Object[] genre = {result1.getString(1),result2.getString(2)};
+									genres.add(genre);
 								}
 							}
-
-						employeeAccessDialog(genres);
+							
 						}
+
+						String[] columnNames = {"ID", "Genre"};
+						Object[][] movieDataArray = new Object[genres.size()][];
+						for(int i = 0; i<genres.size();i++)
+						{
+							movieDataArray[i] = genres.get(i);
+						}
+						employeeAccessTable(movieDataArray,columnNames);
 						
 					}
 					catch (SQLException e1) 
@@ -874,7 +883,7 @@ public class EmployeeAccessFrame extends JFrame
 		repaint();		
 	}
 
-	public void getMetadata() {
+	public void getMetadata() {// TODO Try to make a selection box here
 		JPanel contentPane = new JPanel();
         contentPane.setPreferredSize(new Dimension(400, 350));
         contentPane.setLayout(new FlowLayout());     
