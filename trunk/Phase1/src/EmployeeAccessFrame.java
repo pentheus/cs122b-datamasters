@@ -235,6 +235,9 @@ public class EmployeeAccessFrame extends JFrame
 					Statement update;
 					try 
 					{	//Still need to test.
+						//You need to create a statement that selects the star_id from the stars_in_movies
+						//db to see if it exists before you delete it from the stars db
+						//if it exists, tell the user that it cannot be deleted because it is associated
 						update = connection.createStatement();
 						Integer retID = update.executeUpdate("delete from stars where id = " + id.getText());
 						employeeAccessDialog(retID.toString());
@@ -284,7 +287,7 @@ public class EmployeeAccessFrame extends JFrame
 				if ((id.getText().length() > 0))
 				{
 					try 
-					{	//Still need to test.
+					{	
 						Statement update = connection.createStatement();
 						Integer retID = update.executeUpdate("delete from movies where id = " + id.getText());
 						employeeAccessDialog(retID.toString());
@@ -507,7 +510,7 @@ public class EmployeeAccessFrame extends JFrame
 		
 	    final JTextField firstName = new JTextField(30);		
 		final JTextField lastName = new JTextField(30);	
-		final JTextField ccID = new JTextField(30);	
+		final JTextField ccNum = new JTextField(30);	
 		final JTextField address = new JTextField(30);		
 		final JTextField email = new JTextField(30);	
 		final JTextField password = new JTextField(30);	
@@ -517,13 +520,36 @@ public class EmployeeAccessFrame extends JFrame
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-				if ((firstName.getText().length() > 0) && (ccID.getText().length() > 0))
+				if ((firstName.getText().length() > 0) && (ccNum.getText().length() > 0))
 				{
 					try 
-					{	//I'm not really sure how to do an insert for queries.
-						Statement insert = connection.createStatement();
-						insert.executeUpdate("insert firstName = " + firstName.getText() + "and ccID = " +
-											 ccID.getText());
+					{	
+						int ccID = -1;
+						boolean found = false;
+						Statement getCCID = connection.createStatement();
+						ResultSet result = getCCID.executeQuery("SELECT * FROM creditcards WHERE credit_card_number = "
+								+ ccNum.getText());
+						while(result.next())
+						{
+							ccID = result.getInt(4);
+							found = true;
+						}
+						if(found)
+						{
+							Statement insert = connection.createStatement();
+							insert.executeUpdate("INSERT INTO customers VALUES(" + ccID +  ", '" + firstName.getText() + 
+									"', '" + lastName.getText() + "', " + ccNum.getText() + ", '" + 
+									address.getText() + "', '" + email.getText() + "', '" + password.getText() + 
+									"')");
+						}
+						else
+						{
+							Statement insert = connection.createStatement();
+							insert.executeUpdate("INSERT INTO customers VALUES(DEFAULT, '" + firstName.getText() + 
+									"', '" + lastName.getText() + "', " + ccNum.getText() + ", '" + 
+									address.getText() + "', '" + email.getText() + "', '" + password.getText() + 
+									"')");
+						}
 						employeeAccessDialog("Query Sucessful!");
 					}
 					catch (SQLException e1) 
@@ -543,7 +569,7 @@ public class EmployeeAccessFrame extends JFrame
             {
             	firstName.setText("");
             	lastName.setText("");
-				ccID.setText("");
+				ccNum.setText("");
 				address.setText("");
             	email.setText("");
             	password.setText("");
@@ -554,7 +580,7 @@ public class EmployeeAccessFrame extends JFrame
 		contentPane.add(new JLabel("Enter last name"));
 		contentPane.add(lastName);
 		contentPane.add(new JLabel("Enter credit card ID"));
-		contentPane.add(ccID);
+		contentPane.add(ccNum);
 		contentPane.add(new JLabel("Enter address"));
 		contentPane.add(address);
 		contentPane.add(new JLabel("Enter email"));
@@ -589,9 +615,11 @@ public class EmployeeAccessFrame extends JFrame
 				{
 					try 
 					{	//I'm not really sure how to do an insert for queries.
+						
 						Statement insert = connection.createStatement();
 						insert.executeUpdate("insert firstName = '" + firstName.getText() + "' and dob = " +
 											 dob.getText());
+						
 						employeeAccessDialog("Query Sucessful!");
 					}
 					catch (SQLException e1) 
