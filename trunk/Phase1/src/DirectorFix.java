@@ -19,7 +19,7 @@ public class DirectorFix
 			DriverManager.getConnection("jdbc:postgresql://localhost/fabflixs", "testuser", "testpass");
 		
 		Statement select = connection.createStatement();
-		select.executeUpdate("ALTER TABLE movies ADD director_first_name varchar(50)");
+		select.executeUpdate("ALTER TABLE movies ADD director_first_name varchar(50) DEFAULT 'None'");
 
 		Statement select1 = connection.createStatement();
 		ResultSet result = select1.executeQuery("SELECT * FROM movies");

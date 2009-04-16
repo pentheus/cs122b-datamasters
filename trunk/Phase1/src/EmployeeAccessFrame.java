@@ -686,7 +686,7 @@ public class EmployeeAccessFrame extends JFrame
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-				if ((firstName.getText().length() > 0) && (ccNum.getText().length() > 0)
+				if ((ccNum.getText().length() > 0)
 						&& (address.getText().length() > 0) && (email.getText().length() > 0)
 						&& (password.getText().length() > 0) && (lastName.getText().length() > 0))
 				{
@@ -785,7 +785,7 @@ public class EmployeeAccessFrame extends JFrame
 		get.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-				if ((firstName.getText().length() > 0) && (dob.getText().length() > 0)
+				if ((dob.getText().length() > 0)
 						 && (lastName.getText().length() > 0)  && (photoUrl.getText().length() > 0))
 				{
 					try 
