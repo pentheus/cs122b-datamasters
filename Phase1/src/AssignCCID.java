@@ -1,5 +1,9 @@
+//Bret Lowrey and Danny Liu
+//Done for phase 1 of CS122B, Jacobson
+//University of California Irvine, Spring 2009
 import java.sql.*;
 
+//assigns all of the CC ids to fix data that was inputed wrong in the text file
 public class AssignCCID 
 {
 	public static void main(String[] arg) throws Exception
@@ -13,7 +17,7 @@ public class AssignCCID
 			DriverManager.getConnection("jdbc:postgresql://localhost/fabflixs", "testuser", "testpass");
 		
 		Statement select = connection.createStatement();
-		select.executeUpdate("ALTER TABLE creditcards ADD cc_id integer");
+		select.executeUpdate("ALTER TABLE creditcards ADD cc_id SERIAL");
 
 		Statement select1 = connection.createStatement();
 		ResultSet result = select1.executeQuery("SELECT * FROM creditcards");
@@ -58,6 +62,7 @@ public class AssignCCID
 		
 		Statement select8 = connection.createStatement();
 		select8.executeUpdate("ALTER TABLE customers ADD CONSTRAINT cc_id_c foreign key(cc_id) REFERENCES creditcards(cc_id)");
+		
 		System.out.println("Conversion of customers successful");
 	}
 }
