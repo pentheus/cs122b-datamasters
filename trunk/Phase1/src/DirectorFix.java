@@ -1,3 +1,6 @@
+//Bret Lowrey and Danny Liu
+//Done for phase 1 of CS122B, Jacobson
+//University of California Irvine, Spring 2009
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -22,7 +25,6 @@ public class DirectorFix
 		ResultSet result = select1.executeQuery("SELECT * FROM movies");
 		while(result.next())
 		{
-			//System.out.println(result.getString("director_last_name"));
 			String[] split = result.getString("director_last_name").split(" ");	
 			if (split.length>1)
 			{
