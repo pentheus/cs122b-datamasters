@@ -1,4 +1,4 @@
-//Bret Lowrey and Danny Liu
+//Bret Lowrey and Danny (Chih - Hsien) Liu
 //Done for phase 1 of CS122B, Jacobson
 //University of California Irvine, Spring 2009
 
@@ -76,7 +76,7 @@ public class EmployeeAccessFrame extends JFrame
     						boolean movieExist = false;
     						Statement checkMovie = connection.createStatement();
     						//check to see if the movie exists, needed to ensure it isnt deleting something that is associated
-    						ResultSet result = checkMovie.executeQuery("SELECT * FROM stars_in_movies where movie_id = " + movieID);
+    						ResultSet result = checkMovie.executeQuery("SELECT * FROM stars_in_movies WHERE movie_id = " + movieID);
     						while(result.next())
     						{
     							movieExist = true;
@@ -88,7 +88,7 @@ public class EmployeeAccessFrame extends JFrame
     						else
     						{
     							update = connection.createStatement();
-    							update.executeUpdate("delete from movies where id = " + movieID);
+    							update.executeUpdate("DELETE FROM movies WHERE id = " + movieID);
     							employeeAccessDialog("Movie Deleted");
     						}
     					}
@@ -252,7 +252,7 @@ public class EmployeeAccessFrame extends JFrame
 					try 
 					{
 						Statement update = connection.createStatement();
-						update.executeUpdate("delete from customers where id = " + id.getText());
+						update.executeUpdate("DELETE FROM customers WHERE id = " + id.getText());
 						employeeAccessDialog("Customer Deleted");
 					}
 					catch (SQLException e1) 
@@ -304,7 +304,7 @@ public class EmployeeAccessFrame extends JFrame
 					{	
 						boolean movieExist = false;
 						Statement checkStar = connection.createStatement();
-						ResultSet result = checkStar.executeQuery("SELECT * FROM stars_in_movies where star_id = " + id.getText());
+						ResultSet result = checkStar.executeQuery("SELECT * FROM stars_in_movies WHERE star_id = " + id.getText());
 						while(result.next())
 						{
 							movieExist = true;
@@ -316,7 +316,7 @@ public class EmployeeAccessFrame extends JFrame
 						else
 						{
 							update = connection.createStatement();
-							update.executeUpdate("delete from stars where id = " + id.getText());
+							update.executeUpdate("DELETE FROM stars WHERE id = " + id.getText());
 							employeeAccessDialog("Star Deleted");
 						}
 					}
@@ -370,7 +370,7 @@ public class EmployeeAccessFrame extends JFrame
 					{	
 						boolean movieExist = false;
 						Statement checkMovie = connection.createStatement();
-						ResultSet result = checkMovie.executeQuery("SELECT * FROM stars_in_movies where movie_id = " + id.getText());
+						ResultSet result = checkMovie.executeQuery("SELECT * FROM stars_in_movies WHERE movie_id = " + id.getText());
 						while(result.next())
 						{
 							movieExist = true;
@@ -382,7 +382,7 @@ public class EmployeeAccessFrame extends JFrame
 						else
 						{
 							update = connection.createStatement();
-							update.executeUpdate("delete from movies where id = " + id.getText());
+							update.executeUpdate("DELETE FROM movies WHERE id = " + id.getText());
 							employeeAccessDialog("Movie Deleted");
 						}
 					}
@@ -434,7 +434,7 @@ public class EmployeeAccessFrame extends JFrame
 					{	
 						boolean movieExist = false;
 						Statement checkGenre = connection.createStatement();
-						ResultSet result = checkGenre.executeQuery("SELECT * FROM genres_in_movies where genres_id = " + id.getText());
+						ResultSet result = checkGenre.executeQuery("SELECT * FROM genres_in_movies WHERE genres_id = " + id.getText());
 						while(result.next())
 						{
 							movieExist = true;
@@ -446,7 +446,7 @@ public class EmployeeAccessFrame extends JFrame
 						else
 						{
 							Statement update = connection.createStatement();
-							update.executeUpdate("delete from stars where id = " + id.getText());
+							update.executeUpdate("DELETE FROM stars WHERE id = " + id.getText());
 							employeeAccessDialog("Genre deleted");
 						}
 					}
@@ -513,7 +513,7 @@ public class EmployeeAccessFrame extends JFrame
 							if((movieName.getText().length() > 0 ))
 							{
 								Statement getName = connection.createStatement();
-								ResultSet result = getName.executeQuery("select * from movies where " +
+								ResultSet result = getName.executeQuery("SELECT * FROM movies WHERE " +
 								"title = '" + movieName.getText() + "'");
 								
 								while(result.next())
@@ -534,7 +534,7 @@ public class EmployeeAccessFrame extends JFrame
 							if((starLastName.getText().length() > 0 && (starFirstName.getText().length() > 0)))
 							{
 								Statement getName = connection.createStatement();
-								ResultSet result = getName.executeQuery("select * from stars where " +
+								ResultSet result = getName.executeQuery("SELECT * FROM stars WHERE " +
 								"first_name = '" + starFirstName.getText() + "' and last_name = '" + 
 								starLastName.getText() + "'");
 								
@@ -859,7 +859,7 @@ public class EmployeeAccessFrame extends JFrame
 						if((lastName.getText().length() > 0 && (firstName.getText().length() > 0)))
 						{
 							Statement getName = connection.createStatement();
-							ResultSet result = getName.executeQuery("select * from stars where " +
+							ResultSet result = getName.executeQuery("SELECT * FROM stars WHERE " +
 							"first_name = '" + firstName.getText() + "' and last_name = '" + 
 							lastName.getText() + "'");
 							
@@ -876,20 +876,20 @@ public class EmployeeAccessFrame extends JFrame
 						}
 						ArrayList<Object[]> genres = new ArrayList<Object[]>();
 						Statement getID = connection.createStatement();
-						ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
+						ResultSet result = getID.executeQuery("SELECT * FROM stars_in_movies WHERE star_id ="
 								+ starId);
 						//get all of the movies for the star Id
 						while(result.next())
 						{
 							Statement getGenreID = connection.createStatement();
-							ResultSet result1 = getGenreID.executeQuery("select * from genres_in_movies where " +
+							ResultSet result1 = getGenreID.executeQuery("SELECT * FROM genres_in_movies WHERE " +
 							"movie_id =" + result.getInt(2));
 							
 							//finally get the genres from the movies
 							while(result1.next())
 							{
 								Statement getGenre = connection.createStatement();
-								ResultSet result2 = getGenre.executeQuery("select * from genres where " +
+								ResultSet result2 = getGenre.executeQuery("SELECT * FROM genres WHERE " +
 								"id =" + result1.getInt(1));
 								
 								while(result2.next())
@@ -972,7 +972,7 @@ public class EmployeeAccessFrame extends JFrame
 						if((lastName.getText().length() > 0 && (firstName.getText().length() > 0)))
 						{
 							Statement getName = connection.createStatement();
-							ResultSet result = getName.executeQuery("select * from stars where " +
+							ResultSet result = getName.executeQuery("SELECT * FROM stars WHERE " +
 							"first_name = '" + firstName.getText() + "' and last_name = '" + 
 							lastName.getText() + "'");
 							
@@ -992,12 +992,12 @@ public class EmployeeAccessFrame extends JFrame
 						//find all of the associated movies
 						for(String starId : starIds)
 						{
-							ResultSet result = getID.executeQuery("select * from stars_in_movies where star_id ="
+							ResultSet result = getID.executeQuery("SELECT * FROM stars_in_movies WHERE star_id ="
 									+ starId);
 							while(result.next())
 							{
 								Statement getMovieID = connection.createStatement();
-								ResultSet result1 = getMovieID.executeQuery("select * from movies where " +
+								ResultSet result1 = getMovieID.executeQuery("SELECT * FROM movies WHERE " +
 								"id =" + result.getInt(2));
 								
 								while(result1.next())
@@ -1078,7 +1078,7 @@ public class EmployeeAccessFrame extends JFrame
             	try
             	{
             		Statement select = connection.createStatement();
-            		ResultSet result = select.executeQuery("Select * from " + (String) tableList.getSelectedItem());
+            		ResultSet result = select.executeQuery("SELECT * FROM " + (String) tableList.getSelectedItem());
             		ResultSetMetaData metadata = result.getMetaData();
 
             		//get the names of the columns
