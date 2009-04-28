@@ -2,20 +2,20 @@ package tools;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collections;
 
 //TODO clickable sort buttons
 //TODO clickable Genres, Stars
 //TODO Pages, buttons to go between
-public class MovieListGenerator 
+public class BackupOfMovieListGenerator 
 {
 	public static final int RECORDS_PER_PAGE = 20;
 
-	public static String getList(int index, String comparator, String compareDirection)
+	public static String getList(int index)
 	{	
+		ArrayList<String> resultPages = new ArrayList<String>();
+		int records = 0;//used to keep track of each record added to the table
 		
 		Connection connection;
-		ArrayList<Movie> movies = new ArrayList<Movie>();
 		try 
 		{
 			StringBuilder sb = new StringBuilder();
@@ -35,41 +35,26 @@ public class MovieListGenerator
 				sb.append("<th>" + getStars(connection,resultMovies.getString("id")) + "</th>\n");
 				//TODO link button
 				sb.append("<th>" + "<button type='add'>Add</button>" + "</th>\n");
-				movies.add(new Movie(resultMovies.getString("title"), resultMovies.getString("year"), resultMovies.getString("director_first_name"),
-						resultMovies.getString("director_first_name"),getGenres(connection,resultMovies.getString("id")), 
-						getStars(connection,resultMovies.getString("id")), comparator, compareDirection, sb.toString()));
-				sb = new StringBuilder();
+				records++;
+				if((records % RECORDS_PER_PAGE) == 0)
+				{
+					resultPages.add(sb.toString());
+					sb = new StringBuilder();
+				}
 			}
 		} 
 		catch (SQLException e) 
 		{
 			e.printStackTrace();
 		}
-		Collections.sort(movies);
 
-		return getRecords(index, movies);
+		return resultPages.get(index);
 	}
 	
-	private static String getRecords(int index, ArrayList<Movie> movies)
+	private class Movie 
 	{
-		StringBuilder sb = new StringBuilder();
-		int records = 0;
-		ArrayList<String> resultPages = new ArrayList<String>();
 		
-		for(Movie m : movies)
-		{
-			records++;
-			sb.append(m.getRecord());
-			if((records % RECORDS_PER_PAGE) == 0)
-			{
-				resultPages.add(sb.toString());
-				sb = new StringBuilder();
-			}
-		}
-		
-		return resultPages.get(index).toString();
 	}
-	
 	
 	private static String getGenres(Connection connection, String id)
 	{

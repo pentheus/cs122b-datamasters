@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
@@ -7,6 +10,13 @@
 <HTML>
 <BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BGCOLOR="#CFE0EB" TEXT="#000000" LINK="#336699" VLINK="#336699" ALINK="#336699">
 
+<% if(2==3)
+	{%>
+	<%= "This is a java string"%>
+	<%}else
+		{%>
+		<%= "This is not a java string"%>
+	   <%} %>
 <TABLE BORDER=0 WIDTH="100%" CELLPADDING=1 CELLSPACING=0>
 	<TR>
 		<TD ALIGN="CENTER" BGCOLOR="#053560"><a href="http://localhost:8080/Phase2/"><img src="./Img1.jpg" alt="Image Here" width="262" height="130" hspace=0 border=0></a></TD>
