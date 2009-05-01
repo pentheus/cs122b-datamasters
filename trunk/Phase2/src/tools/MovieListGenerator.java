@@ -4,9 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-//TODO clickable sort buttons
 //TODO clickable Genres, Stars
-//TODO Pages, buttons to go between
 public class MovieListGenerator 
 {
 	public static final int RECORDS_PER_PAGE = 20;
@@ -50,6 +48,50 @@ public class MovieListGenerator
 		return getRecords(index, movies);
 	}
 	
+	public static String getGenreList(int index, String comparator, String compareDirection, String genreName)
+	{	
+		
+		Connection connection;
+		ArrayList<Movie> movies = new ArrayList<Movie>();
+		try 
+		{
+			StringBuilder sb = new StringBuilder();
+			connection = DriverManager.getConnection(
+					"jdbc:postgresql://localhost/fabflixs","testuser", "testpass");
+		
+			Statement select = connection.createStatement();
+			ResultSet resultMovies = select.executeQuery("select * from movies");
+			while(resultMovies.next())
+			{
+				String genres = getGenres(connection,resultMovies.getString("id")).toLowerCase();
+				//System.out.println("Genre : " + genreName + "; genres: " + genres);
+				if(genres.contains(genreName))
+				{
+					sb.append("<tr>\n");
+					sb.append("<th>" + resultMovies.getString("title") + "</th>\n");
+					sb.append("<th>" + resultMovies.getString("year") + "</th>\n");
+					sb.append("<th>" + resultMovies.getString("director_first_name") + " " 
+							  + resultMovies.getString("director_last_name")  + "</th>\n");			
+					sb.append("<th>" + getGenres(connection,resultMovies.getString("id")) + "</th>\n");			
+					sb.append("<th>" + getStars(connection,resultMovies.getString("id")) + "</th>\n");
+					//TODO link button
+					sb.append("<th>" + "<button type='add'>Add</button>" + "</th>\n");
+					movies.add(new Movie(resultMovies.getString("title"), resultMovies.getString("year"), resultMovies.getString("director_first_name"),
+							resultMovies.getString("director_first_name"),getGenres(connection,resultMovies.getString("id")), 
+							getStars(connection,resultMovies.getString("id")), comparator, compareDirection, sb.toString()));
+					sb = new StringBuilder();
+				}				
+			}
+		} 
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+		Collections.sort(movies);
+
+		return getRecords(index, movies);
+	}
+	
 	private static String getRecords(int index, ArrayList<Movie> movies)
 	{
 		StringBuilder sb = new StringBuilder();
@@ -60,18 +102,17 @@ public class MovieListGenerator
 		{
 			records++;
 			sb.append(m.getRecord());
-			if((records % RECORDS_PER_PAGE) == 0)
+			if(((records % RECORDS_PER_PAGE) == 0)||(movies.size()<=records))
 			{
 				resultPages.add(sb.toString());
 				sb = new StringBuilder();
 			}
 		}
-		
 		return resultPages.get(index).toString();
 	}
 	
 	
-	private static String getGenres(Connection connection, String id)
+	public static String getGenres(Connection connection, String id)
 	{
 		String genres = "";
 		Statement select1;
@@ -90,7 +131,7 @@ public class MovieListGenerator
 				genres += resultGenres.getString("name") + ", " ;
 			}
 		}
-		//cut off the last comma
+		//cuts off the last comma
 		if(!genres.equals(""))
 			genres = genres.substring(0, genres.length()-2);
 		}

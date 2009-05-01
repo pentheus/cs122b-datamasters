@@ -1,6 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
@@ -10,13 +7,6 @@
 <HTML>
 <BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BGCOLOR="#CFE0EB" TEXT="#000000" LINK="#336699" VLINK="#336699" ALINK="#336699">
 
-<% if(2==3)
-	{%>
-	<%= "This is a java string"%>
-	<%}else
-		{%>
-		<%= "This is not a java string"%>
-	   <%} %>
 <TABLE BORDER=0 WIDTH="100%" CELLPADDING=1 CELLSPACING=0>
 	<TR>
 		<TD ALIGN="CENTER" BGCOLOR="#053560"><a href="http://localhost:8080/Phase2/"><img src="./Img1.jpg" alt="Image Here" width="262" height="130" hspace=0 border=0></a></TD>
@@ -49,9 +39,9 @@
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page11.html">Page11</A>&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page12.html">Page12</A>&nbsp;&nbsp;</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF= >Page12</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav">Page13</A>&nbsp;&nbsp;</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Login.html">Login</A>&nbsp;&nbsp;</TD>
 				</TR>
 			</TABLE>
 		</TD>
@@ -69,34 +59,23 @@
 		<TR>
 		  <TD><FONT FACE="Lucida,Verdana,Helvetica,Arial">
 
-		<B><FONT SIZE="+2">Login</FONT></B>
+		<B><FONT SIZE="+2">Information on "Single Stars"</FONT></B>
 		</FONT></TD>
 		</TR>
-	</TABLE>
-	<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="#000000"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="1" ALT=""></TD></TR></TABLE>
-	<TABLE CELLSPACING="0" CELLPADDING="3" WIDTH="100%" BORDER="0" BGCOLOR="#EEEED4">
-	<TR><TD><FONT FACE="Lucida,Verdana,Helvetica,Arial">&nbsp;
-
-	</FONT>
-	<P><font face="Lucida,Verdana,Helvetica,Arial"> <STRONG> Existing customer? </STRONG> </BR> </BR> Email Address: </BR> <input type="text" size="30">
-	</BR> </BR> Password: </BR> <input type="text" size="30"> </BR> </BR>
-</font>
-	
-	</TD></TR>
 </TABLE>
 	<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="#000000"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="1" ALT=""></TD></TR></TABLE>
 	<TABLE CELLSPACING="0" CELLPADDING="3" WIDTH="100%" BORDER="0" BGCOLOR="#EEEED4">
 	<TR><TD><FONT FACE="Lucida,Verdana,Helvetica,Arial">&nbsp;
 
 	</FONT>
-	<P><font face="Lucida,Verdana,Helvetica,Arial"> <STRONG> New Customer? </STRONG> </BR> </BR> First Name: </BR> <input type="text" size="30">
-	</BR> </BR> Last Name: </BR> <input type="text" size="30"> </BR> </BR> Email Address: </BR> <input type="text" size="30"> </BR> </BR> Password: </BR> <input type="text" size="30">
-	</BR> </BR> Retype Password: </BR> <input type="text" size="30"> </BR> </BR>
+	<P><font face="Lucida,Verdana,Helvetica,Arial"> Star's Name: </BR> </BR> Date of Birth: </BR> </BR> Picture: </BR> </BR> Title of Movies: </BR> </BR> 
+	Poster: </BR> </BR> Stars: </BR> </BR>
 </font>
 	
 	</TD></TR>
-	</TABLE>
 	
+	</TABLE>
+
 	<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="#000000"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="1" ALT=""></TD></TR></TABLE>
 </TD></TR>
 
