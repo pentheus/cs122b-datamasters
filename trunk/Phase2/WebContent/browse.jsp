@@ -30,7 +30,7 @@
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="search.jsp">Search</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="login.html">Login</A>&nbsp;&nbsp;</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="login.jsp">Login</A>&nbsp;&nbsp;</TD>
 				</TR>
 			</TABLE>
 		</TD>
@@ -65,8 +65,6 @@
 	<TR><TD><FONT FACE="Lucida,Verdana,Helvetica,Arial">
 	<P>Please select a type of browsing.</P>
 	<jsp:useBean id="login" scope="session" class="info.Login" />
-	<%= login.getInfo() %>
-	<% login.setInfo("From Browse"); %>
 	</FONT>
 	</TD></TR>
 	</TABLE>
@@ -118,7 +116,7 @@
 
 </CENTER>
 
-<P>Project Info </P>
+<P>Bret Lowrey, CS122B, 2009 </P>
 
 </BODY>
 </HTML>

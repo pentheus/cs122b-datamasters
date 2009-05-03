@@ -27,7 +27,7 @@
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD HEIGHT=22 BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;Search&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="login.html">Login</A>&nbsp;&nbsp;</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="login.jsp">Login</A>&nbsp;&nbsp;</TD>
 				</TR>
 			</TABLE>
 		</TD>
@@ -97,7 +97,7 @@
 
 </CENTER>
 
-<P>Project Info </P>
+<P>Bret Lowrey, CS122B, 2009 </P>
 
 </BODY>
 </HTML>
