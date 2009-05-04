@@ -103,7 +103,6 @@ public class BrowseGenre extends HttpServlet {
 	    }
 	    
 	    out.println("</font></body></html>");
-	    out.close();
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
