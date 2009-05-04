@@ -5,11 +5,12 @@
 <!-- with no invariant sections. -->
 <!-- A copy of the license can be found at http://www.gnu.org/copyleft/fdl.html -->
 <HTML>
-<BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BGCOLOR="#CFE0EB" TEXT="#000000" LINK="#336699" VLINK="#336699" ALINK="#336699">
+<BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BGCOLOR="ffec98" TEXT="#000000" LINK="#336699" VLINK="#336699" ALINK="#336699">
 
+<jsp:useBean id="cart" scope="session" class="info.Cart"/>
 <TABLE BORDER=0 WIDTH="100%" CELLPADDING=1 CELLSPACING=0>
 	<TR>
-		<TD ALIGN="CENTER" BGCOLOR="#053560"><a href="http://localhost:8080/Phase2/"><img src="./Img1.jpg" alt="Image Here" width="262" height="130" hspace=0 border=0></a></TD>
+		<TD ALIGN="CENTER" BGCOLOR="a60000"><a href="http://localhost:8080/Phase2/"><img src="./fabflix.png" alt="Fabflix" width="295" height="201" hspace=0 border=0></a></TD>
 	</TR>
 </TABLE>
 <TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0>
@@ -17,29 +18,15 @@
 		<TD ALIGN="CENTER" BGCOLOR="#D3D4C5">
 			<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0>
 				<TR>
-					<TD HEIGHT=22 BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="index.jsp">Home</A>&nbsp;&nbsp;</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="index.jsp">Main</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page2.html">Page2</A>&nbsp;&nbsp;</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="browse.jsp">Browse</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page3.html">Page3</A>&nbsp;&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page4.html">Page4</A>&nbsp;&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page5.html">Page5</A>&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page6.html">Page6</A>&nbsp;&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page7.html">Page7</A>&nbsp;&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page8.html">Page8</A>&nbsp;&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page9.html">Page9</A>&nbsp;&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Page10.html">Page10</A>&nbsp;&nbsp;</TD>
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="Shopping cart.jsp">Shopping Cart</A>&nbsp;</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="search.jsp">Search</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="login.jsp">Login</A>&nbsp;&nbsp;</TD>
+					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="checkout.jsp">Checkout</A>&nbsp;&nbsp;</TD>
 				</TR>
 			</TABLE>
 		</TD>
@@ -47,7 +34,7 @@
 </TABLE>
 <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="#000000"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="2" ALT=""></TD></TR></TABLE>
 <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="#000000"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="2" ALT=""></TD></TR></TABLE>
-<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="#CFE0EB"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="15" ALT=""></TD></TR></TABLE>
+<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="ffec98"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="15" ALT=""></TD></TR></TABLE>
 
 
 
@@ -66,12 +53,28 @@
 	<TR><TD><FONT FACE="Lucida,Verdana,Helvetica,Arial">&nbsp;
 
 	</FONT>
-	<P><font face="Lucida,Verdana,Helvetica,Arial"> <STRONG> Items in the Shopping Cart: </STRONG> </BR> </BR> 
-	"Name of the DVD that is added" &nbsp &nbsp &nbsp &nbsp  "Quantity (Default 1)" </BR> </BR> 
-	"Name of the DVD that is added" &nbsp &nbsp &nbsp &nbsp  "Quantity (Default 1)" </BR> </BR>
-	"Name of the DVD that is added" &nbsp &nbsp &nbsp &nbsp  "Quantity (Default 1)" </BR> </BR>
-	</BR> </BR> Checkout(hyperlink) </font>
+	<P><font face="Lucida,Verdana,Helvetica,Arial"> 
+	<STRONG> Items in the Shopping Cart: </STRONG> </BR> </BR> 
+
 	
+
+	<form  action="cart.jsp" method="GET" >
+	<table border='1' align='center' WIDTH='80%'><tr>
+		<th>Title</th>
+	    <th>Quanity</th>
+	    	
+	    <% cart.addItem(new info.Item("Item 1", 1));
+	    cart.addItem(new info.Item("Item 2", 1));	%>
+	    <% for(info.Item item : cart.getItems()){%>
+	    	<%= "<tr>"%>
+		    <%= "<th>" + item.getTitle()  + "</th>"%>
+		    <%= "<th><input type='text' size='5' name="+ item.getTitle() + " value='"+ item.getQuantity()  + "'></th>"%>
+		    <%= "</tr>"%>
+	    	<%}%>
+	    	
+	   </table>
+        <input type="submit" name="action" value="Update Quantity" />
+    </form>
 	</TD></TR>
 	</TABLE>
 

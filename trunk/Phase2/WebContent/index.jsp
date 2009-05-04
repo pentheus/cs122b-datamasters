@@ -8,11 +8,11 @@
 <jsp:useBean id="login" scope="session" class="info.Login" />
 
 <HTML>
-<BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BGCOLOR="#CFE0EB" TEXT="#000000" LINK="#336699" VLINK="#336699" ALINK="#336699">
+<BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BGCOLOR="ffec98" TEXT="#000000" LINK="#336699" VLINK="#336699" ALINK="#336699">
 
 <TABLE BORDER=0 WIDTH="100%" CELLPADDING=1 CELLSPACING=0>
 	<TR>
-		<TD ALIGN="CENTER" BGCOLOR="#053560"><a href="http://localhost:8080/Phase2/"><img src="./Img1.jpg" alt="Image Here" width="262" height="130" hspace=0 border=0></a></TD>
+		<TD ALIGN="CENTER" BGCOLOR="a60000"><a href="http://localhost:8080/Phase2/"><img src="./fabflix.png" alt="Fabflix" width="295" height="201" hspace=0 border=0></a></TD>
 	</TR>
 </TABLE>
 
@@ -24,13 +24,15 @@
 		<TD ALIGN="CENTER" BGCOLOR="#D3D4C5">
 			<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0>
 				<TR>
-					<TD HEIGHT=22 BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;Main&nbsp;&nbsp;</TD>
+					<TD HEIGHT=22 BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>Main&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="browse.jsp">Browse</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="search.jsp">Search</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="login.jsp">Login</A>&nbsp;&nbsp;</TD>
+					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
+					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="checkout.jsp">Checkout</A>&nbsp;&nbsp;</TD>
 				</TR>
 			</TABLE>
 		</TD>
@@ -44,9 +46,9 @@
 
 <CENTER>
 
-<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="#CFE0EB"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="15" ALT=""></TD></TR></TABLE>
+<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR BGCOLOR="ffec98"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="15" ALT=""></TD></TR></TABLE>
 
-<TABLE cellspacing="0" cellpadding="3" border="0" width="100%" bgcolor="#CFE0EB">
+<TABLE cellspacing="0" cellpadding="3" border="0" width="100%" bgcolor="ffec98">
 	<TR>
 		<TD align="center" valign="top">
 
@@ -67,7 +69,7 @@
 	</FONT>
 	</TD></TR>
 	</TABLE>
-	<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><tr style="background-color: rgb(176, 196, 222);"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="1" ALT=""></TD></TR></TABLE>
+	<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><tr style="ffec98"><TD><IMG SRC="images/1x1.gif" WIDTH="1" HEIGHT="1" ALT=""></TD></TR></TABLE>
 </TD></TR>
 </TABLE>
 
