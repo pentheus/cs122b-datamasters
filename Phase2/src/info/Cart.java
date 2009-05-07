@@ -1,5 +1,9 @@
 package info;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class Cart {
@@ -14,6 +18,10 @@ public class Cart {
 
 	public ArrayList<Item> getItems() {
 		return items;
+	}
+	
+	public void resetCart() {
+		items = new ArrayList<Item>();
 	}
 	
 	public boolean itemExists(Item item)
@@ -38,5 +46,23 @@ public class Cart {
 			}
 		}
 		return null;
+	}
+	
+	public void submitOrder(String customerID, String movieID, String time, String quantity, String shippingAddress )
+	{
+		Connection connection;
+		try 
+		{
+			connection = DriverManager.getConnection(
+					"jdbc:postgresql://localhost/fabflixs","testuser", "testpass");
+		
+			Statement select = connection.createStatement();
+			select.executeUpdate("INSERT INTO sales VALUES(" + customerID +"," + movieID + ",'" + time + "'," + quantity + ",'" + shippingAddress + "')");
+			
+		} 
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
 	}
 }

@@ -33,6 +33,35 @@ public class MovieList
 		return ((recordCount + tools.MovieListGenerator.RECORDS_PER_PAGE - 1) / 
 				tools.MovieListGenerator.RECORDS_PER_PAGE);
 	}
+	
+	public int getNumberOfRecordPages(String title, String year, String director, String star)
+	{
+		int recordCount = 0;
+		
+		Connection connection;
+		try 
+		{
+			connection = DriverManager.getConnection(
+					"jdbc:postgresql://localhost/fabflixs","testuser", "testpass");
+		
+			Statement select = connection.createStatement();
+			//TODO
+			ResultSet resultMovies = select.executeQuery("select * from movies where title ~* '" + title + "'");
+			while(resultMovies.next())
+			{
+				recordCount++;
+			}
+		} 
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+		
+		//return the number rounded up
+		return ((recordCount + tools.MovieListGenerator.RECORDS_PER_PAGE - 1) / 
+				tools.MovieListGenerator.RECORDS_PER_PAGE);
+	}
+	
 	public void setCurrentPage(int currentPage) {
 		this.currentPage = currentPage;
 	}
