@@ -1,3 +1,4 @@
+//This class cotains all of the fields for a movie in the system
 package tools;
 
 public class Movie implements Comparable<Movie>
@@ -63,7 +64,7 @@ public class Movie implements Comparable<Movie>
 		return stars;
 	}
 
-	@Override
+	//this is needed in the movie list to compare it in the list
 	public int compareTo(Movie m) 
 	{
 		if (comparator.equalsIgnoreCase("year"))

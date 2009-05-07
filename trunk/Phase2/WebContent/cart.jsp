@@ -7,7 +7,33 @@
 <HTML>
 <BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BGCOLOR="ffec98" TEXT="#000000" LINK="#336699" VLINK="#336699" ALINK="#336699">
 
+<%@page import="java.util.*"%>
 <jsp:useBean id="cart" scope="session" class="info.Cart"/>
+
+<% 
+String action = "NULL";
+if (request.getParameter("action") != null)
+{
+	action = request.getParameter("action");
+}
+if (request.getParameter("add") != null)
+{
+	cart.addItem(new info.Item(request.getParameter("add"), 1));
+}
+ArrayList<info.Item> items = cart.getItems(); 
+for(info.Item i : items)
+{
+	if (request.getParameter(i.getTitle()) != null)
+	{
+		int quantity = Integer.parseInt(request.getParameter(i.getTitle()));
+		if(quantity >= 0)
+		{
+			i.setQuantity(quantity);
+		}
+	}
+}
+%>
+
 <TABLE BORDER=0 WIDTH="100%" CELLPADDING=1 CELLSPACING=0>
 	<TR>
 		<TD ALIGN="CENTER" BGCOLOR="a60000"><a href="http://localhost:8080/Phase2/"><img src="./fabflix.png" alt="Fabflix" width="295" height="201" hspace=0 border=0></a></TD>
@@ -63,16 +89,16 @@
 		<th>Title</th>
 	    <th>Quanity</th>
 	    	
-	    <% cart.addItem(new info.Item("Item 1", 1));
-	    cart.addItem(new info.Item("Item 2", 1));	%>
 	    <% for(info.Item item : cart.getItems()){%>
 	    	<%= "<tr>"%>
 		    <%= "<th>" + item.getTitle()  + "</th>"%>
-		    <%= "<th><input type='text' size='5' name="+ item.getTitle() + " value='"+ item.getQuantity()  + "'></th>"%>
+		    <%= "<th><input type='text' size='5' name='"+ item.getTitle() + "' value='"+ item.getQuantity()  + "'></th>"%>
 		    <%= "</tr>"%>
 	    	<%}%>
 	    	
 	   </table>
+	    <div class='navbar' align='right' />
+	    <BR>
         <input type="submit" name="action" value="Update Quantity" />
     </form>
 	</TD></TR>

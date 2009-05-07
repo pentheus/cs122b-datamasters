@@ -32,7 +32,8 @@ public class MovieListGenerator
 				sb.append("<th>" + getGenres(connection,resultMovies.getString("id")) + "</th>\n");			
 				sb.append("<th>" + getStars(connection,resultMovies.getString("id")) + "</th>\n");
 				//TODO link button
-				sb.append("<th>" + "<button type='add'>Add</button>" + "</th>\n");
+				sb.append("<th>" + "<form  action='cart.jsp' method='GET' ><input TYPE=HIDDEN name='add' value='"+resultMovies.getString("title")+"' />" +
+						"<input type='submit' value='Add to Cart'/></form>" + "</th>\n");
 				movies.add(new Movie(resultMovies.getString("title"), resultMovies.getString("year"), resultMovies.getString("director_first_name"),
 						resultMovies.getString("director_first_name"),getGenres(connection,resultMovies.getString("id")), 
 						getStars(connection,resultMovies.getString("id")), comparator, compareDirection, sb.toString()));
@@ -64,18 +65,18 @@ public class MovieListGenerator
 			while(resultMovies.next())
 			{
 				String genres = getGenres(connection,resultMovies.getString("id")).toLowerCase();
-				//System.out.println("Genre : " + genreName + "; genres: " + genres);
 				if(genres.contains(genreName))
 				{
 					sb.append("<tr>\n");
-					sb.append("<th>" + resultMovies.getString("title") + "</th>\n");
+					sb.append("<th><A HREF='single-movie.jsp?id="+ resultMovies.getString("id") + "'>" + resultMovies.getString("title") + "</A></th>\n");
 					sb.append("<th>" + resultMovies.getString("year") + "</th>\n");
 					sb.append("<th>" + resultMovies.getString("director_first_name") + " " 
 							  + resultMovies.getString("director_last_name")  + "</th>\n");			
 					sb.append("<th>" + getGenres(connection,resultMovies.getString("id")) + "</th>\n");			
 					sb.append("<th>" + getStars(connection,resultMovies.getString("id")) + "</th>\n");
 					//TODO link button
-					sb.append("<th>" + "<button type='add'>Add</button>" + "</th>\n");
+					sb.append("<th>" + "<form  action='cart.jsp' method='GET' ><input TYPE=HIDDEN name='add' value='"+resultMovies.getString("title")+
+							"' /><input type='submit' value='Add to Cart'/></form>" + "</th>\n");
 					movies.add(new Movie(resultMovies.getString("title"), resultMovies.getString("year"), resultMovies.getString("director_first_name"),
 							resultMovies.getString("director_first_name"),getGenres(connection,resultMovies.getString("id")), 
 							getStars(connection,resultMovies.getString("id")), comparator, compareDirection, sb.toString()));
@@ -141,7 +142,7 @@ public class MovieListGenerator
 		return genres;
 	}
 	
-	private static String getStars(Connection connection, String id)
+	static String getStars(Connection connection, String id)
 	{
 		String stars = "";
 		Statement select1;
@@ -157,8 +158,8 @@ public class MovieListGenerator
 									 " where id=" + resultStarsInMovies.getString("star_id"));
 				while(resultStars.next())
 				{
-					stars += resultStars.getString("first_name") + " " +
-							 resultStars.getString("last_name") + ", " ;
+					stars += "<A HREF='single-star.jsp?id=" + resultStarsInMovies.getString("star_id") + "'>" + resultStars.getString("first_name") + " " +
+							 resultStars.getString("last_name") + "</A>, " ;
 				}
 			}
 			//cut off the last comma
@@ -169,6 +170,54 @@ public class MovieListGenerator
 			e.printStackTrace();
 		}
 		return stars;
+	}
+	
+	public static String getResults(String title, String year, String director, String star, int index, String comparator, String compareDirection)
+	{
+		System.out.println(title);
+		System.out.println(year);
+		System.out.println(director);
+		System.out.println(star);
+		ArrayList<Movie> movies = new ArrayList<Movie>();
+		Connection connection;
+		try 
+		{
+			StringBuilder sb = new StringBuilder();
+			connection = DriverManager.getConnection(
+					"jdbc:postgresql://localhost/fabflixs","testuser", "testpass");
+		
+			Statement select = connection.createStatement();
+			//TODO
+			ResultSet resultMovies = select.executeQuery("select * from movies where title ~* '" + title + "'");
+			while(resultMovies.next())
+			{
+				sb.append("<tr>\n");
+				sb.append("<th>" + resultMovies.getString("title") + "</th>\n");
+				sb.append("<th>" + resultMovies.getString("year") + "</th>\n");
+				sb.append("<th>" + resultMovies.getString("director_first_name") + " " 
+						  + resultMovies.getString("director_last_name")  + "</th>\n");			
+				sb.append("<th>" + getGenres(connection,resultMovies.getString("id")) + "</th>\n");			
+				sb.append("<th>" + getStars(connection,resultMovies.getString("id")) + "</th>\n");
+				//TODO link button
+				sb.append("<th>" + "<form  action='cart.jsp' method='GET' ><input TYPE=HIDDEN name='add' value='"+resultMovies.getString("title")+"' />" +
+						"<input type='submit' value='Add to Cart'/></form>" + "</th>\n");
+				movies.add(new Movie(resultMovies.getString("title"), resultMovies.getString("year"), resultMovies.getString("director_first_name"),
+						resultMovies.getString("director_first_name"),getGenres(connection,resultMovies.getString("id")), 
+						getStars(connection,resultMovies.getString("id")), comparator, compareDirection, sb.toString()));
+				sb = new StringBuilder();
+			}
+		} 
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+		if(movies.size() == 0)
+		{
+			return "No movies found" ;
+		}
+		Collections.sort(movies);
+
+		return getRecords(index, movies);
 	}
 }
 

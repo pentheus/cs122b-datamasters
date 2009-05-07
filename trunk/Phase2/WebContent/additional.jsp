@@ -132,9 +132,7 @@ function startup(){
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
 					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="search.jsp">Search</A>&nbsp;&nbsp;</TD>
 					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD HEIGHT=22 BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;Login&nbsp;&nbsp;</TD>				
-					<TD BGCOLOR="#D3D4C5" ALIGN=CENTER>|</TD>
-					<TD           BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;<A CLASS="topnav" HREF="checkout.jsp">Checkout</A>&nbsp;&nbsp;</TD>	
+					<TD HEIGHT=22 BGCOLOR="#D3D4C5" ALIGN=CENTER NOWRAP>&nbsp;&nbsp;Login&nbsp;&nbsp;</TD>					
 				</TR>
 			</TABLE>
 		</TD>
