@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
+
 import java.sql.*;
 
 public class EmployeeAccessFrame extends JFrame
@@ -667,6 +668,122 @@ public class EmployeeAccessFrame extends JFrame
         pack();
 		repaint();		
 	}
+	
+	//insert a brand new movie to the DB with extra features to automatically update the appropriate fields
+	public void insertMovieAdvanced() {
+		JPanel contentPane = new JPanel();
+        contentPane.setPreferredSize(new Dimension(400, 700));
+        contentPane.setLayout(new FlowLayout());        
+		
+	    final JTextField title = new JTextField(30);		
+		final JTextField year = new JTextField(30);	
+		final JTextField directorRestOfName = new JTextField(30);	
+		final JTextField directorLastName = new JTextField(30);		
+		final JTextField bannerUrl = new JTextField(30);	
+		final JTextField trailerUrl = new JTextField(30);	
+		final JTextField genres = new JTextField(30);	
+		final JTextField starFirstName = new JTextField(30);	
+		final JTextField starLastName = new JTextField(30);	
+		final JTextField starDob = new JTextField(30);	
+		final JTextField starPhoto = new JTextField(30);	
+		
+		JButton get = new JButton("Insert");
+		JButton clear = new JButton("Clear");
+		get.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e)
+            {
+				if ((title.getText().length() > 0) && (directorLastName.getText().length() > 0)
+						&& (year.getText().length() > 0) && (bannerUrl.getText().length() > 0)
+						&& (trailerUrl.getText().length() > 0))
+				{
+					try 
+					{	
+						Statement insert = connection.createStatement();
+						String query = "Select add_movie('" + title.getText() + 
+									"', " + year.getText() + ", '" + directorLastName.getText() + "', '" +
+									directorRestOfName.getText() + "', '" + bannerUrl.getText() + "', '" +
+									trailerUrl.getText() + "', '" + convertToSqlArray(genres.getText()) + "', '" + 
+									convertToSqlArray(starFirstName.getText()) + "', '" + 
+									convertToSqlArray(starLastName.getText()) + "', '" + 
+									convertToSqlArray(starDob.getText()) + "', '" + 
+									convertToSqlArray(starPhoto.getText()) +"')";
+						insert.executeQuery(query);
+						employeeAccessDialog("Query Sucessful!");
+					}
+					catch (SQLException e1) 
+					{
+						e1.printStackTrace();
+						employeeAccessDialog("Query Failed!");
+					}
+				}
+				else
+					Toolkit.getDefaultToolkit().beep();  // signal error
+            }
+        });
+		
+		clear.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e)
+            {
+            	title.setText("");
+            	year.setText("");
+            	directorRestOfName.setText("");
+            	directorLastName.setText("");
+            	bannerUrl.setText("");
+            	trailerUrl.setText("");
+            	genres.setText("");
+            	starFirstName.setText("");
+            	starLastName.setText("");
+            	starDob.setText("");
+            	starPhoto.setText("");
+            }
+        });
+		contentPane.add(new JLabel("Enter title of movie"));
+		contentPane.add(title);
+		contentPane.add(new JLabel("Enter year"));
+		contentPane.add(year);
+		contentPane.add(new JLabel("Enter director's last name"));
+		contentPane.add(directorLastName);
+		contentPane.add(new JLabel("Enter rest of director's name"));
+		contentPane.add(directorRestOfName);
+		contentPane.add(new JLabel("Enter banner URL"));
+		contentPane.add(bannerUrl);
+		contentPane.add(new JLabel("Enter trailer URL"));
+		contentPane.add(trailerUrl);
+		contentPane.add(new JLabel("---------------------------------------------------------------------------------------"));
+		contentPane.add(new JLabel("For all fields where there are multiple entries,"));
+		contentPane.add(new JLabel("seperate the entries with commas."));
+		contentPane.add(new JLabel("---------------------------------------------------------------------------------------"));
+		contentPane.add(new JLabel("Enter genre(s)"));
+		contentPane.add(genres);
+		contentPane.add(new JLabel("Enter stars' first name(s)"));
+		contentPane.add(starFirstName);
+		contentPane.add(new JLabel("Enter stars' last name(s)"));
+		contentPane.add(starLastName);
+		contentPane.add(new JLabel("Enter stars' date of birth(s)"));
+		contentPane.add(starDob);
+		contentPane.add(new JLabel("Enter photo URL(s) "));
+		contentPane.add(starPhoto);
+		contentPane.add(get);
+		contentPane.add(clear);
+	    
+		setContentPane(contentPane);
+
+        pack();
+		repaint();		
+	}
+	
+	public static String convertToSqlArray(String list)
+	{
+		String[] split = list.split(",");
+		String arrayified = "{";
+		for(String s : split)
+		{
+			arrayified += "\"" + s.trim() + "\",";
+		}
+		arrayified = arrayified.substring(0, arrayified.length()-1);
+		arrayified += "}";
+		return arrayified;
+	}
 
 	//insert a customer to DB, must check to see if the cc-id exists
 	public void insertCustomer() {
@@ -978,7 +1095,7 @@ public class EmployeeAccessFrame extends JFrame
 							
 							while(result.next())
 							{
-								Integer id = result.getInt(1); 
+								Integer id = result.getInt(1);
 								starIds.add(id.toString());
 							}
 						}
@@ -1195,6 +1312,10 @@ public class EmployeeAccessFrame extends JFrame
 	        menuItem.addActionListener(new InsertMovieListener());
 	        insertMenu.add(menuItem);
 	        
+	        menuItem = new JMenuItem("Movie to the database with extras", KeyEvent.VK_E);
+	        menuItem.addActionListener(new InsertMovieExtraListener());
+	        insertMenu.add(menuItem);
+	        
 	        menuItem = new JMenuItem("Associate star with existing movie", KeyEvent.VK_A);
 	        menuItem.addActionListener(new InsertAssociationListener());
 	        insertMenu.add(menuItem);
@@ -1292,6 +1413,14 @@ public class EmployeeAccessFrame extends JFrame
 	        public void actionPerformed(ActionEvent e)
 	        {
 	            parentFrame.insertMovie();
+	        }
+	    }
+	    
+	    class InsertMovieExtraListener implements ActionListener
+	    {
+	        public void actionPerformed(ActionEvent e)
+	        {
+	            parentFrame.insertMovieAdvanced();
 	        }
 	    }
 	    
